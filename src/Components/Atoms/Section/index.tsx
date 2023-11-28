@@ -9,8 +9,8 @@ type SectionProps = {
 const variants = cva('h-screen', {
   variants: {
     size: {
-      medium: 'max-w-[1280px]',
-      large: 'max-w-[1440px]',
+      medium: '',
+      large: '',
     },
   },
   defaultVariants: {
