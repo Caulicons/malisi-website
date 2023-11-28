@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prettier:check": "npx prettier . --check",
     "prettier:write": "npx prettier . --write",
-    "pre-commit": "npm run lint && npm run prettier:check"
+    "precommit": "npm run lint && npm run prettier:check"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
@@ -41,7 +41,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pre-commit"
+      "pre-commit": "npm run precommit"
     }
   }
 }
