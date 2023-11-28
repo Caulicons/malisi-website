@@ -11,11 +11,6 @@
     "prettier:write": "npx prettier . --write",
     "pre-commit": "npm run lint && npm run prettier:check"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier:check"
-    }
-  },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
@@ -43,5 +38,10 @@
     "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
   }
 }
