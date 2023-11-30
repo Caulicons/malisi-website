@@ -1,5 +1,7 @@
+import Main from '@/components/atoms/Main';
+
 const Home = () => {
-  return <main></main>;
+  return <Main></Main>;
 };
 
 export default Home;
