@@ -37,9 +37,9 @@ export default function BannerImage() {
           transition: 'all 1.2s ease-in-out',
           position: 'absolute',
         }}
-        className='animate-zoom bg-gradient-to-r from-primary to-secondary '
+        className='animate-zoom from-primary to-secondary bg-gradient-to-r '
       >
-        <div className='h-screen w-screen bg-secondary/75' />
+        <div className='bg-secondary/75 h-screen w-screen' />
       </div>
     </>
   );
