@@ -8,7 +8,7 @@ import Image from '@components/atoms/Image';
 import NavLinks from '@/components/atoms/NavLinks';
 
 export default function HamburgerMenu() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
   useClickAway(ref, () => setIsOpen(false));
