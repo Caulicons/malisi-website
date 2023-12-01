@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: 20, 127, 60;
+  --secondary: 43, 90, 64;
+  --black: 17, 17, 17;
+  --white: 247, 247, 247;
 }
 
+/* Structure to create dark mode later */
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -25,3 +28,4 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+ */
