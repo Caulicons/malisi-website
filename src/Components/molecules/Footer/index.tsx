@@ -1,52 +1,60 @@
-import Image from '../../atoms/Image';
-import Text from '../../atoms/Text';
+import Link from 'next/link';
+import Text from '@components/atoms/Text';
 import { FaSquareTwitter } from 'react-icons/fa6';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaWhatsappSquare } from 'react-icons/fa';
 export default function Footer() {
   return (
-    <footer className='bg-secondary flex w-full flex-col items-center justify-center gap-8 p-8 pb-10 text-center md:flex-row md:items-start'>
-      <Image
-        src={'/assets/images/Logo/logoIcon.png'}
-        alt='logo'
-        width={60}
-        height={60}
-      />
-      <div className='flex flex-col gap-2 text-white'>
-        <Text variant='p'>Contact:</Text>
-        <ul className='flex flex-col items-center gap-1'>
-          <li>
-            <Text className='text-white' icon='📞'>
-              (11) 97800-6719
-            </Text>
-          </li>
-          <li>
-            <Text className='text-white' icon='📧'>
-              Caulicons.jobs@gmail.com
-            </Text>
-          </li>
-        </ul>
-      </div>
-      <div className='flex flex-col gap-3'>
-        <Text variant='p'>Social Medias:</Text>
-        <ul className='flex justify-center gap-4 [&_li]:h-9 [&_li]:w-9 [&_li]:text-white'>
-          <li>
-            <FaSquareTwitter className='h-9 w-9' />
-          </li>
-          <li>
-            <FaWhatsappSquare className='h-9 w-9' />
-          </li>
-          <li>
-            <FaFacebookSquare className='h-9 w-9' />
-          </li>
-        </ul>
-      </div>
-      <div className='w-3/5 justify-center md:w-2/5'>
-        <Text>Local:</Text>
-        <Text className='text-white'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. sit amet,
-          consectetur adipiscing elit.
-        </Text>
+    /* TODO : (footer) see a way to automatically re-render the content */
+    <footer className='w-full bg-secondary'>
+      <div className='flex w-full max-w-7xl flex-col justify-center gap-7 px-8 py-8 text-center md:flex-row'>
+        <div className='flex flex-col gap-2 text-white'>
+          <Text tag='h4' variant='footerHeader'>
+            Contato
+          </Text>
+          <ul className='flex flex-col items-center gap-2'>
+            <li>
+              <Text className='text-white' icon='📞'>
+                (11) 93015-3155
+              </Text>
+            </li>
+            <li>
+              <Text className='break-all text-white' icon='📧'>
+                Marcelo.lima@malisiengenharia.com.br
+              </Text>
+            </li>
+          </ul>
+        </div>
+        <div className='flex flex-col gap-2'>
+          {/* TODO : (footer) Add social correct social medias */}
+          <Text tag='h4' variant='footerHeader'>
+            Social Medias:
+          </Text>
+          <ul className='flex justify-center gap-4 [&_li]:h-9 [&_li]:w-9 [&_li]:cursor-pointer [&_li]:text-white'>
+            <li>
+              <Link href='/'>
+                <FaSquareTwitter className='h-12 w-12' />
+              </Link>
+            </li>
+            <li>
+              <Link href='/'>
+                <FaWhatsappSquare className='h-12 w-12' />
+              </Link>
+            </li>
+            <li>
+              <Link href='/'>
+                <FaFacebookSquare className='h-12 w-12' />
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className='flex flex-col justify-center gap-2 md:w-2/6'>
+          {/* TODO : (footer) Add local, maps component may be a good option*/}
+          <Text tag='h4' variant='footerHeader'>
+            LOCAL
+          </Text>
+          <Text className='text-white'>Site em criação.</Text>
+        </div>
       </div>
     </footer>
   );

@@ -2,13 +2,13 @@ import React, { forwardRef } from 'react';
 import cn from '@utils/cn';
 import { cva } from 'class-variance-authority';
 
-type Variant = {
-  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'span';
+type Tag = {
+  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'span';
 };
 
 type TypographyProps = {
   children: React.ReactNode;
-  styles?:
+  variant?:
     | 'h1'
     | 'h2'
     | 'h3'
@@ -20,14 +20,15 @@ type TypographyProps = {
     | 'cardTitle'
     | 'cardBody'
     | 'ancor'
+    | 'footerHeader'
     | 'button';
   icon?: React.ReactNode;
 } & React.HTMLAttributes<HTMLParagraphElement> &
-  Variant;
+  Tag;
 
 const variants = cva('', {
   variants: {
-    styles: {
+    variant: {
       h1: [''],
       h2: [''],
       h3: [''],
@@ -39,21 +40,26 @@ const variants = cva('', {
       cardTitle: [''],
       cardBody: [''],
       ancor: [''],
+      footerHeader: ['text-2xl font-bold text-black uppercase'],
       button: [''],
     },
   },
   defaultVariants: {
-    styles: 'p',
+    variant: 'p',
   },
 });
 
 const Text = forwardRef<HTMLParagraphElement, TypographyProps>(function T(
-  { children, variant = 'p', styles = 'p', icon, className, ...props },
+  { children, tag = 'p', variant: fashion = 'p', icon, className, ...props },
   ref
 ) {
-  const Tag = variant;
+  const Tag = tag;
   return (
-    <Tag ref={ref} className={cn(variants({ styles }), className)} {...props}>
+    <Tag
+      ref={ref}
+      className={cn(variants({ variant: fashion }), className)}
+      {...props}
+    >
       {icon ? icon + ' ' + children : children}
     </Tag>
   );
