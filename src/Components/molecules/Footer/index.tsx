@@ -12,6 +12,7 @@ export default function Footer() {
           <Text tag='h4' variant='footerHeader'>
             Contato
           </Text>
+          {/* TODO : (footer) add links to contanct, when click switch to matches contact*/}
           <ul className='flex flex-col items-center gap-2'>
             <li>
               <Text className='text-white' icon='📞'>

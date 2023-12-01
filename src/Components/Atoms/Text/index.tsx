@@ -50,16 +50,12 @@ const variants = cva('', {
 });
 
 const Text = forwardRef<HTMLParagraphElement, TypographyProps>(function T(
-  { children, tag = 'p', variant: fashion = 'p', icon, className, ...props },
+  { children, tag = 'p', variant = 'p', icon, className, ...props },
   ref
 ) {
   const Tag = tag;
   return (
-    <Tag
-      ref={ref}
-      className={cn(variants({ variant: fashion }), className)}
-      {...props}
-    >
+    <Tag ref={ref} className={cn(variants({ variant }), className)} {...props}>
       {icon ? icon + ' ' + children : children}
     </Tag>
   );
