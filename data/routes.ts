@@ -1,19 +1,19 @@
 const routes = [
   {
-    name: 'Home',
+    name: 'INÍCIO',
     href: '/',
   },
   {
-    name: 'About',
-    href: '/About',
+    name: 'SOBRE',
+    href: '/sobre',
   },
   {
-    name: 'Service',
-    href: '/Service',
+    name: 'SERVIÇOS',
+    href: '/servicos',
   },
   {
-    name: 'Contact',
-    href: '/Contact',
+    name: 'CONTATO',
+    href: '/contato',
   },
 ];
 
