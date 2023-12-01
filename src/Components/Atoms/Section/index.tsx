@@ -1,12 +1,13 @@
 import { cva } from 'class-variance-authority';
 import cn from '../../../../utils/cn';
 
+type childrenProps = {} & React.HTMLAttributes<HTMLDivElement>;
 type SectionProps = {
   size?: 'medium' | 'large';
-  childrenClassName?: string;
+  childrenProps: childrenProps;
 } & React.HTMLAttributes<HTMLDivElement>;
-
-const variants = cva('h-screen', {
+/* FIXME: case not use this belong the project deleter the code block above  */
+/* const variants = cva('h-screen', {
   variants: {
     size: {
       medium: '',
@@ -16,17 +17,23 @@ const variants = cva('h-screen', {
   defaultVariants: {
     size: 'large',
   },
-});
+}); */
 
 export default function Section({
   className,
   children,
-  childrenClassName,
-  size = 'large',
+  childrenProps,
+  ...props
 }: SectionProps) {
   return (
-    <section className={className}>
-      <div className={cn(variants({ size }), childrenClassName)}>
+    <section
+      className={cn(
+        'flex h-screen w-full items-center justify-center',
+        className
+      )}
+      {...props}
+    >
+      <div className={cn('', childrenProps.className)} {...childrenProps}>
         {children}
       </div>
     </section>

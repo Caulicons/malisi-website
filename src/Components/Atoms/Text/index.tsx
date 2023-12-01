@@ -29,10 +29,14 @@ type TypographyProps = {
 const variants = cva('', {
   variants: {
     variant: {
-      h1: [''],
+      h1: [
+        'uppercase font-semibold md:font-bold text-2xl text-white  md:text-4xl lg:text-5xl tracking-[9px]',
+      ],
       h2: [''],
       h3: [''],
-      subTitle: [''],
+      subTitle: [
+        'uppercase font-bold text-secondary text-sm md:text-lg lg:text-2xl tracking-[9px]',
+      ],
       p: [''],
       pBold: [''],
       pHGL: [''],
@@ -40,7 +44,7 @@ const variants = cva('', {
       cardTitle: [''],
       cardBody: [''],
       ancor: [''],
-      footerHeader: ['text-2xl font-bold text-black uppercase'],
+      footerHeader: ['text-2xl font-bold text-black uppercase tracking-[px]'],
       button: [''],
     },
   },

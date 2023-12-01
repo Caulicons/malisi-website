@@ -6,8 +6,8 @@ import { FaWhatsappSquare } from 'react-icons/fa';
 export default function Footer() {
   return (
     /* TODO : (footer) see a way to automatically re-render the content */
-    <footer className='w-full bg-secondary'>
-      <div className='flex w-full max-w-7xl flex-col justify-center gap-7 px-8 py-8 text-center md:flex-row'>
+    <footer className='flex  justify-center bg-secondary'>
+      <div className='flex w-full max-w-7xl flex-col justify-center gap-7 px-5 py-8 text-center md:flex-row'>
         <div className='flex flex-col gap-2 text-white'>
           <Text tag='h4' variant='footerHeader'>
             Contato
@@ -54,7 +54,7 @@ export default function Footer() {
           <Text tag='h4' variant='footerHeader'>
             LOCAL
           </Text>
-          <Text className='text-white'>Site em criação.</Text>
+          <Text className='text-white'>Site em construção.</Text>
         </div>
       </div>
     </footer>

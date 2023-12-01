@@ -8,10 +8,11 @@ type BannerProps = {
 };
 
 const Banner = ({ subtitle, title, customImage }: BannerProps) => {
+  const banner = customImage ? customImage : 'home';
   return (
     <Section
       style={{
-        backgroundImage: `url(assets/images/banners/home.jpg)`,
+        backgroundImage: `url(assets/images/banners/${banner}.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
