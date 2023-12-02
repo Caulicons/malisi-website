@@ -3,8 +3,7 @@ import cn from '../../../../utils/cn';
 
 type childrenProps = {} & React.HTMLAttributes<HTMLDivElement>;
 type SectionProps = {
-  size?: 'medium' | 'large';
-  childrenProps: childrenProps;
+  childrenProps?: childrenProps;
 } & React.HTMLAttributes<HTMLDivElement>;
 /* FIXME: case not use this belong the project deleter the code block above  */
 /* const variants = cva('h-screen', {
@@ -28,12 +27,15 @@ export default function Section({
   return (
     <section
       className={cn(
-        'flex h-screen w-full items-center justify-center',
+        'flex h-screen w-full items-center justify-center p-4 md:p-10',
         className
       )}
       {...props}
     >
-      <div className={cn('', childrenProps.className)} {...childrenProps}>
+      <div
+        className={cn('px-10 lg:max-w-7xl', childrenProps?.className)}
+        {...childrenProps}
+      >
         {children}
       </div>
     </section>

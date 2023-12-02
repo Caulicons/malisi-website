@@ -29,7 +29,7 @@ export default function Footer() {
         <div className='flex flex-col gap-2'>
           {/* TODO : (footer) Add social correct social medias */}
           <Text tag='h4' variant='footerHeader'>
-            Social Medias:
+            Social Medias
           </Text>
           <ul className='flex justify-center gap-4 [&_li]:h-9 [&_li]:w-9 [&_li]:cursor-pointer [&_li]:text-white'>
             <li>

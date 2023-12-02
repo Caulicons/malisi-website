@@ -18,7 +18,7 @@ const variants = cva(
     variants: {
       variant: {
         mobile: 'hover:ml-2 ',
-        desktop: 'p-4',
+        desktop: 'p-4 text-lg',
       },
     },
     defaultVariants: {
