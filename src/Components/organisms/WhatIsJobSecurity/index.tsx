@@ -21,6 +21,7 @@ const WhatIsJobSecurity = () => {
             key={info.title}
             title={info.title}
             description={info.description}
+            
           />
         ))}
       </div>
