@@ -1,6 +1,6 @@
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
-import CardToggle from '@/components/molecules/Cards/CardToggle';
+import CardDropdown from '@/components/molecules/Cards/CardDropDown';
 import { whatIsJobSecurity } from '@data/infos';
 
 const WhatIsJobSecurity = () => {
@@ -15,13 +15,12 @@ const WhatIsJobSecurity = () => {
       <Text tag='h2' variant='h2'>
         o que é segurança do trabalho?
       </Text>
-      <div className='mt-4 flex flex-col flex-wrap justify-center gap-3 md:flex-row lg:flex-row'>
+      <div className='mt-4 flex flex-col justify-center gap-3 md:flex-row'>
         {whatIsJobSecurity.map((info) => (
-          <CardToggle
+          <CardDropdown
             key={info.title}
             title={info.title}
             description={info.description}
-            className=''
           />
         ))}
       </div>
