@@ -6,11 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint && && npx prettier . --check",
     "commit": "cz",
-    "prettier:check": "npx prettier . --check",
-    "prettier:write": "npx prettier . --write",
-    "precommit": "npm run lint && npm run prettier:check"
+    "prepare": "husky install",
+    "commit-lint": "npm run lint "
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
