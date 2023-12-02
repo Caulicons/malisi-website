@@ -30,9 +30,11 @@ const variants = cva('', {
   variants: {
     variant: {
       h1: [
-        'uppercase font-semibold md:font-bold text-2xl text-white  md:text-4xl lg:text-5xl tracking-[9px]',
+        'uppercase font-semibold md:font-bold text-xl text-white  md:text-4xl lg:text-[45px] tracking-[9px] ',
       ],
-      h2: [''],
+      h2: [
+        'uppercase font-bold md:font-extrabold text-xl text-black md:text-3xl lg:text-[42px]	 tracking-[9px]',
+      ],
       h3: [''],
       subTitle: [
         'uppercase font-bold text-secondary text-sm md:text-lg lg:text-2xl tracking-[9px]',
@@ -41,8 +43,8 @@ const variants = cva('', {
       pBold: [''],
       pHGL: [''],
       citation: [''],
-      cardTitle: [''],
-      cardBody: [''],
+      cardTitle: [' text-left text-xl font-bold uppercase'],
+      cardBody: [' w-full p-4 text-center font-medium'],
       ancor: [''],
       footerHeader: ['text-2xl font-bold text-black uppercase tracking-[px]'],
       button: [''],
