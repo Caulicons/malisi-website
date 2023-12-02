@@ -1,17 +1,16 @@
 'use client';
 import { Divide as Hamburger } from 'hamburger-react';
 import { useRef, useState } from 'react';
-import routes from '@data/routes';
 import { useClickAway } from 'react-use';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from '@components/atoms/Image';
-import NavLinks from '@/components/atoms/NavLinks';
+import Nav from '@/components/molecules/Nav';
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
-
   useClickAway(ref, () => setIsOpen(false));
+
   return (
     <div>
       {!isOpen && (
@@ -21,7 +20,7 @@ export default function HamburgerMenu() {
       )}
       <AnimatePresence>
         {isOpen && (
-          <>
+          <div className='fixed left-0 right-0 top-0 z-10 h-screen'>
             {/* Apply the gray overlay */}
             <motion.span
               initial={{ opacity: 0, width: 0 }}
@@ -64,45 +63,9 @@ export default function HamburgerMenu() {
                   <Hamburger toggled={isOpen} size={21} toggle={setIsOpen} />
                 </div>
               </div>
-              <nav>
-                <ul className='flex flex-col gap-2'>
-                  {routes.map((route, idx) => {
-                    return (
-                      <motion.li
-                        initial={{ scale: 0, opacity: 0 }}
-                        animate={{
-                          scale: 1,
-                          opacity: 1,
-                        }}
-                        exit={{
-                          scale: 0,
-                          opacity: 0,
-                          width: 0,
-                          transition: { delay: 0, damping: 0 },
-                        }}
-                        transition={{
-                          type: 'spring',
-                          stiffness: 260,
-                          damping: 20,
-                          delay: 0.9 + idx / 10,
-                          duration: 0.7,
-                          ease: 'easeInOut',
-                        }}
-                        key={route.name}
-                        className=' '
-                      >
-                        <NavLinks
-                          route={route}
-                          setState={setIsOpen}
-                          className='mt-2 p-[6px]'
-                        />
-                      </motion.li>
-                    );
-                  })}
-                </ul>
-              </nav>
+              <Nav />
             </motion.aside>
-          </>
+          </div>
         )}
       </AnimatePresence>
     </div>

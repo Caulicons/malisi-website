@@ -3,7 +3,7 @@ import HamburgerMenu from './HamburgerMenu';
 
 export default function HeaderMobile() {
   return (
-    <div className='flex w-full items-center justify-between md:hidden'>
+    <div className='flex w-full items-center justify-between md:invisible md:hidden'>
       <Image
         src='/assets/images/logo/Logo.png'
         alt='Malisi Engenharia de segurança do trabalho e meio ambiente logo'
