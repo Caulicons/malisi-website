@@ -5,17 +5,15 @@ import { IconType } from 'react-icons';
 type ButtonProps = {
   icon?: IconType | string;
   variant?: 'primary' | 'secondary';
-} & React.DetailedHTMLProps<
-  React.ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
->;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+//TODO: Maybe is necessary change the primary button to a call to action anchor
 const variants = cva(
-  ' rounded-2xl  px-4 py-3 flex items-center gap-5 justify-between w-fit',
+  ' rounded-2xl px-4 py-3 flex items-center gap-5 justify-between w-fit',
   {
     variants: {
       variant: {
-        primary: ' bg-secondary text-white  hover:bg-secondary/95',
+        primary: 'bg-secondary text-white hover:bg-secondary/95',
         secondary: '',
       },
     },

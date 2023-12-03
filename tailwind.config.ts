@@ -7,12 +7,25 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      tablet: '720px',
+      laptop: '1024px',
+      desktop: '1280px',
+    },
     extend: {
       colors: {
         primary: 'rgba(var(--primary), <alpha-value>)',
         secondary: 'rgba(var(--secondary), <alpha-value>)',
         black: 'rgba(var(--black), <alpha-value>)',
         white: 'rgba(var(--white), <alpha-value>)',
+      },
+      lineHeight: {
+        heading1: '120%',
+        heading: '110%',
+      },
+      maxWidth: {
+        sectionContainerSmall: '1024px',
+        sectionContainer: '1280px',
       },
     },
   },

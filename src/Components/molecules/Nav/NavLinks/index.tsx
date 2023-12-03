@@ -16,7 +16,7 @@ const NavLinks = ({ route, setState, className }: NavLinksProps) => {
     <Link
       onClick={() => (setState ? setState((prev) => !prev) : null)}
       className={cn(
-        'group/underline flex flex-col text-xl font-semibold tracking-[3px] text-primary hover:ml-2 hover:text-secondary  md:p-4 md:text-lg md:hover:ml-0',
+        'group/underline tablet:p-4 tablet:text-lg tablet:hover:ml-0 flex flex-col text-xl font-semibold tracking-[3px]  text-primary hover:ml-2 hover:text-secondary',
         className
       )}
       href={route.href}

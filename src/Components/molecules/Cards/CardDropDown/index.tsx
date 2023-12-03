@@ -12,12 +12,12 @@ const CardDropdown = ({ title, description, className }: CardDropdownProps) => {
   return (
     <button
       className={cn(
-        'group/card h-full w-full select-none rounded-2xl border-2 border-secondary transition-all duration-1000  md:max-w-[49%] lg:max-w-[24%] ',
+        'group/card tablet:min-w-[310px] tablet:max-w-[49%] desktop:min-w-[310px] desktop:max-w-[24%] h-full w-full select-none rounded-2xl border-2 border-secondary ',
         className
       )}
     >
       <div
-        className='flex w-full items-center justify-between 
+        className='flex items-center justify-between 
         gap-2 rounded-xl bg-secondary p-3'
       >
         <IoPeopleCircleOutline
@@ -31,7 +31,7 @@ const CardDropdown = ({ title, description, className }: CardDropdownProps) => {
       <Text
         tag='p'
         variant='cardBody'
-        className='hidden duration-700 group-focus/card:block group-focus/card:h-full '
+        className='hidden group-focus/card:flex '
       >
         {description}
       </Text>

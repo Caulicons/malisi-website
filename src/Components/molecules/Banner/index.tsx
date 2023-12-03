@@ -17,19 +17,17 @@ const Banner = ({ subtitle, title, imageName }: BannerProps) => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
-      className=' relative  h-[calc(100vh-80px)] md:h-[calc(100vh-102px)]'
-      childrenProps={{
-        className:
-          ' h-full bg-gray-900/70 items-center flex justify-center text-center absolute top-0 left-0 w-full',
-      }}
+      className='tablet:min-h-[calc(100vh-102px)] tablet:p-0 h-[calc(100vh-80px)] p-0'
     >
-      <div className='w-4/5'>
-        <Text className='mb-5' variant='subTitle'>
-          {subtitle}
-        </Text>
-        <Text tag='h1' variant='h1' className=''>
-          {title}
-        </Text>
+      <div className='flex h-full w-full items-center justify-center bg-gray-900/70  text-center'>
+        <div className='max-w-sectionContainer'>
+          <Text className='mb-5' variant='subTitle'>
+            {subtitle}
+          </Text>
+          <Text tag='h1' variant='h1' className='leading-[150%]'>
+            {title}
+          </Text>
+        </div>
       </div>
     </Section>
   );
