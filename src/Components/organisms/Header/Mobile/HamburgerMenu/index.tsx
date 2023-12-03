@@ -53,7 +53,7 @@ export default function HamburgerMenu() {
             >
               <div className='flex w-full justify-between pb-6'>
                 <Image
-                  src='/assets/images/logo/Logo.png'
+                  src='/assets/images/logos/Logo.png'
                   alt='Malisi Engenharia de segurança do trabalho e meio ambiente logo'
                   width={120}
                   height={47}
