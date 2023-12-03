@@ -75,7 +75,7 @@ export default function CarouselWithSwiper({}) {
       pagination={{ clickable: true }}
       loop={true}
       scrollbar={{ draggable: true }}
-      className='flex h-[450px] place-content-center items-center justify-center md:w-11/12'
+      className='tablet:w-11/12 flex h-[450px] place-content-center items-center justify-center'
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
