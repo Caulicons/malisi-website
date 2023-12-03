@@ -1,5 +1,6 @@
 import Main from '@/components/atoms/Main';
 import Banner from '@/components/molecules/Banner';
+import HighQualityService from '@/components/organisms/HighQualityServices';
 import WhatIsJobSecurity from '@/components/organisms/WhatIsJobSecurity';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         subtitle='segurança do trabalho'
       />
       <WhatIsJobSecurity />
+      <HighQualityService />
     </Main>
   );
 };

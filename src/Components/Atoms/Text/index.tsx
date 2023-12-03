@@ -19,7 +19,7 @@ type TypographyProps = {
     | 'citation'
     | 'cardTitle'
     | 'cardBody'
-    | 'ancor'
+    | 'anchor'
     | 'footerHeader'
     | 'button';
   icon?: React.ReactNode;
@@ -30,26 +30,26 @@ const variants = cva('', {
   variants: {
     variant: {
       h1: [
-        'uppercase font-semibold md:font-bold text-xl text-white  md:text-4xl lg:text-[45px] tracking-[9px] ',
+        'uppercase text-2xl font-semibold tablet:font-bold text-white tablet:text-3xl desktop:text-[42px] tracking-[5px] leading-heading1',
       ],
       h2: [
-        'uppercase font-bold md:font-extrabold text-xl text-black md:text-3xl lg:text-[42px]	 tracking-[9px]',
+        'uppercase font-bold text-2xl tablet:font-extrabold  text-black tablet:text-3xl desktop:text-[42px]	text-center tracking-[4px] leading-heading ',
       ],
       h3: [
-        'uppercase leading-[120%] font-bold text-xl  md:text-[27px] text-secondary 	 tracking-[9px]',
+        'uppercase font-bold text-xl  tablet:text-[27px] text-secondary text-center tracking-[4px] leading-heading',
       ],
       subTitle: [
-        'uppercase font-bold text-secondary text-sm md:text-lg  tracking-[9px]',
+        'uppercase font-bold text-secondary text-sm tablet:text-lg text-center tracking-[9px]',
       ],
-      p: [''],
+      p: ['tracking-wide'],
       pBold: [''],
       pHGL: [''],
-      citation: ['leading-[140%] uppercase font-normal tracking-[3px]'],
-      cardTitle: [' text-left text-lg md:text-xl font-bold uppercase '],
-      cardBody: [' w-full p-4 text-center font-medium'],
-      ancor: [''],
+      citation: ['uppercase font-normal tracking-[3.6px]'],
+      cardTitle: [' text-left text-lg tablet:text-xl font-bold uppercase '],
+      cardBody: [' w-full p-4 text-center font-medium tracking-wide '],
+      anchor: [''],
       footerHeader: ['text-2xl font-bold text-black uppercase tracking-[px]'],
-      button: ['text-left text-lg md:text-xl font-bold uppercase'],
+      button: ['text-left text-lg tablet:text-xl font-bold uppercase'],
       span: [''],
     },
   },
