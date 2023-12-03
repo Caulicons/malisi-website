@@ -35,19 +35,22 @@ const variants = cva('', {
       h2: [
         'uppercase font-bold md:font-extrabold text-xl text-black md:text-3xl lg:text-[42px]	 tracking-[9px]',
       ],
-      h3: [''],
+      h3: [
+        'uppercase leading-[120%] font-bold text-xl  md:text-[27px] text-secondary 	 tracking-[9px]',
+      ],
       subTitle: [
-        'uppercase font-bold text-secondary text-sm md:text-lg lg:text-2xl tracking-[9px]',
+        'uppercase font-bold text-secondary text-sm md:text-lg  tracking-[9px]',
       ],
       p: [''],
       pBold: [''],
       pHGL: [''],
-      citation: [''],
-      cardTitle: [' text-left text-xl font-bold uppercase'],
+      citation: ['leading-[140%] uppercase font-normal tracking-[3px]'],
+      cardTitle: [' text-left text-lg md:text-xl font-bold uppercase '],
       cardBody: [' w-full p-4 text-center font-medium'],
       ancor: [''],
       footerHeader: ['text-2xl font-bold text-black uppercase tracking-[px]'],
-      button: [''],
+      button: ['text-left text-lg md:text-xl font-bold uppercase'],
+      span: [''],
     },
   },
   defaultVariants: {

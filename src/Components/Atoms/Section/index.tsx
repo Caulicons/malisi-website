@@ -33,7 +33,7 @@ export default function Section({
       {...props}
     >
       <div
-        className={cn('px-10 lg:max-w-7xl', childrenProps?.className)}
+        className={cn('max-w-7xl px-8', childrenProps?.className)}
         {...childrenProps}
       >
         {children}

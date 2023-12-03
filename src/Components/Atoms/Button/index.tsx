@@ -10,17 +10,20 @@ type ButtonProps = {
   HTMLButtonElement
 >;
 
-const variants = cva('', {
-  variants: {
-    variant: {
-      primary: '',
-      secondary: '',
+const variants = cva(
+  ' rounded-2xl  px-4 py-3 flex items-center gap-5 justify-between w-fit',
+  {
+    variants: {
+      variant: {
+        primary: ' bg-secondary text-white  hover:bg-secondary/95',
+        secondary: '',
+      },
     },
-  },
-  defaultVariants: {
-    variant: 'primary',
-  },
-});
+    defaultVariants: {
+      variant: 'primary',
+    },
+  }
+);
 
 export default function Button({
   className,
@@ -31,7 +34,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button className={cn(variants({ variant }), className)} {...props}>
-      {icon ? icon + ' ' + children : children}
+      {children}
     </button>
   );
 }
