@@ -1,4 +1,3 @@
-import Anchor from '@/components/atoms/Anchor';
 import Image from '@/components/atoms/Image';
 import SocialMediaIcon from '@/components/atoms/SocialMediaIcon';
 import Text from '@/components/atoms/Text';
@@ -9,7 +8,19 @@ type CardMemberProps = {
   role: string;
   quote: string;
   socialMedias: {
-    name: string;
+    name:
+      | 'WhatsApp'
+      | 'Instagram'
+      | 'Facebook'
+      | 'Linkedin'
+      | 'Twitter'
+      | 'Youtube'
+      | 'Github'
+      | 'Telegram'
+      | 'Discord'
+      | 'Snapchat'
+      | 'TikTok'
+      | 'Twitch';
     url: string;
   }[];
 };
@@ -38,7 +49,7 @@ const CardMember = ({
           <Text
             tag='h3'
             variant='h3'
-            className='tablet:text-base text-base  text-white'
+            className='text-base text-white  tablet:text-base'
           >
             {name}
           </Text>
@@ -47,7 +58,7 @@ const CardMember = ({
         </div>
         <div className='flex justify-evenly '>
           {/* FIXME: resolve this type any */}
-          {socialMedias.map((socialMedia: any) => (
+          {socialMedias.map((socialMedia) => (
             <SocialMediaIcon key={socialMedia.name} {...socialMedia} />
           ))}
         </div>
