@@ -4,6 +4,7 @@ import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
 import { FaWhatsapp } from 'react-icons/fa6';
 import { sectionHighQualityService } from '@data/infos';
+import Redirect from '@/components/molecules/Redirect';
 
 const HighQualityService = () => {
   return (
@@ -25,19 +26,21 @@ const HighQualityService = () => {
               {sectionHighQualityService.title}
             </Text>
             <Text tag='p' className='mt-6'>
-              {sectionHighQualityService.infos.citation}
+              {sectionHighQualityService.quote.description}
             </Text>
           </div>
           <div className='flex flex-col gap-3'>
             <Text tag='p' variant='citation'>
-              {sectionHighQualityService.infos.citationAuthor}
+              {sectionHighQualityService.quote.author}
             </Text>
-            <Button style={{ fontSize: '30px' }}>
-              <FaWhatsapp />
-              <Text tag='p' variant='button'>
-                {sectionHighQualityService.infos.buttonName}
-              </Text>
-            </Button>
+            <Redirect
+              href={'#'}
+              variant='tertiary'
+              Icon={FaWhatsapp}
+              highlight={true}
+            >
+              Fale conosco
+            </Redirect>
           </div>
         </div>
       </div>

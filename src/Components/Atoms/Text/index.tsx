@@ -45,7 +45,9 @@ const variants = cva('', {
       pBold: [''],
       pHGL: [''],
       citation: ['uppercase font-normal tracking-[3.6px]'],
-      cardTitle: [' text-left text-lg tablet:text-xl font-bold uppercase '],
+      cardTitle: [
+        ' text-left text-lg tablet:text-xl font-bold uppercase tracking-[2px]',
+      ],
       cardBody: [' w-full p-4 text-center font-medium tracking-wide '],
       anchor: [''],
       footerHeader: ['text-2xl font-bold text-black uppercase tracking-[px]'],

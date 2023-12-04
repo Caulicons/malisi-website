@@ -16,11 +16,11 @@ const WhatIsJobSecurity = () => {
           </Text>
         </div>
         <div className='tablet:flex-row flex flex-col flex-wrap gap-3'>
-          {sectionWhatIsJobSecurity.infos.map((info) => (
+          {sectionWhatIsJobSecurity.cards.map((card) => (
             <CardDropdown
-              key={info.title}
-              title={info.title}
-              description={info.description}
+              key={card.title}
+              title={card.title}
+              description={card.description}
             />
           ))}
         </div>
