@@ -1,3 +1,11 @@
+import { IoRibbonOutline } from 'react-icons/io5';
+import { TbTools, TbUsersGroup } from 'react-icons/tb';
+import { BsBuildingAdd, BsGraphUp } from 'react-icons/bs';
+import {
+  sectionMeetOurTeamType,
+  sectionOurPurposeType,
+} from '../types/sections';
+
 const sectionWhatIsJobSecurity = {
   subTitle: 'segurança',
   title: 'O que é segurança do trabalho?',
@@ -41,9 +49,6 @@ const sectionHighQualityService = {
   },
 };
 
-import { IoRibbonOutline } from 'react-icons/io5';
-import { TbTools } from 'react-icons/tb';
-import { BsBuildingAdd } from 'react-icons/bs';
 const sectionTheBetterChoiceInWorkSafety = {
   subTitle: 'serviços',
   title: 'A MELHOR ESCOLHA EM SEGURANÇA DO TRABALHO.',
@@ -92,34 +97,7 @@ const sectionOurClients = {
   ],
 };
 
-type sectionMeetOurTeamInfos = {
-  subTitle: string;
-  title: string;
-  team: {
-    id: number;
-    name: string;
-    role: string;
-    quote: string;
-    image: string;
-    socialMedias: {
-      name:
-        | 'WhatsApp'
-        | 'Instagram'
-        | 'Facebook'
-        | 'Linkedin'
-        | 'Twitter'
-        | 'Youtube'
-        | 'Github'
-        | 'Telegram'
-        | 'Discord'
-        | 'Snapchat'
-        | 'TikTok'
-        | 'Twitch';
-      url: string;
-    }[];
-  }[];
-};
-const sectionMeetOurTeam: sectionMeetOurTeamInfos = {
+const sectionMeetOurTeam: sectionMeetOurTeamType = {
   subTitle: 'Nossa equipe',
   title: 'Conhecão nossa equipe',
   team: [
@@ -175,27 +153,30 @@ const sectionContact = {
   title: 'entre em contato com a gente para mais informações',
 };
 
-const sectionWhoWeAre = {
+const sectionOurPurpose: sectionOurPurposeType = {
   subTitle: 'Quem somos',
   title: 'Nosso Proposito',
   description:
     'Oferecer aos clientes, qualidade em termos de documentações, treinamentos e requisitos legais. Promover às empresas gestão eficiente de saúde e segurança do trabalho e meio ambienteh, através de um relacionamento ético, íntegro e transparente.',
   cards: [
     {
-      icon: TbTools,
+      icon: BsGraphUp,
       title: 'missão',
       description:
         'Proteger a integridade física das pessoas e equilíbrio do meio ambiente, através de soluções inovadoras em segurança do trabalho, higiene ocupacional e sustentabilidade ambiental. Proporcionando um ambiente de trabalho saudável e seguro para nossos clientes, garantindo o cumprimento das normas regulamentadoras e promovendo a preservação do planeta para as futuras gerações.',
+      variant: 'primary',
     },
     {
-      icon: TbTools,
+      icon: TbUsersGroup,
       title: 'visão',
       description:
         'Ser líder na promoção da segurança do trabalho e no cuidado com o meio ambiente, sendo reconhecidos pela excelência de nossos serviços e pelo compromisso com a saúde, segurança e sustentabilidade. Buscamos constantemente inovar e expandir nossos conhecimentos, impactando positivamente os clientes em que atuamos.',
+      variant: 'secondary',
     },
   ],
 };
 
+/* HiOutlineUsers icon*/
 const sectionValues = {
   subTitle: 'Valores',
   title: 'Prezar por relações duradouras,  tendo como pilares: ',
@@ -243,6 +224,6 @@ export {
   sectionOurClients,
   sectionMeetOurTeam,
   sectionContact,
-  sectionWhoWeAre,
+  sectionOurPurpose,
   sectionValues,
 };
