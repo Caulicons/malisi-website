@@ -4,7 +4,7 @@ import { IconType } from 'react-icons';
 import { cva } from 'class-variance-authority';
 import Text from '@/components/atoms/Text';
 
-type CartProps = {
+type CardProps = {
   icon?: IconType;
   iconColor?: 'string';
   description?: string;
@@ -12,14 +12,15 @@ type CartProps = {
   title: string;
   imgURL?: string;
   variant?: 'primary' | 'secondary';
-} & React.HtmlHTMLAttributes<HTMLDivElement>;
+  className?: string;
+};
 
 const variants = cva(
   'flex w-full flex-col gap-4 rounded-2xl bg-white p-6 pb-9 text-left',
   {
     variants: {
       variant: {
-        primary: 'bg-primary text-white',
+        primary: 'bg-secondary text-white',
         secondary: 'bg-white text-secondary border-2 border-secondary',
       },
     },
@@ -31,14 +32,14 @@ const variants = cva(
 
 export default function Card({
   className,
-  children,
   icon: Icon,
   iconColor,
+  iconSize,
   imgURL,
   title,
   description,
   variant = 'primary',
-}: CartProps) {
+}: CardProps) {
   if (!Icon && !imgURL) {
     throw new Error('One of Icon and imgURL must be provided');
   } else if (Icon && imgURL) {
@@ -51,7 +52,7 @@ export default function Card({
         <div>
           {Icon && (
             <span className={cn('text-primary', `text-${iconColor}`)}>
-              <Icon fontSize={50} />
+              <Icon fontSize={iconSize ? iconSize : 50} />
             </span>
           )}
           {imgURL && (
