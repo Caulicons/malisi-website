@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import Text from '@components/atoms/Text';
 import { FaSquareTwitter } from 'react-icons/fa6';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaWhatsappSquare } from 'react-icons/fa';
+import Anchor from '@/components/atoms/Anchor';
 export default function Footer() {
   return (
     /* TODO : (footer) see a way to automatically re-render the content */
@@ -33,19 +33,19 @@ export default function Footer() {
           </Text>
           <ul className='flex justify-center gap-4 [&_li]:h-9 [&_li]:w-9 [&_li]:cursor-pointer [&_li]:text-white'>
             <li>
-              <Link href='/'>
+              <Anchor href='/'>
                 <FaSquareTwitter className='h-12 w-12' />
-              </Link>
+              </Anchor>
             </li>
             <li>
-              <Link href='/'>
+              <Anchor href='/'>
                 <FaWhatsappSquare className='h-12 w-12' />
-              </Link>
+              </Anchor>
             </li>
             <li>
-              <Link href='/'>
+              <Anchor href='/'>
                 <FaFacebookSquare className='h-12 w-12' />
-              </Link>
+              </Anchor>
             </li>
           </ul>
         </div>

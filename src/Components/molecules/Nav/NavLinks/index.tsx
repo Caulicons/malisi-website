@@ -1,7 +1,6 @@
 'use client';
+import Anchor from '@/components/atoms/Anchor';
 import cn from '@utils/cn';
-import { cva } from 'class-variance-authority';
-import Link from 'next/link';
 
 type NavLinksProps = {
   route: {
@@ -13,7 +12,7 @@ type NavLinksProps = {
 
 const NavLinks = ({ route, setState, className }: NavLinksProps) => {
   return (
-    <Link
+    <Anchor
       onClick={() => (setState ? setState((prev) => !prev) : null)}
       className={cn(
         'group/underline tablet:p-4 tablet:text-lg tablet:hover:ml-0 flex flex-col text-xl font-semibold tracking-[3px]  text-primary hover:ml-2 hover:text-secondary',
@@ -23,7 +22,7 @@ const NavLinks = ({ route, setState, className }: NavLinksProps) => {
     >
       {route.name}
       <span className='h-[2px] w-0 bg-primary duration-700 group-hover/underline:w-4/5' />
-    </Link>
+    </Anchor>
   );
 };
 
