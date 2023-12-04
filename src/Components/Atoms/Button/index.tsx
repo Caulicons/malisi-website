@@ -3,6 +3,7 @@ import cn from '../../../../utils/cn';
 import { IconType } from 'react-icons';
 
 type ButtonProps = {
+  type: 'button' | 'submit' | 'reset';
   icon?: IconType | string;
   variant?: 'primary' | 'secondary';
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
