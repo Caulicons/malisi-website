@@ -230,7 +230,11 @@ const sectionValues = {
   ],
 };
 
-const sectionOurHistory = {};
+/* const sectionOurHistory = {
+  subTitle: 'História',
+  title: 'Nossa História',
+  description: 
+}; */
 
 export {
   sectionWhatIsJobSecurity,
