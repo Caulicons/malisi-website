@@ -177,7 +177,7 @@ const sectionOurPurpose: sectionOurPurposeType = {
 };
 
 /* HiOutlineUsers icon*/
-const sectionValues = {
+const sectionOurValues = {
   subTitle: 'Valores',
   title: 'Prezar por relações duradouras,  tendo como pilares: ',
   cards: [
@@ -211,11 +211,11 @@ const sectionValues = {
   ],
 };
 
-/* const sectionOurHistory = {
-  subTitle: 'História',
+const sectionOurHistory = {
+  subTitle: 'trajetoria',
   title: 'Nossa História',
-  description: 
-}; */
+  description: '',
+};
 
 export {
   sectionWhatIsJobSecurity,
@@ -225,5 +225,6 @@ export {
   sectionMeetOurTeam,
   sectionContact,
   sectionOurPurpose,
-  sectionValues,
+  sectionOurValues,
+  sectionOurHistory,
 };
