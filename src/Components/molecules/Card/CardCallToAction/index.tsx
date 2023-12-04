@@ -18,7 +18,7 @@ const CardCallToAction = ({
   Icon,
 }: CardCallToActionProps) => {
   return (
-    <div className='tablet:max-w-[32%] flex w-full flex-col justify-between gap-4 rounded-2xl bg-secondary p-4 text-white'>
+    <div className='flex w-full flex-col justify-between gap-4 rounded-2xl bg-secondary p-4 text-white tablet:max-w-[32%]'>
       <div className='flex flex-col gap-3'>
         <div className='flex items-center justify-between gap-2 border-white'>
           {Icon ? <Icon size={36} /> : <BsBuildingCheck size={27} />}

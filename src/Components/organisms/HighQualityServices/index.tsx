@@ -9,7 +9,7 @@ import Redirect from '@/components/molecules/Redirect';
 const HighQualityService = () => {
   return (
     <Section className='min-h-[60vh]'>
-      <div className='tablet:flex-row tablet:items-start max-w-sectionContainerSmall flex flex-col items-center gap-10'>
+      <div className='flex max-w-sectionContainerSmall flex-col items-center gap-10 tablet:flex-row tablet:items-start'>
         <Image
           src='/assets/images/quotes/quote01.png'
           alt='Fundador da Malisi palestrado o que é segurança do trabalho'
@@ -17,7 +17,7 @@ const HighQualityService = () => {
           height={300}
           className='rounded-3xl'
         />
-        <div className='tablet:gap-10 flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 tablet:gap-10'>
           <div className='flex flex-col gap-3'>
             <Text tag='p' variant='subTitle' className='tablet:text-start'>
               {sectionHighQualityService.subTitle}

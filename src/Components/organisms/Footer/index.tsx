@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     /* TODO : (footer) see a way to automatically re-render the content */
     <footer className='flex  justify-center bg-secondary'>
-      <div className='tablet:flex-row flex w-full max-w-7xl flex-col justify-center gap-7 px-5 py-8 text-center'>
+      <div className='flex w-full max-w-7xl flex-col justify-center gap-7 px-5 py-8 text-center tablet:flex-row'>
         <div className='flex flex-col gap-2 text-white'>
           <Text tag='h4' variant='footerHeader'>
             Contato
@@ -49,7 +49,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className='tablet:w-2/6 flex flex-col justify-center gap-2'>
+        <div className='flex flex-col justify-center gap-2 tablet:w-2/6'>
           {/* TODO : (footer) Add local, maps component may be a good option*/}
           <Text tag='h4' variant='footerHeader'>
             LOCAL

@@ -48,7 +48,9 @@ const variants = cva('', {
       cardTitle: [
         ' text-left text-lg tablet:text-xl font-bold uppercase tracking-[2px]',
       ],
-      cardBody: [' w-full p-4 text-center font-medium tracking-wide '],
+      cardBody: [
+        ' w-full p-2 tablet:p-4 text-center font-medium tracking-wide ',
+      ],
       anchor: [''],
       footerHeader: ['text-2xl font-bold text-black uppercase tracking-[px]'],
       button: ['text-left text-lg tablet:text-xl font-bold uppercase'],

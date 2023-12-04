@@ -4,7 +4,7 @@ import Anchor from '@/components/atoms/Anchor';
 
 export default function HeaderDesktop() {
   return (
-    <div className='tablet:visible tablet:flex invisible hidden max-h-[70px] w-full items-center justify-between '>
+    <div className='invisible hidden max-h-[70px] w-full items-center justify-between tablet:visible tablet:flex '>
       <Anchor href='/'>
         <Image
           src='/assets/images/logos/LogoWithCaption.png'

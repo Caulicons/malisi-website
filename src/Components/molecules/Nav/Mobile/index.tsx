@@ -5,7 +5,7 @@ import NavLinks from '../NavLinks';
 
 const NavMobile = () => {
   return (
-    <ul className='tablet:invisible tablet:hidden flex flex-col gap-2'>
+    <ul className='flex flex-col gap-2 tablet:invisible tablet:hidden'>
       <AnimatePresence>
         {routes.map((route, idx) => {
           return (

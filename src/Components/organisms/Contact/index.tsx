@@ -5,8 +5,8 @@ import { sectionContact } from '@data/infos';
 const Contact = () => {
   return (
     <Section>
-      <div className='max-w-sectionContainer tablet:flex-row flex flex-col'>
-        <div className='tablet:max-w-[55%]  flex flex-col'>
+      <div className='flex max-w-sectionContainer flex-col tablet:flex-row'>
+        <div className='flex  flex-col tablet:max-w-[55%]'>
           <Text variant='subTitle' className='tablet:text-start'>
             {sectionContact.subTitle}
           </Text>
