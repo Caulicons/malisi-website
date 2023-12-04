@@ -217,6 +217,155 @@ const sectionOurHistory = {
   description: '',
 };
 
+const sectionPlansAndStrategy = {
+  subTitle: 'objetivo',
+  title: 'Estratégias e planos',
+  description:
+    'Cada cliente é único. É por isso que personalizamos cada um de nossos planos a fim de atender exatamente às suas expectativas. Seja uma estratégia simples ou um empreendimento abrangente, sentaremos com você, ouviremos suas solicitações e prepararemos um plano personalizado.',
+};
+
+const sectionOurServices = {
+  subTitle: 'NOSSOS SERVIÇOS',
+  title: 'ATENDEMOS ESSAS NORMAS REGULAMENTADORAS',
+  cards: [
+    {
+      name: 'NR 05',
+      description: 'COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES',
+    },
+    {
+      name: 'NR 06',
+      description: 'EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL – EPI',
+    },
+    {
+      name: 'NR 07',
+      description: ' SAÚDE E PCMSO',
+    },
+    {
+      name: 'NR 17',
+      description: 'ERGONOMIA',
+    },
+    {
+      name: 'NR 18',
+      description:
+        'CONDIÇÕES E MEIO AMBIENTE DE TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO',
+    },
+    {
+      name: 'NR 19',
+      description: 'explosivos',
+    },
+    {
+      name: 'NR 33',
+      description: 'TRABALHO EM ESPAÇOS CONFINADOS / TREINAMENTO E INSTRUTOR',
+    },
+    {
+      name: 'NR 35',
+      description: 'TRABALHO EM ALTURA / TREINAMENTO E INSTRUTOR',
+    },
+    {
+      name: 'NR 36',
+      description:
+        'TRABALHO EM EMPRESAS DE ABATE E PROCESSAMENTO DE CARNES E DERIVADOS',
+    },
+  ],
+};
+
+const sectionOurConsultancies = {
+  subTitle: 'consultoria',
+  title: 'Nossas consultorias',
+  cards: [
+    {
+      name: 'NR 05',
+      details: {
+        description: 'COMISSÃO INTERNA DE PREVEN&Ccedil;&atilde;O DE ACIDENTES',
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    {
+      name: 'Programa de Gerenciamento de Riscos - PGR',
+      details: {
+        description:
+          'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    {
+      name: 'Programa de Controle Avaliações de Higiene Ocupacional de Saúde Ocupacional',
+      details: {
+        description:
+          'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
+        forWhat:
+          'O PGR é para todos os empregadores que mantenham os trabalhadores como empregados (CLT).',
+        whatAreTheObjectives:
+          'O principal objetivo do PGR é prevenir que acidentes que possam vir prejudicar a saúde dos trabalhadores, a propriedade privada e ao meio ambiente.',
+        beNotDo:
+          'As empresas que não cumprirem essa exigência, estão infringindo ao nas Normas Regulamentadoras – NR de segurança e medicina do trabalho, expondo as empresas a multas e notificações por parte do Ministério do Trabalho.',
+      },
+    },
+    {
+      name: 'CONSULTOR TÉCNICO DE CAMPO, OBSERVADORES E FISCAIS DE SEGURANÇA PARA TRABALHO EM ALTURA, ESPAÇOS CONFINADOS E RESGATE',
+      details: {
+        description:
+          'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
+        forWhat:
+          'O PGR é para todos os empregadores que mantenham os trabalhadores como empregados (CLT).',
+        whatAreTheObjectives:
+          'O principal objetivo do PGR é prevenir que acidentes que possam vir prejudicar a saúde dos trabalhadores, a propriedade privada e ao meio ambiente.',
+        beNotDo:
+          'As empresas que não cumprirem essa exigência, estão infringindo ao nas Normas Regulamentadoras – NR de segurança e medicina do trabalho, expondo as empresas a multas e notificações por parte do Ministério do Trabalho.',
+      },
+    },
+    {
+      name: 'NR 05',
+      details: {
+        description: 'COMISSÃO INTERNA DE PREVEN&Ccedil;&atilde;O DE ACIDENTES',
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    {
+      name: 'Programa de Gerenciamento de Riscos - PGR',
+      details: {
+        description:
+          'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    {
+      name: 'Programa de Controle Avaliações de Higiene Ocupacional de Saúde Ocupacional',
+      details: {
+        description:
+          'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
+        forWhat:
+          'O PGR é para todos os empregadores que mantenham os trabalhadores como empregados (CLT).',
+        whatAreTheObjectives:
+          'O principal objetivo do PGR é prevenir que acidentes que possam vir prejudicar a saúde dos trabalhadores, a propriedade privada e ao meio ambiente.',
+        beNotDo:
+          'As empresas que não cumprirem essa exigência, estão infringindo ao nas Normas Regulamentadoras – NR de segurança e medicina do trabalho, expondo as empresas a multas e notificações por parte do Ministério do Trabalho.',
+      },
+    },
+    {
+      name: 'CONSULTOR TÉCNICO DE CAMPO, OBSERVADORES E FISCAIS DE SEGURANÇA PARA TRABALHO EM ALTURA, ESPAÇOS CONFINADOS E RESGATE',
+      details: {
+        description:
+          'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
+        forWhat:
+          'O PGR é para todos os empregadores que mantenham os trabalhadores como empregados (CLT).',
+        whatAreTheObjectives:
+          'O principal objetivo do PGR é prevenir que acidentes que possam vir prejudicar a saúde dos trabalhadores, a propriedade privada e ao meio ambiente.',
+        beNotDo:
+          'As empresas que não cumprirem essa exigência, estão infringindo ao nas Normas Regulamentadoras – NR de segurança e medicina do trabalho, expondo as empresas a multas e notificações por parte do Ministério do Trabalho.',
+      },
+    },
+  ],
+};
+
 export {
   sectionWhatIsJobSecurity,
   sectionHighQualityService,
@@ -227,4 +376,7 @@ export {
   sectionOurPurpose,
   sectionOurValues,
   sectionOurHistory,
+  sectionPlansAndStrategy,
+  sectionOurServices,
+  sectionOurConsultancies,
 };
