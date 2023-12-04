@@ -1,6 +1,10 @@
 import Main from '@/components/atoms/Main';
 import Banner from '@/components/molecules/Banner';
+import Contact from '@/components/organisms/Contact';
+import MeetOurTeam from '@/components/organisms/MeetOurTeam';
+import OurHistory from '@/components/organisms/OurHistory';
 import OurPurpose from '@/components/organisms/OurPurpose';
+import OurValues from '@/components/organisms/OurValues';
 
 const About = () => {
   return (
@@ -11,6 +15,10 @@ const About = () => {
         height={50}
       />
       <OurPurpose />
+      <OurValues />
+      <OurHistory />
+      <MeetOurTeam />
+      <Contact />
     </Main>
   );
 };

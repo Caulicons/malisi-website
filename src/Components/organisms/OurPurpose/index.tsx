@@ -1,6 +1,6 @@
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
-import Card from '@/components/molecules/Cards';
+import Card from '@/components/molecules/Card';
 import { sectionOurPurpose } from '@data/infos';
 
 const OurPurpose = () => {
