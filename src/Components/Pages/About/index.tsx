@@ -12,7 +12,7 @@ const About = () => {
       <Banner
         title='Aqui você certamente encontrará os melhores serviços de Engenharia de Segurança do Trabalho e Meio Ambiente. '
         subtitle='segurança do trabalho'
-        height={50}
+        variant='small'
       />
       <OurPurpose />
       <OurValues />

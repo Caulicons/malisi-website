@@ -41,7 +41,7 @@ const Banner = ({ subtitle, title, imageName, variant }: BannerProps) => {
     >
       <span
         className={cn(
-          'flex w-full items-center justify-center bg-gray-900/70  text-center',
+          'flex min-h-[calc(100vh-102px)] w-full items-center justify-center bg-gray-900/70  text-center',
           variants({ variant })
         )}
       >
