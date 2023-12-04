@@ -10,7 +10,7 @@ export default function Section({
   return (
     <section
       className={cn(
-        'flex h-full min-h-screen w-full items-center justify-center p-5 tablet:p-10',
+        'flex h-full min-h-screen w-full items-center justify-center p-5 py-8 tablet:p-10',
         className
       )}
       {...props}
