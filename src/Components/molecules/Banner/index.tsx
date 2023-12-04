@@ -1,19 +1,31 @@
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
 import cn from '@utils/cn';
+import { cva } from 'class-variance-authority';
 
 type BannerProps = {
   subtitle: string;
   title: string;
   imageName?: string;
   className?: string;
-  height?: number;
+  variant?: 'default' | 'small';
 };
 
-const Banner = ({ subtitle, title, imageName, height = 100 }: BannerProps) => {
+const variants = cva('', {
+  variants: {
+    variant: {
+      default: 'tablet:min-h-[calc(100vh-102px)]',
+      small: 'tablet:min-h-[calc(50vh-102px)]',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+  },
+});
+
+const Banner = ({ subtitle, title, imageName, variant }: BannerProps) => {
   const banner = imageName ? imageName : 'home';
-  const maxHight =
-    height === 100 ? '' : `tablet:max-h-[calc(${height}vh-102px)] `;
+
   return (
     <Section
       style={{
@@ -23,12 +35,17 @@ const Banner = ({ subtitle, title, imageName, height = 100 }: BannerProps) => {
         backgroundRepeat: 'no-repeat',
       }}
       className={cn(
-        `h-[calc(100vh-80px)] p-0  tablet:min-h-full  tablet:p-0 `,
-        maxHight
+        `min-h-[calc(100vh-102px)] p-0 tablet:p-0`,
+        variants({ variant })
       )}
     >
-      <div className='flex h-full w-full items-center  justify-center bg-gray-900/70  text-center'>
-        <div className='max-w-sectionContainer'>
+      <span
+        className={cn(
+          'flex w-full items-center justify-center bg-gray-900/70  text-center',
+          variants({ variant })
+        )}
+      >
+        <div className='h-full max-w-sectionContainer p-2 tablet:p-10'>
           <Text className='mb-5' variant='subTitle'>
             {subtitle}
           </Text>
@@ -36,7 +53,7 @@ const Banner = ({ subtitle, title, imageName, height = 100 }: BannerProps) => {
             {title}
           </Text>
         </div>
-      </div>
+      </span>
     </Section>
   );
 };
