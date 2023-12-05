@@ -1,5 +1,7 @@
+import Container from '@/components/atoms/Container';
+import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import Text from '@/components/atoms/Text';
+import Contact from '@/components/organisms/Contact';
 import cn from '@utils/cn';
 import { cva } from 'class-variance-authority';
 
@@ -35,25 +37,28 @@ const Banner = ({ subtitle, title, imageName, variant }: BannerProps) => {
         backgroundRepeat: 'no-repeat',
       }}
       className={cn(
-        `min-h-[calc(100vh-102px)] p-0 tablet:p-0`,
+        `min-h-[calc(100vh-80px)] p-0 tablet:min-h-[calc(100vh-102px)] tablet:p-0`,
         variants({ variant })
       )}
     >
-      <span
+      <div
         className={cn(
-          'flex min-h-[calc(100vh-102px)] w-full items-center justify-center bg-gray-900/70  text-center',
+          'flex min-h-[calc(100vh-80px)]  w-full items-center justify-center bg-gray-900/70 text-center  tablet:min-h-[calc(100vh-80px)]',
           variants({ variant })
         )}
       >
-        <div className='h-full max-w-sectionContainer p-2 tablet:p-10'>
-          <Text className='mb-5' variant='subTitle'>
-            {subtitle}
-          </Text>
-          <Text tag='h1' variant='h1' className='leading-[150%]'>
-            {title}
-          </Text>
-        </div>
-      </span>
+        <Container className=''>
+          <div>
+            <Presentation
+              title={title}
+              subtitle={subtitle}
+              heading='h1'
+              titleColor='white'
+              position='center'
+            />
+          </div>
+        </Container>
+      </div>
     </Section>
   );
 };

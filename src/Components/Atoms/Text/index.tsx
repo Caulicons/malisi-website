@@ -12,7 +12,7 @@ type TypographyProps = {
     | 'h1'
     | 'h2'
     | 'h3'
-    | 'subTitle'
+    | 'subtitle'
     | 'p'
     | 'pBold'
     | 'pHGL'
@@ -30,17 +30,15 @@ const variants = cva('', {
   variants: {
     variant: {
       h1: [
-        'uppercase text-2xl font-semibold tablet:font-bold text-white tablet:text-3xl desktop:text-[42px] tracking-[5px] leading-heading1',
+        'uppercase text-2xl font-semibold tablet:extrabold tablet:text-3xl desktop:text-[42px] tracking-[5px] desktop:leading-heading',
       ],
       h2: [
-        'uppercase font-bold text-2xl tablet:font-extrabold  text-black tablet:text-3xl desktop:text-[42px]	text-center tracking-[4px] leading-heading ',
+        ' desktop:leading-heading uppercase font-bold text-2xl tablet:font-extrabold tablet:text-3xl desktop:text-[42px]	 tracking-[4px]',
       ],
       h3: [
-        'uppercase font-bold text-xl  tablet:text-[27px] text-secondary text-center tracking-[4px] leading-heading',
+        'leading-heading uppercase font-bold text-xl  tablet:text-[27px]  tracking-[4px] ',
       ],
-      subTitle: [
-        'uppercase font-bold text-secondary text-sm tablet:text-lg text-center tracking-[9px]',
-      ],
+      subtitle: ['uppercase font-bold text-sm tablet:text-lg tracking-[9px]'],
       p: ['tracking-wide'],
       pBold: [''],
       pHGL: [''],
@@ -52,7 +50,7 @@ const variants = cva('', {
         ' w-full p-2 tablet:p-4 text-center font-medium tracking-wide ',
       ],
       anchor: [''],
-      footerHeader: ['text-2xl font-bold text-black uppercase tracking-[px]'],
+      footerHeader: ['text-2xl font-bold text-black uppercase tracking-[2px]'],
       button: ['text-left text-lg tablet:text-xl font-bold uppercase'],
       span: [''],
     },

@@ -1,26 +1,25 @@
+import Container from '@/components/atoms/Container';
+import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import Text from '@/components/atoms/Text';
 import CardConsultancies from '@/components/molecules/Card/CardConsultancies';
 import { sectionOurConsultancies } from '@data/infos';
 
 const OurConsultancies = () => {
   return (
-    <Section className='rounded-b-[75px] bg-secondary'>
-      <div className='flex max-w-sectionContainer flex-col gap-16'>
-        <div className='flex  flex-col gap-4'>
-          <Text variant='subTitle' className='text-white'>
-            {sectionOurConsultancies.subTitle}
-          </Text>
-          <Text tag='h2' variant='h2' className='text-white'>
-            {sectionOurConsultancies.title}
-          </Text>
-        </div>
+    <Section className='rounded-b-section bg-secondary'>
+      <Container>
+        <Presentation
+          title={sectionOurConsultancies.title}
+          subtitle={sectionOurConsultancies.subtitle}
+          titleColor='white'
+          subtitleColor='white'
+        />
         <div className='flex flex-row flex-wrap justify-center gap-4'>
           {sectionOurConsultancies.cards.map((consultancy) => (
             <CardConsultancies key={consultancy.name} {...consultancy} />
           ))}
         </div>
-      </div>
+      </Container>
     </Section>
   );
 };

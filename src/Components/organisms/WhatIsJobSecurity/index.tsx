@@ -1,3 +1,5 @@
+import Container from '@/components/atoms/Container';
+import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
 import CardDropdown from '@/components/molecules/Card/CardDropDown';
@@ -5,17 +7,14 @@ import { sectionWhatIsJobSecurity } from '@data/infos';
 
 const WhatIsJobSecurity = () => {
   return (
-    <Section className='min-h-[24vh]'>
-      <div className='flex max-w-sectionContainer flex-col gap-7'>
-        <div className='flex flex-col gap-2'>
-          <Text tag='p' variant='subTitle' className='tablet:text-start'>
-            {sectionWhatIsJobSecurity.subTitle}
-          </Text>
-          <Text tag='h2' variant='h2' className='tablet:text-start'>
-            {sectionWhatIsJobSecurity.title}
-          </Text>
-        </div>
-        <div className='flex flex-col flex-wrap gap-3 tablet:flex-row'>
+    <Section>
+      <Container>
+        <Presentation
+          title={sectionWhatIsJobSecurity.title}
+          subtitle={sectionWhatIsJobSecurity.subtitle}
+          position='start'
+        />
+        <div className='flex flex-col flex-wrap justify-center gap-3 tablet:flex-row'>
           {sectionWhatIsJobSecurity.cards.map((card) => (
             <CardDropdown
               key={card.title}
@@ -25,7 +24,7 @@ const WhatIsJobSecurity = () => {
             />
           ))}
         </div>
-      </div>
+      </Container>
     </Section>
   );
 };

@@ -1,7 +1,7 @@
 import { IconType } from 'react-icons';
 
 type sectionMeetOurTeamType = {
-  subTitle: string;
+  subtitle: string;
   title: string;
   team: {
     id: number;
@@ -29,7 +29,7 @@ type sectionMeetOurTeamType = {
 };
 
 type sectionOurPurposeType = {
-  subTitle: string;
+  subtitle: string;
   title: string;
   description: string;
   cards: {

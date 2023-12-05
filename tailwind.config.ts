@@ -13,6 +13,9 @@ const config: Config = {
       desktop: '1280px',
     },
     extend: {
+      borderRadius: {
+        section: '75px',
+      },
       colors: {
         primary: 'rgba(var(--primary), <alpha-value>)',
         secondary: 'rgba(var(--secondary), <alpha-value>)',
@@ -20,8 +23,8 @@ const config: Config = {
         white: 'rgba(var(--white), <alpha-value>)',
       },
       lineHeight: {
-        heading1: '120%',
-        heading: '110%',
+        heading1: '150%',
+        heading: '120%',
       },
       maxWidth: {
         sectionContainerSmall: '1024px',

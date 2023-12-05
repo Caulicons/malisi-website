@@ -5,26 +5,29 @@ import Text from '@/components/atoms/Text';
 import { FaWhatsapp } from 'react-icons/fa6';
 import { sectionHighQualityService } from '@data/infos';
 import Redirect from '@/components/molecules/Redirect';
+import Presentation from '@/components/atoms/Presentation';
+import Container from '@/components/atoms/Container';
 
 const HighQualityService = () => {
   return (
-    <Section className='min-h-[60vh]'>
-      <div className='flex max-w-sectionContainerSmall flex-col items-center gap-10 tablet:flex-row tablet:items-start'>
+    <Section>
+      <Container direction='row' size='small' gap='lg'>
         <Image
           src='/assets/images/quotes/quote01.png'
           alt='Fundador da Malisi palestrado o que é segurança do trabalho'
           width={300}
           height={300}
-          className='rounded-3xl'
+          className='self-center rounded-3xl'
         />
         <div className='flex flex-col gap-5 tablet:gap-10'>
           <div className='flex flex-col gap-3'>
-            <Text tag='p' variant='subTitle' className='tablet:text-start'>
-              {sectionHighQualityService.subTitle}
-            </Text>
-            <Text tag='h3' variant='h3' className='tablet:text-start'>
-              {sectionHighQualityService.title}
-            </Text>
+            <Presentation
+              subtitle={sectionHighQualityService.subtitle}
+              title={sectionHighQualityService.title}
+              titleColor='secondary'
+              position='start'
+              heading='h3'
+            />
             <Text tag='p' className='mt-6'>
               {sectionHighQualityService.quote.description}
             </Text>
@@ -43,7 +46,7 @@ const HighQualityService = () => {
             </Redirect>
           </div>
         </div>
-      </div>
+      </Container>
     </Section>
   );
 };

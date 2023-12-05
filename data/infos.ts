@@ -7,7 +7,7 @@ import {
 } from '../types/sections';
 
 const sectionWhatIsJobSecurity = {
-  subTitle: 'segurança',
+  subtitle: 'segurança',
   title: 'O que é segurança do trabalho?',
   cards: [
     {
@@ -38,7 +38,7 @@ const sectionWhatIsJobSecurity = {
 };
 
 const sectionHighQualityService = {
-  subTitle: 'serviços de alta qualidade',
+  subtitle: 'serviços de alta qualidade',
   title:
     'A importÂncia de uma boa assessoria em segurança do trabalho e meio ambiente',
   quote: {
@@ -50,7 +50,7 @@ const sectionHighQualityService = {
 };
 
 const sectionTheBetterChoiceInWorkSafety = {
-  subTitle: 'serviços',
+  subtitle: 'serviços',
   title: 'A MELHOR ESCOLHA EM SEGURANÇA DO TRABALHO.',
   cards: [
     {
@@ -77,7 +77,7 @@ const sectionTheBetterChoiceInWorkSafety = {
 };
 
 const sectionOurClients = {
-  subTitle: 'Avaliações',
+  subtitle: 'Avaliações',
   title: 'Nossos Clientes',
   reviews: [
     {
@@ -98,8 +98,8 @@ const sectionOurClients = {
 };
 
 const sectionMeetOurTeam: sectionMeetOurTeamType = {
-  subTitle: 'Nossa equipe',
-  title: 'Conhecão nossa equipe',
+  subtitle: 'Nossa equipe',
+  title: 'Conheça nossa equipe',
   team: [
     {
       id: 1,
@@ -149,12 +149,12 @@ const sectionMeetOurTeam: sectionMeetOurTeamType = {
 };
 
 const sectionContact = {
-  subTitle: 'Contato',
+  subtitle: 'Contato',
   title: 'entre em contato com a gente para mais informações',
 };
 
 const sectionOurPurpose: sectionOurPurposeType = {
-  subTitle: 'Quem somos',
+  subtitle: 'Quem somos',
   title: 'Nosso Proposito',
   description:
     'Oferecer aos clientes, qualidade em termos de documentações, treinamentos e requisitos legais. Promover às empresas gestão eficiente de saúde e segurança do trabalho e meio ambienteh, através de um relacionamento ético, íntegro e transparente.',
@@ -178,7 +178,7 @@ const sectionOurPurpose: sectionOurPurposeType = {
 
 /* HiOutlineUsers icon*/
 const sectionOurValues = {
-  subTitle: 'Valores',
+  subtitle: 'Valores',
   title: 'Prezar por relações duradouras,  tendo como pilares: ',
   cards: [
     {
@@ -212,20 +212,20 @@ const sectionOurValues = {
 };
 
 const sectionOurHistory = {
-  subTitle: 'trajetoria',
+  subtitle: 'trajetoria',
   title: 'Nossa História',
   description: '',
 };
 
 const sectionPlansAndStrategy = {
-  subTitle: 'objetivo',
+  subtitle: 'objetivo',
   title: 'Estratégias e planos',
   description:
     'Cada cliente é único. É por isso que personalizamos cada um de nossos planos a fim de atender exatamente às suas expectativas. Seja uma estratégia simples ou um empreendimento abrangente, sentaremos com você, ouviremos suas solicitações e prepararemos um plano personalizado.',
 };
 
 const sectionOurServices = {
-  subTitle: 'NOSSOS SERVIÇOS',
+  subtitle: 'NOSSOS SERVIÇOS',
   title: 'ATENDEMOS ESSAS NORMAS REGULAMENTADORAS',
   cards: [
     {
@@ -270,7 +270,7 @@ const sectionOurServices = {
 };
 
 const sectionOurConsultancies = {
-  subTitle: 'consultoria',
+  subtitle: 'consultoria',
   title: 'Nossas consultorias',
   cards: [
     {

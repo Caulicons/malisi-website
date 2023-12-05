@@ -1,4 +1,6 @@
+import Container from '@/components/atoms/Container';
 import Image from '@/components/atoms/Image';
+import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
 import { sectionOurHistory } from '@data/infos';
@@ -7,14 +9,14 @@ const OurHistory = () => {
   return (
     /* Sorry for the code below 😭😭😭😭😭 */
     <Section>
-      <div>
-        <div className='flex w-screen flex-col gap-2 rounded-t-[75px] bg-secondary p-5 tablet:p-10 '>
-          <Text variant='subTitle' className='text-white'>
-            {sectionOurHistory.subTitle}
-          </Text>
-          <Text variant='h2' className='text-white'>
-            {sectionOurHistory.title}
-          </Text>
+      <Container>
+        <div className='rounded-t-section flex w-full flex-col gap-2 bg-secondary p-5 tablet:p-10 '>
+          <Presentation
+            title={sectionOurHistory.title}
+            subtitle={sectionOurHistory.subtitle}
+            titleColor='white'
+            subtitleColor='white'
+          />
         </div>
         <div className='mx-auto flex max-w-sectionContainer flex-col gap-8 p-5 tablet:items-center'>
           <div className=' flex flex-col gap-8  laptop:flex-row'>
@@ -93,7 +95,7 @@ const OurHistory = () => {
             página do livro da MALISI.
           </Text>
         </div>
-      </div>
+      </Container>
     </Section>
   );
 };
