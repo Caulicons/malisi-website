@@ -1,5 +1,5 @@
 import Image from '@components/atoms/Image';
-import cn from '../../../../utils/cn';
+import cn from '../../../../../utils/cn';
 import { IconType } from 'react-icons';
 import { cva } from 'class-variance-authority';
 import Text from '@/components/atoms/Text';
@@ -16,7 +16,7 @@ type CardProps = {
 };
 
 const variants = cva(
-  'flex w-full flex-col gap-4 rounded-2xl bg-white p-6 pb-9 text-left',
+  'flex  flex-col gap-4 rounded-2xl bg-white p-6 pb-9 text-left',
   {
     variants: {
       variant: {
@@ -48,7 +48,7 @@ export default function Card({
 
   return (
     <div className={cn(variants({ variant }), className)}>
-      <div className='flex items-center justify-between'>
+      <div className='flex  items-center justify-between'>
         <div>
           {Icon && (
             <span className={cn('text-primary', `text-${iconColor}`)}>

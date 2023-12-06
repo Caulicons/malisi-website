@@ -1,23 +1,24 @@
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import CardClientReview from '@/components/molecules/Card/CardClientReview';
-import { sectionOurClients } from '@data/infos';
+import CardClientReview from '@/components/molecules/Cards/CardClientReview';
+import ourClientData from './data';
+import CardContainer from '@/components/molecules/Cards/CardContainer';
 
 const OurClients = () => {
   return (
     <Section className='rounded-t-section bg-secondary '>
       <Container gap='xl'>
         <Presentation
-          subtitle={sectionOurClients.subtitle}
-          title={sectionOurClients.title}
+          subtitle={ourClientData.subtitle}
+          title={ourClientData.title}
           subtitleColor='white'
         />
-        <div className='mx-auto flex w-full flex-col gap-5 tablet:flex-row'>
-          {sectionOurClients.reviews.map((review) => (
+        <CardContainer grid='tablet:grid-cols-2'>
+          {ourClientData.reviews.map((review) => (
             <CardClientReview key={review.id} {...review} />
           ))}
-        </div>
+        </CardContainer>
       </Container>
     </Section>
   );

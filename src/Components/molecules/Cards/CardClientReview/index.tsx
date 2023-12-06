@@ -15,7 +15,10 @@ const CardClientReview = ({
   author,
 }: CardClientReviewProps) => {
   return (
-    <div key={id} className='flex flex-col gap-2 rounded-2xl  bg-white p-5'>
+    <div
+      key={id}
+      className='flex h-full max-w-[400px] flex-col gap-2 rounded-2xl bg-white p-5'
+    >
       <Image
         src={`/assets/images/clients/client${id}.png`}
         width={50}

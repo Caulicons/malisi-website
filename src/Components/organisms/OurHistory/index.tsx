@@ -3,17 +3,17 @@ import Image from '@/components/atoms/Image';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
-import { sectionOurHistory } from '@data/infos';
+import { ourHistoryData } from './data';
 
 const OurHistory = () => {
   return (
     /* Sorry for the code below 😭😭😭😭😭 */
     <Section>
       <Container>
-        <div className='rounded-t-section flex w-full flex-col gap-2 bg-secondary p-5 tablet:p-10 '>
+        <div className='flex w-full flex-col gap-2 rounded-t-section bg-secondary p-5 tablet:p-10 '>
           <Presentation
-            title={sectionOurHistory.title}
-            subtitle={sectionOurHistory.subtitle}
+            title={ourHistoryData.title}
+            subtitle={ourHistoryData.subtitle}
             titleColor='white'
             subtitleColor='white'
           />

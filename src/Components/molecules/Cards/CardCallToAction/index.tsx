@@ -9,16 +9,20 @@ import Redirect from '@/components/molecules/Redirect';
 type CardCallToActionProps = {
   title: string;
   description: string;
-  Icon?: IconType;
+  icon?: IconType;
+  button: {
+    icon?: IconType | undefined;
+    name: string;
+  };
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const CardCallToAction = ({
   title,
   description,
-  Icon,
+  icon: Icon,
 }: CardCallToActionProps) => {
   return (
-    <div className='flex w-full flex-col justify-between gap-4 rounded-2xl bg-secondary p-4 text-white tablet:max-w-[32%]'>
+    <div className='flex  w-full flex-col justify-between gap-4 rounded-2xl bg-secondary p-4 text-white'>
       <div className='flex flex-col gap-3'>
         <div className='flex items-center justify-between gap-2 border-white'>
           {Icon ? <Icon size={36} /> : <BsBuildingCheck size={27} />}

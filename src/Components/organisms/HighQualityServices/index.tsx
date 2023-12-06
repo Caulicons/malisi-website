@@ -3,10 +3,10 @@ import Image from '@/components/atoms/Image';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
 import { FaWhatsapp } from 'react-icons/fa6';
-import { sectionHighQualityService } from '@data/infos';
 import Redirect from '@/components/molecules/Redirect';
 import Presentation from '@/components/atoms/Presentation';
 import Container from '@/components/atoms/Container';
+import { highQualityServiceData } from './data';
 
 const HighQualityService = () => {
   return (
@@ -22,19 +22,19 @@ const HighQualityService = () => {
         <div className='flex flex-col gap-5 tablet:gap-10'>
           <div className='flex flex-col gap-3'>
             <Presentation
-              subtitle={sectionHighQualityService.subtitle}
-              title={sectionHighQualityService.title}
+              subtitle={highQualityServiceData.subtitle}
+              title={highQualityServiceData.title}
               titleColor='secondary'
               position='start'
               heading='h3'
             />
             <Text tag='p' className='mt-6'>
-              {sectionHighQualityService.quote.description}
+              {highQualityServiceData.quote.description}
             </Text>
           </div>
           <div className='flex flex-col gap-3'>
             <Text tag='p' variant='citation'>
-              {sectionHighQualityService.quote.author}
+              {highQualityServiceData.quote.author}
             </Text>
             <Redirect
               href={'#'}

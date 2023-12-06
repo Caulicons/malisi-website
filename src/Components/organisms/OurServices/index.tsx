@@ -1,24 +1,25 @@
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import CardService from '@/components/molecules/Card/CardService';
-import { sectionOurServices } from '@data/infos';
+import CardService from '@/components/molecules/Cards/CardService';
+import { ourServicesData } from './data';
+import CardContainer from '@/components/molecules/Cards/CardContainer';
 
 const OurServices = () => {
   return (
     <Section className='rounded-t-section bg-secondary'>
       <Container>
         <Presentation
-          title={sectionOurServices.title}
-          subtitle={sectionOurServices.subtitle}
+          title={ourServicesData.title}
+          subtitle={ourServicesData.subtitle}
           titleColor='white'
           subtitleColor='white'
         />
-        <div className='flex flex-row flex-wrap justify-center gap-4 p-4'>
-          {sectionOurServices.cards.map((service) => (
+        <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-3'>
+          {ourServicesData.cards.map((service) => (
             <CardService key={service.name} {...service} />
           ))}
-        </div>
+        </CardContainer>
       </Container>
     </Section>
   );

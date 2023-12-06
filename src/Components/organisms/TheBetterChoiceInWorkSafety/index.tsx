@@ -1,27 +1,23 @@
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import CardCallToAction from '@/components/molecules/Card/CardCallToAction';
-import { sectionTheBetterChoiceInWorkSafety } from '@data/infos';
+import CardCallToAction from '@/components/molecules/Cards/CardCallToAction';
+import theBetterChoiceInWorkSafetyData from './data';
+import CardContainer from '@/components/molecules/Cards/CardContainer';
 
 const TheBetterChoiceInWorkSafety = () => {
   return (
     <Section>
       <Container gap='xl'>
         <Presentation
-          title={sectionTheBetterChoiceInWorkSafety.title}
-          subtitle={sectionTheBetterChoiceInWorkSafety.subtitle}
+          title={theBetterChoiceInWorkSafetyData.title}
+          subtitle={theBetterChoiceInWorkSafetyData.subtitle}
         />
-        <div className='flex flex-col justify-center gap-3 tablet:flex-row'>
-          {sectionTheBetterChoiceInWorkSafety.cards.map((card) => (
-            <CardCallToAction
-              key={card.title}
-              title={card.title}
-              description={card.description}
-              Icon={card.icon}
-            />
+        <CardContainer grid='tablet:grid-cols-3'>
+          {theBetterChoiceInWorkSafetyData.cards.map((card) => (
+            <CardCallToAction key={card.title} {...card} />
           ))}
-        </div>
+        </CardContainer>
       </Container>
     </Section>
   );

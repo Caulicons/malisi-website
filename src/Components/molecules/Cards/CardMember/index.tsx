@@ -34,7 +34,7 @@ const CardMember = ({
 }: CardMemberProps) => {
   return (
     <div
-      className='flex max-w-[300px] flex-col justify-center  text-center'
+      className='flex max-w-[300px] flex-col justify-center text-center'
       key={id}
     >
       <Image

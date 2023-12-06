@@ -4,10 +4,10 @@ import { IconType } from 'react-icons';
 import { IoPeopleCircleOutline } from 'react-icons/io5';
 
 type CardDropdownProps = {
+  icon: IconType;
   title: string;
   description: string;
   className?: string;
-  icon?: IconType;
 };
 
 const CardDropdown = ({
@@ -19,7 +19,7 @@ const CardDropdown = ({
   return (
     <button
       className={cn(
-        'group/card  h-full w-full select-none rounded-2xl border-2 border-secondary ',
+        'group/card h-fit w-full min-w-[300px] select-none rounded-2xl border-2 border-secondary ',
         className
       )}
     >
@@ -27,14 +27,7 @@ const CardDropdown = ({
         className='flex items-center justify-between 
         gap-2 rounded-xl bg-secondary p-3'
       >
-        {Icon ? (
-          <Icon size={45} color='white' />
-        ) : (
-          <IoPeopleCircleOutline
-            className='text-white'
-            style={{ fontSize: '45px', fontColor: 'white' }}
-          />
-        )}
+        <Icon size={45} color='white' />
         <Text tag='h3' variant='cardTitle' className='text-end text-white'>
           {title}
         </Text>

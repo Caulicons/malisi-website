@@ -18,7 +18,7 @@ const CardConsultancies = ({ name, details }: CardConsultanciesProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='flex h-full w-full flex-col items-center justify-center  rounded-3xl   border border-white bg-white text-start text-white tablet:min-h-[150px]  tablet:max-w-[49%] laptop:max-w-[49%]'>
+    <div className='flex h-fit w-full flex-col items-center  justify-center   rounded-3xl border border-white bg-white text-start text-white'>
       <div
         onClick={() => setIsOpen(!isOpen)}
         className='flex w-full  items-center justify-between gap-5 rounded-3xl bg-secondary p-5 tablet:min-h-[150px]'

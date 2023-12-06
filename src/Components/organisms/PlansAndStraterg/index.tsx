@@ -1,16 +1,16 @@
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import { sectionPlansAndStrategy } from '@data/infos';
+import { plansAndStrategyData } from './data';
 
 const PlansAndStrategy = () => {
   return (
     <Section>
       <Container>
         <Presentation
-          title={sectionPlansAndStrategy.title}
-          subtitle={sectionPlansAndStrategy.subtitle}
-          description={sectionPlansAndStrategy.description}
+          title={plansAndStrategyData.title}
+          subtitle={plansAndStrategyData.subtitle}
+          description={plansAndStrategyData.description}
           position='start'
         />
       </Container>

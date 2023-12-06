@@ -1,29 +1,24 @@
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import Text from '@/components/atoms/Text';
-import CardDropdown from '@/components/molecules/Card/CardDropDown';
-import { sectionWhatIsJobSecurity } from '@data/infos';
+import CardDropdown from '@/components/molecules/Cards/CardDropDown';
+import whatIsJobSecurityData from './data';
+import CardContainer from '@/components/molecules/Cards/CardContainer';
 
 const WhatIsJobSecurity = () => {
   return (
     <Section>
       <Container>
         <Presentation
-          title={sectionWhatIsJobSecurity.title}
-          subtitle={sectionWhatIsJobSecurity.subtitle}
+          title={whatIsJobSecurityData.title}
+          subtitle={whatIsJobSecurityData.subtitle}
           position='start'
         />
-        <div className='flex flex-col flex-wrap justify-center gap-3 tablet:flex-row'>
-          {sectionWhatIsJobSecurity.cards.map((card) => (
-            <CardDropdown
-              key={card.title}
-              title={card.title}
-              description={card.description}
-              className='tablet:min-w-[310px] tablet:max-w-[49%] desktop:min-w-[310px] desktop:max-w-[24%]'
-            />
+        <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-4'>
+          {whatIsJobSecurityData.cards.map((card) => (
+            <CardDropdown key={card.title} {...card} />
           ))}
-        </div>
+        </CardContainer>
       </Container>
     </Section>
   );
