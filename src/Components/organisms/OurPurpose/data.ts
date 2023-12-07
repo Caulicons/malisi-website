@@ -1,6 +1,6 @@
 import { BsGraphUp } from 'react-icons/bs';
 import { TbUsersGroup } from 'react-icons/tb';
-import { sectionOurPurposeType } from '../../../../types/sections';
+import { sectionOurPurposeType } from '../../../types/sections';
 
 const ourPurposeData: sectionOurPurposeType = {
   subtitle: 'Quem somos',

@@ -1,4 +1,4 @@
-import { sectionMeetOurTeamType } from '../../../../types/sections';
+import { sectionMeetOurTeamType } from '../../../types/sections';
 
 const meetOurTeamData: sectionMeetOurTeamType = {
   subtitle: 'Nossa equipe',

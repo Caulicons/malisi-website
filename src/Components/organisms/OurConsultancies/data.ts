@@ -22,7 +22,7 @@ const ourConsultanciesData = {
       },
     },
     {
-      name: 'Programa de Controle Avaliações de Higiene Ocupacional de Saúde Ocupacional',
+      name: 'ProgramaD Controle Avaliações de Higiene Ocupacional de Saúde Ocupacional',
       details: {
         description:
           'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
@@ -50,14 +50,14 @@ const ourConsultanciesData = {
     {
       name: 'NR 19',
       details: {
-        description: 'COMISSÃO INTERNA DE PREVEN&Ccedil;&atilde;O DE ACIDENTES',
+        description: 'COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES',
         forWhat: '',
         whatAreTheObjectives: '',
         beNotDo: '',
       },
     },
     {
-      name: 'Programa de Gerenciamento de Riscos - PGR',
+      name: 'Programa de Gerenciamento de Riscos - PGRR',
       details: {
         description:
           'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
@@ -80,7 +80,7 @@ const ourConsultanciesData = {
       },
     },
     {
-      name: 'CONSULTOR TÉCNICO DE CAMPO, OBSERVADORES E FISCAIS DE SEGURANÇA PARA TRABALHO EM ALTURA, ESPAÇOS CONFINADOS E RESGATE',
+      name: 'CONSULTOR TÉCNICO DE CAMPO, OBSERVADORES E FISCAIS DE SEGURANÇA PARA TRABALHO NO subterrâneo, ESPAÇOS CONFINADOS E RESGATE',
       details: {
         description:
           'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
