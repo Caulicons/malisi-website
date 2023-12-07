@@ -6,7 +6,8 @@ import MeetOurTeam from '@/components/organisms/MeetOurTeam';
 import OurClients from '@/components/organisms/OurClients';
 import TheBetterChoiceInWorkSafety from '@/components/organisms/TheBetterChoiceInWorkSafety';
 import WhatIsJobSecurity from '@/components/organisms/WhatIsJobSecurity';
-
+import { slidesTrainings } from './data';
+import Carousel from '@/components/molecules/Carousel';
 const Home = () => {
   return (
     <Main>
@@ -17,6 +18,11 @@ const Home = () => {
       <WhatIsJobSecurity />
       <HighQualityService />
       <TheBetterChoiceInWorkSafety />
+      <Carousel
+        title='Treinamentos'
+        subtitle='Projetos'
+        slides={slidesTrainings}
+      />
       <OurClients />
       <MeetOurTeam />
       <Contact />

@@ -23,14 +23,17 @@ const routesAtom = atom([
   },
 ]);
 
-const activateReactAtom = atom(null, (get, set, route: string) => {
-  set(
-    routesAtom,
-    get(routesAtom).map((r) => {
-      if (r.name === route) return { ...r, active: true };
-      return { ...r, active: false };
-    })
-  );
-});
+const activateReactAtom = atom(
+  null,
+  (get, set, route: 'INÍCIO' | 'SOBRE' | 'SERVIÇOS' | 'CONTATO') => {
+    set(
+      routesAtom,
+      get(routesAtom).map((r) => {
+        if (r.name === route) return { ...r, active: true };
+        return { ...r, active: false };
+      })
+    );
+  }
+);
 
 export { routesAtom, activateReactAtom };

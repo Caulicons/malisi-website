@@ -2,7 +2,6 @@ import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
 import CardDropdown from '@/components/molecules/Cards/CardDropDown';
-import { PiUsers } from 'react-icons/pi';
 import { ourValuesData } from './data';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
 

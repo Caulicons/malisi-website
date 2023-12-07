@@ -11,7 +11,7 @@ const About = () => {
     <Main>
       <Banner
         title='Aqui você certamente encontrará os melhores serviços de Engenharia de Segurança do Trabalho e Meio Ambiente. '
-        subtitle='segurança do trabalho'
+        subtitle='sobre nós'
         variant='small'
       />
       <OurPurpose />

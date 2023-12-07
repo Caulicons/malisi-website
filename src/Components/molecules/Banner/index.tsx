@@ -1,7 +1,6 @@
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import Contact from '@/components/organisms/Contact';
 import cn from '@utils/cn';
 import { cva } from 'class-variance-authority';
 

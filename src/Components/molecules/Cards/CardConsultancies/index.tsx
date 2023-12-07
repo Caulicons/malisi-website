@@ -1,6 +1,7 @@
 'use client';
 import Text from '@/components/atoms/Text';
 import { useState } from 'react';
+import { IconType } from 'react-icons';
 import { FaCirclePlus } from 'react-icons/fa6';
 import { FaCircleMinus } from 'react-icons/fa6';
 

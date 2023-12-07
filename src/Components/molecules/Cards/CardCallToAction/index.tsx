@@ -1,7 +1,5 @@
-import Anchor from '@/components/atoms/Anchor';
 import Text from '@/components/atoms/Text';
 import { IconType } from 'react-icons';
-import { FaPlus } from 'react-icons/fa6';
 import { BsBuildingCheck } from 'react-icons/bs';
 
 import Redirect from '@/components/molecules/Redirect';

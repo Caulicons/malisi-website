@@ -1,7 +1,6 @@
 import Text from '@/components/atoms/Text';
 import cn from '@utils/cn';
 import { IconType } from 'react-icons';
-import { IoPeopleCircleOutline } from 'react-icons/io5';
 
 type CardDropdownProps = {
   icon: IconType;
