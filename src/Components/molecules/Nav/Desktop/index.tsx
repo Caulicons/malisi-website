@@ -1,7 +1,11 @@
-import routes from '@data/routes';
+'use client';
 import NavLinks from '../NavLinks';
+import { useAtomValue } from 'jotai';
+import { routesAtom } from '@/provider/atoms/routes';
 
 const NavDesktop = () => {
+  const routes = useAtomValue(routesAtom);
+
   return (
     <ul className='invisible hidden tablet:visible tablet:flex'>
       {routes.map((route) => (

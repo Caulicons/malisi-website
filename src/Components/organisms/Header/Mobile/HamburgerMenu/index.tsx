@@ -1,23 +1,24 @@
 'use client';
+import { useAtom } from 'jotai';
 import { Divide as Hamburger } from 'hamburger-react';
 import { useRef, useState } from 'react';
 import { useClickAway } from 'react-use';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from '@components/atoms/Image';
 import Nav from '@/components/molecules/Nav';
+import asideMenuOpenAtom from '@/provider/atoms/asideMenuOpen';
 
 export default function HamburgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useAtom(asideMenuOpenAtom);
   const ref = useRef(null);
   useClickAway(ref, () => setIsOpen(false));
 
   return (
     <div>
-      {!isOpen && (
-        <div className='rounded-xl bg-primary text-white hover:bg-primary/95'>
-          <Hamburger toggled={isOpen} size={21} toggle={setIsOpen} />
-        </div>
-      )}
+      <div className='rounded-xl bg-primary text-white hover:bg-primary/95'>
+        <Hamburger toggled={isOpen} size={21} toggle={setIsOpen} />
+      </div>
+
       <AnimatePresence>
         {isOpen && (
           <div className='fixed left-0 right-0 top-0 z-10 h-screen'>

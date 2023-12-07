@@ -1,9 +1,11 @@
 'use client';
 import { AnimatePresence, motion } from 'framer-motion';
-import routes from '@data/routes';
 import NavLinks from '../NavLinks';
+import { useAtomValue } from 'jotai';
+import { routesAtom } from '@/provider/atoms/routes';
 
 const NavMobile = () => {
+  const routes = useAtomValue(routesAtom);
   return (
     <ul className='flex flex-col gap-2 tablet:invisible tablet:hidden'>
       <AnimatePresence>
