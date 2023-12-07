@@ -1,4 +1,3 @@
-import Carousel from '@/components/Carousel';
 import Main from '@/components/atoms/Main';
 import Banner from '@/components/molecules/Banner';
 import Contact from '@/components/organisms/Contact';
@@ -6,6 +5,7 @@ import OurConsultancies from '@/components/organisms/OurConsultancies';
 import OurServices from '@/components/organisms/OurServices';
 import PlansAndStrategy from '@/components/organisms/PlansAndStraterg';
 import { slidesConsultancies, slidesTrainings } from './data';
+import Carousel from '@/components/molecules/Carousel';
 
 const Services = () => {
   return (
