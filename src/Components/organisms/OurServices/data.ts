@@ -1,44 +1,58 @@
 const ourServicesData = {
-  subtitle: 'NOSSOS SERVIÇOS',
-  title: 'ATENDEMOS ESSAS NORMAS REGULAMENTADORAS',
+  subtitle: '',
+  title: 'NOSSOS SERVIÇOS',
   cards: [
     {
-      name: 'NR 05',
-      description: 'COMISSÃO INTERNA DE PREVENÇÃO DE ACIDENTES',
+      name: 'AEP',
+      description: 'Análise Ergonômica Preliminar',
     },
     {
-      name: 'NR 06',
-      description: 'EQUIPAMENTOS DE PROTEÇÃO INDIVIDUAL – EPI',
+      name: 'AET',
+      description: 'Análise Ergonômica do Trabalho',
     },
     {
-      name: 'NR 07',
-      description: ' SAÚDE E PCMSO',
+      name: 'Laudos de Insalubridade e Periculosidade',
+      description: '',
     },
     {
-      name: 'NR 17',
-      description: 'ERGONOMIA',
+      name: 'PRG',
+      description: 'Programa de Gerenciamento de Riscos',
     },
     {
-      name: 'NR 18',
-      description:
-        'CONDIÇÕES E MEIO AMBIENTE DE TRABALHO NA INDÚSTRIA DA CONSTRUÇÃO',
+      name: 'NR-10',
+      description: 'Laudo para Instalações Elétricas',
     },
     {
-      name: 'NR 19',
-      description: 'explosivos',
+      name: 'SPDA',
+      description: 'Laudo de Sistema de  Proteção contra Descarga Atmosférica',
     },
     {
-      name: 'NR 33',
-      description: 'TRABALHO EM ESPAÇOS CONFINADOS / TREINAMENTO E INSTRUTOR',
+      name: 'NR-10',
+      description: 'Laudo de Aterramento ',
     },
     {
-      name: 'NR 35',
-      description: 'TRABALHO EM ALTURA / TREINAMENTO E INSTRUTOR',
+      name: 'NR-13',
+      description: 'Laudo de Caleiras e Vasos de Pressão',
     },
     {
-      name: 'NR 36',
-      description:
-        'TRABALHO EM EMPRESAS DE ABATE E PROCESSAMENTO DE CARNES E DERIVADOS',
+      name: 'LTCAT',
+      description: '',
+    },
+    {
+      name: 'Palestras',
+      description: '',
+    },
+    {
+      name: 'Higiene Ocupacional',
+      description: '',
+    },
+    {
+      name: 'Treinamentos',
+      description: '',
+    },
+    {
+      name: 'SIPAT',
+      description: '',
     },
   ],
 };

@@ -3,10 +3,10 @@ import { TbUsersGroup } from 'react-icons/tb';
 import { sectionOurPurposeType } from '../../../types/sections';
 
 const ourPurposeData: sectionOurPurposeType = {
-  subtitle: 'Quem somos',
+  subtitle: '',
   title: 'Nosso Proposito',
   description:
-    'Oferecer aos clientes, qualidade em termos de documentações, treinamentos e requisitos legais. Promover às empresas gestão eficiente de saúde e segurança do trabalho e meio ambienteh, através de um relacionamento ético, íntegro e transparente.',
+    'Oferecer aos clientes e parceiros garantia em cumprimentos legais e excelência na elaboração de documentos, treinamentos e palestras.',
   cards: [
     {
       icon: BsGraphUp,

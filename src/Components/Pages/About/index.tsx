@@ -5,13 +5,14 @@ import MeetOurTeam from '@/components/organisms/MeetOurTeam';
 import OurHistory from '@/components/organisms/OurHistory';
 import OurPurpose from '@/components/organisms/OurPurpose';
 import OurValues from '@/components/organisms/OurValues';
+import { aboutPageData } from './data';
 
 const About = () => {
   return (
     <Main>
       <Banner
-        title='Aqui você certamente encontrará os melhores serviços de Engenharia de Segurança do Trabalho e Meio Ambiente. '
-        subtitle='sobre nós'
+        title={aboutPageData.title}
+        subtitle={aboutPageData.subtitle}
         variant='small'
       />
       <OurPurpose />

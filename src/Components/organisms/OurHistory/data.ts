@@ -1,5 +1,5 @@
 const ourHistoryData = {
-  subtitle: 'trajetoria',
+  subtitle: '',
   title: 'Nossa História',
   description: '',
 };

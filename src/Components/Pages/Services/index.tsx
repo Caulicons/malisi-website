@@ -3,31 +3,24 @@ import Banner from '@/components/molecules/Banner';
 import Contact from '@/components/organisms/Contact';
 import OurConsultancies from '@/components/organisms/OurConsultancies';
 import OurServices from '@/components/organisms/OurServices';
-import PlansAndStrategy from '@/components/organisms/PlansAndStraterg';
-import { slidesConsultancies, slidesTrainings } from './data';
-import Carousel from '@/components/molecules/Carousel';
+import PlansAndStrategy from '@/components/organisms/PlansAndStrategy';
+import { servicePageData } from './data';
+import CarouselTrainings from '@/components/organisms/Carrousels/CarouselTrainings';
+import CarouselConsultancies from '@/components/organisms/Carrousels/CarouselConsultancies';
 
 const Services = () => {
   return (
     <Main>
       <Banner
-        title='Aqui você certamente encontrará os melhores serviços de Engenharia de Segurança do Trabalho e Meio Ambiente. '
-        subtitle='serviços'
+        title={servicePageData.title}
+        subtitle={servicePageData.subtitle}
         variant='small'
       />
       <PlansAndStrategy />
       <OurServices />
-      <Carousel
-        title='Projetos'
-        subtitle='Treinamentos'
-        slides={slidesTrainings}
-      />
+      <CarouselTrainings />
       <OurConsultancies />
-      <Carousel
-        title='Consultoria'
-        subtitle='Consultoria'
-        slides={slidesConsultancies}
-      />
+      <CarouselConsultancies />
       <Contact />
     </Main>
   );

@@ -12,6 +12,7 @@ const PlansAndStrategy = () => {
           subtitle={plansAndStrategyData.subtitle}
           description={plansAndStrategyData.description}
           position='start'
+          titleColor='secondary'
         />
       </Container>
     </Section>

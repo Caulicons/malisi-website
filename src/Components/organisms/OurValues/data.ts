@@ -2,7 +2,7 @@ import { PiUsers } from 'react-icons/pi';
 
 const ourValuesData = {
   subtitle: 'Valores',
-  title: 'Prezar por relações duradouras,  tendo como pilares: ',
+  title: 'Prezamos por relações duradouras,  tendo como pilares: ',
   cards: [
     {
       icon: PiUsers,

@@ -28,9 +28,7 @@ const HighQualityService = () => {
               position='start'
               heading='h3'
             />
-            <Text tag='p' className='mt-6'>
-              {highQualityServiceData.quote.description}
-            </Text>
+            <Text tag='p'>{highQualityServiceData.quote.description}</Text>
           </div>
           <div className='flex flex-col gap-3'>
             <Text tag='p' variant='citation'>

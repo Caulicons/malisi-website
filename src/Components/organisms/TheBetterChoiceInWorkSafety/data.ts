@@ -9,7 +9,8 @@ const theBetterChoiceInWorkSafetyData = {
     {
       icon: TbTools,
       title: 'treinamentos',
-      description: 'Treinamentos de Segurança do Trabalho com certificados.',
+      description:
+        'Educar e conscientizar o trabalhador sobre os riscos de sua atividade e orientá-lo sobre a forma correta de executar sua tarefa.',
       button: {
         name: 'Saiba mais',
       },

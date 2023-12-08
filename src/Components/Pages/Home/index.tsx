@@ -6,23 +6,18 @@ import MeetOurTeam from '@/components/organisms/MeetOurTeam';
 import OurClients from '@/components/organisms/OurClients';
 import TheBetterChoiceInWorkSafety from '@/components/organisms/TheBetterChoiceInWorkSafety';
 import WhatIsJobSecurity from '@/components/organisms/WhatIsJobSecurity';
-import { slidesTrainings } from './data';
-import Carousel from '@/components/molecules/Carousel';
+import CarouselTrainings from '@/components/organisms/Carrousels/CarouselTrainings';
+
+import { homePageData } from './data';
+
 const Home = () => {
   return (
     <Main>
-      <Banner
-        title='Aqui você certamente encontrará os melhores serviços de Engenharia de Segurança do Trabalho e Meio Ambiente. '
-        subtitle='segurança do trabalho'
-      />
+      <Banner title={homePageData.title} subtitle={homePageData.subtitle} />
       <WhatIsJobSecurity />
       <HighQualityService />
       <TheBetterChoiceInWorkSafety />
-      <Carousel
-        title='Treinamentos'
-        subtitle='Projetos'
-        slides={slidesTrainings}
-      />
+      <CarouselTrainings />
       <OurClients />
       <MeetOurTeam />
       <Contact />
