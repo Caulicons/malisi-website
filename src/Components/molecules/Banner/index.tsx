@@ -7,6 +7,7 @@ import { cva } from 'class-variance-authority';
 type BannerProps = {
   subtitle: string;
   title: string;
+  imageURL?: string;
   imageName?: string;
   className?: string;
   variant?: 'default' | 'small';

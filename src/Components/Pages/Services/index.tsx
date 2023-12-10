@@ -1,12 +1,11 @@
+import { servicePageData } from './data';
 import Main from '@/components/atoms/Main';
 import Banner from '@/components/molecules/Banner';
 import Contact from '@/components/organisms/Contact';
-import OurConsultancies from '@/components/organisms/OurConsultancies';
-import OurServices from '@/components/organisms/OurServices';
+import OurTrainings from '@/components/organisms/OurTraining';
+import OurPortfolio from '@/components/organisms/OurPortfolio';
+import OurServices from '@/components/organisms/OurServicesTT';
 import PlansAndStrategy from '@/components/organisms/PlansAndStrategy';
-import { servicePageData } from './data';
-import CarouselTrainings from '@/components/organisms/Carrousels/CarouselTrainings';
-import CarouselConsultancies from '@/components/organisms/Carrousels/CarouselConsultancies';
 
 const Services = () => {
   return (
@@ -14,13 +13,13 @@ const Services = () => {
       <Banner
         title={servicePageData.title}
         subtitle={servicePageData.subtitle}
+        imageName={servicePageData.imageName}
         variant='small'
       />
       <PlansAndStrategy />
       <OurServices />
-      <CarouselTrainings />
-      <OurConsultancies />
-      <CarouselConsultancies />
+      <OurPortfolio />
+      <OurTrainings />
       <Contact />
     </Main>
   );

@@ -20,7 +20,10 @@ const CardContainer = ({
   };
 
   return (
-    <div className={cn('grid ', gapVariants[gap], grid, className)} {...props}>
+    <div
+      className={cn('grid grid-cols-1', gapVariants[gap], grid, className)}
+      {...props}
+    >
       {children}
     </div>
   );

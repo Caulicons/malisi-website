@@ -15,8 +15,12 @@ const WhatIsJobSecurity = () => {
           position='start'
         />
         <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-4'>
-          {whatIsJobSecurityData.cards.map((card) => (
-            <CardDropdown key={card.title} {...card} />
+          {whatIsJobSecurityData.cards.map(({ Icon, ...card }) => (
+            <CardDropdown
+              key={card.title}
+              icon={<Icon.type {...Icon.props} />}
+              {...card}
+            />
           ))}
         </CardContainer>
       </Container>

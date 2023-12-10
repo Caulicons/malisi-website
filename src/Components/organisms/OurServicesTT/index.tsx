@@ -1,9 +1,9 @@
+import { ourServicesData } from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
-import CardService from '@/components/molecules/Cards/CardService';
-import { ourServicesData } from './data';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
+import CardServices from '@/components/molecules/Cards/CardServices';
 
 const OurServices = () => {
   return (
@@ -17,7 +17,7 @@ const OurServices = () => {
         />
         <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-3'>
           {ourServicesData.cards.map((service) => (
-            <CardService key={service.name} {...service} />
+            <CardServices key={service.name} {...service} />
           ))}
         </CardContainer>
       </Container>

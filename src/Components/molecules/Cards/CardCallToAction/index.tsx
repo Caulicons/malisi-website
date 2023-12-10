@@ -31,7 +31,7 @@ const CardCallToAction = ({
         <Text className='text-center'>{description}</Text>
       </div>
       {/* TODO: change href later */}
-      <Redirect href='/sobre' iconSize={21} className='self-end'>
+      <Redirect href='/servicos' iconSize={21} className='self-end'>
         Saiba mais
       </Redirect>
     </div>

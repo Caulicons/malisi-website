@@ -48,7 +48,7 @@ const Presentation = ({
         <Text
           tag='p'
           variant='subtitle'
-          className={cn(subtitleColorVariant[subtitleColor])}
+          className={cn('h-fit', subtitleColorVariant[subtitleColor])}
         >
           {subtitle}
         </Text>

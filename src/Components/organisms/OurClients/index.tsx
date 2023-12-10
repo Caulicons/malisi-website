@@ -1,24 +1,30 @@
+'use client';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Presentation';
 import Section from '@/components/atoms/Section';
 import CardClientReview from '@/components/molecules/Cards/CardClientReview';
 import ourClientData from './data';
-import CardContainer from '@/components/molecules/Cards/CardContainer';
+import { SwiperSlide } from 'swiper/react';
+import Carousel from '@/components/molecules/Carousel';
 
 const OurClients = () => {
   return (
-    <Section className='rounded-t-section bg-secondary '>
+    <Section className='block rounded-t-section bg-secondary'>
       <Container gap='xl'>
         <Presentation
           subtitle={ourClientData.subtitle}
           title={ourClientData.title}
           subtitleColor='white'
         />
-        <CardContainer grid='tablet:grid-cols-2'>
+        <Carousel>
           {ourClientData.reviews.map((review) => (
-            <CardClientReview key={review.id} {...review} />
+            <SwiperSlide key={review.id}>
+              <div className='grid h-full w-full justify-center'>
+                <CardClientReview {...review} />
+              </div>
+            </SwiperSlide>
           ))}
-        </CardContainer>
+        </Carousel>
       </Container>
     </Section>
   );

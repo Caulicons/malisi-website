@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className='flex w-full justify-center bg-secondary'>
       <Container
         gap='xl'
-        className='grid justify-center px-5 py-10 text-center tablet:flex-row laptop:grid-cols-3'
+        className='grid justify-center gap-8 px-5 py-10 text-center tablet:flex-row laptop:grid-cols-2'
       >
         <div className='flex w-full flex-col gap-1 text-white'>
           <Text tag='h4' variant='footerHeader'>
@@ -42,13 +42,6 @@ export default function Footer() {
               <SocialMediaIcon key={socialMedia.name} {...socialMedia} />
             ))}
           </div>
-        </div>
-        <div className='flex flex-col items-center justify-center gap-2 text-center tablet:w-2/6'>
-          {/* TODO : (footer) Add local, maps component may be a good option*/}
-          <Text tag='h4' variant='footerHeader'>
-            LOCAL
-          </Text>
-          <Text className='text-white'>Site em construção.</Text>
         </div>
       </Container>
     </footer>

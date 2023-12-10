@@ -15,8 +15,12 @@ const OurValues = () => {
           position='end'
         />
         <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-3'>
-          {ourValuesData.cards.map((card) => (
-            <CardDropdown key={card.title} {...card} />
+          {ourValuesData.cards.map(({ Icon, ...card }) => (
+            <CardDropdown
+              key={card.title}
+              icon={<Icon.type {...Icon.props} />}
+              {...card}
+            />
           ))}
         </CardContainer>
       </Container>

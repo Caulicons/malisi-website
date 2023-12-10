@@ -5,7 +5,7 @@ type CardServiceProps = {
   description: string;
 };
 
-const CardService = ({ name, description }: CardServiceProps) => {
+const CardTrainings = ({ name, description }: CardServiceProps) => {
   return (
     <div className='flex h-full w-full items-center  gap-4  rounded-3xl border border-white px-3 py-2 text-start text-white '>
       <CgArrowRightO size={42} />
@@ -18,4 +18,4 @@ const CardService = ({ name, description }: CardServiceProps) => {
   );
 };
 
-export default CardService;
+export default CardTrainings;

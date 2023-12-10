@@ -30,7 +30,7 @@ const Container = ({
   return (
     <div
       className={cn(
-        'flex flex-col',
+        'flex w-full flex-col',
         variantSize[size],
         variantDirection[direction],
         variantGap[gap],
