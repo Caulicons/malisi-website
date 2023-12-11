@@ -30,9 +30,9 @@ const CardDropdown = ({
         className
       )}
       onBlur={() => setIsOpen(false)}
+      onFocus={() => setIsOpen(true)}
     >
       <div
-        onClick={() => setIsOpen(!isOpen)}
         className='flex w-full items-center justify-between 
         gap-2 rounded-xl bg-secondary p-4'
       >

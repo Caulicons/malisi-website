@@ -23,14 +23,24 @@ const CardServices = ({ name, details }: CardConsultanciesProps) => {
     <div
       tabIndex={0}
       onBlur={() => setIsOpen(false)}
+      onFocus={() => setIsOpen(true)}
       className='flex h-fit w-full flex-col items-center justify-center rounded-3xl border border-white bg-white text-start text-white'
     >
-      <div
-        onClick={() => setIsOpen(!isOpen)}
-        className='flex w-full  items-center justify-between rounded-3xl bg-secondary p-5 tablet:min-h-[150px]'
-      >
+      <div className='cursor flex w-full  items-center justify-between rounded-3xl bg-secondary p-5 tablet:min-h-[150px]'>
         <span>
-          {isOpen ? <FaCircleMinus size={42} /> : <FaCirclePlus size={42} />}
+          {isOpen ? (
+            <FaCircleMinus
+              onClick={() => setIsOpen(false)}
+              cursor='pointer'
+              size={42}
+            />
+          ) : (
+            <FaCirclePlus
+              onClick={() => setIsOpen(true)}
+              cursor='pointer'
+              size={42}
+            />
+          )}
         </span>
         <Text
           tag='h3'
