@@ -10,12 +10,16 @@ export default function Footer() {
         gap='xl'
         className='grid justify-center gap-8 px-5 py-10 text-center tablet:flex-row laptop:grid-cols-2'
       >
-        <div className='flex w-full flex-col gap-1 text-white'>
-          <Text tag='h4' variant='footerHeader'>
+        <div className='flex w-full flex-col gap-3 text-white'>
+          <Text
+            tag='h4'
+            variant='footerHeader'
+            className='text-white underline'
+          >
             Contato
           </Text>
           {/* TODO : (footer) add links to contanct, when click switch to matches contact*/}
-          <ul className='flex flex-col items-center gap-2'>
+          <ul className='flex flex-col items-center gap-1'>
             <li>
               <Text className='text-white' icon='📞'>
                 {footerData.phone}
@@ -28,8 +32,12 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className='flex w-full flex-col gap-1'>
-          <Text tag='h4' variant='footerHeader'>
+        <div className='flex w-full flex-col gap-3'>
+          <Text
+            tag='h4'
+            variant='footerHeader'
+            className='text-white underline'
+          >
             Social Medias
           </Text>
           <div className='flex justify-center gap-4'>
