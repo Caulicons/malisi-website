@@ -15,7 +15,7 @@ const Presentation = ({
   subtitle,
   title,
   description,
-  titleColor = 'black',
+  titleColor = 'secondary',
   subtitleColor = 'secondary',
   heading = 'h2',
   position = 'center',

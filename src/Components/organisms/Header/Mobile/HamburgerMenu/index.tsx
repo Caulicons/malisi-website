@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Image from '@components/atoms/Image';
 import Nav from '@/components/molecules/Nav';
 import asideMenuOpenAtom from '@/provider/atoms/asideMenuOpen';
+import Anchor from '@/components/atoms/Anchor';
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useAtom(asideMenuOpenAtom);
@@ -53,13 +54,15 @@ export default function HamburgerMenu() {
               className='fixed left-0 right-0 top-0 h-screen  bg-white p-6'
             >
               <div className='flex w-full justify-between pb-6'>
-                <Image
-                  src='/assets/images/logos/Logo.png'
-                  alt='Malisi Engenharia de segurança do trabalho e meio ambiente logo'
-                  width={120}
-                  height={47}
-                  className='mr-1'
-                />
+                <Anchor href='/#'>
+                  <Image
+                    src='/assets/images/logos/Logo.png'
+                    alt='Malisi Engenharia de segurança do trabalho e meio ambiente logo'
+                    width={120}
+                    height={47}
+                    className='mr-1'
+                  />
+                </Anchor>
                 <div className='rounded-xl bg-primary text-white hover:bg-primary/95'>
                   <Hamburger toggled={isOpen} size={21} toggle={setIsOpen} />
                 </div>

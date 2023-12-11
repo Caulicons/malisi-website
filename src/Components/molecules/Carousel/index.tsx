@@ -10,6 +10,7 @@ const Carousel = ({ children, ...props }: CarouselProps) => {
     <Swiper
       slidesPerView={1}
       spaceBetween={20}
+      grabCursor={true}
       loop={true}
       breakpoints={{
         768: {

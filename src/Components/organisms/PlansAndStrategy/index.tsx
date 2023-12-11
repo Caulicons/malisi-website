@@ -1,7 +1,7 @@
-import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/Presentation';
-import Section from '@/components/atoms/Section';
 import { plansAndStrategyData } from './data';
+import Container from '@/components/atoms/Container';
+import Presentation from '@/components/atoms/SectionPresentation';
+import Section from '@/components/atoms/Section';
 
 const PlansAndStrategy = () => {
   return (

@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Malisi',
   description:
-    'Malisi, oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente',
+    'Malisi, oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.',
 };
 
 export default function RootLayout({

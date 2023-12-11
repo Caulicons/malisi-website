@@ -1,8 +1,8 @@
+import { ourPurposeData } from './data';
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/Presentation';
+import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import Card from '@/components/molecules/Cards/Card';
-import { ourPurposeData } from './data';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
 
 const OurPurpose = () => {

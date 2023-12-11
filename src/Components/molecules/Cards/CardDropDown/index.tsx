@@ -26,7 +26,7 @@ const CardDropdown = ({
     <div
       tabIndex={0}
       className={cn(
-        'grid h-full w-full cursor-pointer flex-col rounded-2xl border-2 border-secondary',
+        'grid h-fit w-full cursor-pointer flex-col rounded-2xl border-2 border-secondary',
         className
       )}
       onBlur={() => setIsOpen(false)}

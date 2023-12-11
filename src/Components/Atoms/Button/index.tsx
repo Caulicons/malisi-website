@@ -8,7 +8,6 @@ type ButtonProps = {
   variant?: 'primary' | 'secondary';
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-//TODO: Maybe is necessary change the primary button to a call to action anchor
 const variants = cva(
   ' rounded-2xl px-4 py-3 flex items-center gap-5 justify-between w-fit',
   {

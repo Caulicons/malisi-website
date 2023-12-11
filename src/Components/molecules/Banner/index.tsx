@@ -1,5 +1,5 @@
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/Presentation';
+import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import cn from '@utils/cn';
 import { cva } from 'class-variance-authority';

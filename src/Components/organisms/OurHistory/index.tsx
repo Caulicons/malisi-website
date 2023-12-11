@@ -1,9 +1,9 @@
+import { ourHistoryData } from './data';
 import Container from '@/components/atoms/Container';
 import Image from '@/components/atoms/Image';
-import Presentation from '@/components/atoms/Presentation';
+import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
-import { ourHistoryData } from './data';
 
 const OurHistory = () => {
   return (

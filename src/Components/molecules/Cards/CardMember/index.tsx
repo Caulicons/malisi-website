@@ -53,11 +53,12 @@ const CardMember = ({
           >
             {name}
           </Text>
-          <Text className='font-bold uppercase tracking-[9px]'>{role}</Text>
+          <Text className='self-center text-[14px] font-bold uppercase tracking-[9px]'>
+            {role}
+          </Text>
           <Text className='text-white'>{quote}</Text>
         </div>
         <div className='flex justify-evenly '>
-          {/* FIXME: resolve this type any */}
           {socialMedias.map((socialMedia) => (
             <SocialMediaIcon key={socialMedia.name} {...socialMedia} />
           ))}

@@ -1,8 +1,7 @@
-import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/Presentation';
-import Section from '@/components/atoms/Section';
-import CardServices from '@/components/molecules/Cards/CardServices';
 import { ourTrainingsData } from './data';
+import Container from '@/components/atoms/Container';
+import Presentation from '@/components/atoms/SectionPresentation';
+import Section from '@/components/atoms/Section';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
 import CardTrainings from '@/components/molecules/Cards/CardTrainings';
 

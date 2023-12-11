@@ -4,7 +4,7 @@ import Banner from '@/components/molecules/Banner';
 import Contact from '@/components/organisms/Contact';
 import OurTrainings from '@/components/organisms/OurTraining';
 import OurPortfolio from '@/components/organisms/OurPortfolio';
-import OurServices from '@/components/organisms/OurServicesTT';
+import OurServices from '@/components/organisms/OurServices';
 import PlansAndStrategy from '@/components/organisms/PlansAndStrategy';
 
 const Services = () => {

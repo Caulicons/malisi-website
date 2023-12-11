@@ -1,8 +1,8 @@
+import { ourValuesData } from './data';
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/Presentation';
+import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import CardDropdown from '@/components/molecules/Cards/CardDropDown';
-import { ourValuesData } from './data';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
 
 const OurValues = () => {

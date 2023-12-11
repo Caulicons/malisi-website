@@ -1,12 +1,11 @@
-import Button from '@/components/atoms/Button';
+import { highQualityServiceData } from './data';
 import Image from '@/components/atoms/Image';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
 import { FaWhatsapp } from 'react-icons/fa6';
 import Redirect from '@/components/molecules/Redirect';
-import Presentation from '@/components/atoms/Presentation';
+import Presentation from '@/components/atoms/SectionPresentation';
 import Container from '@/components/atoms/Container';
-import { highQualityServiceData } from './data';
 
 const HighQualityService = () => {
   return (
@@ -19,8 +18,8 @@ const HighQualityService = () => {
           height={300}
           className='self-center rounded-3xl'
         />
-        <div className='flex flex-col gap-5 tablet:gap-10'>
-          <div className='flex flex-col gap-3'>
+        <Container className='flex flex-col gap-5 tablet:gap-10'>
+          <Container className='flex flex-col gap-3'>
             <Presentation
               subtitle={highQualityServiceData.subtitle}
               title={highQualityServiceData.title}
@@ -29,21 +28,21 @@ const HighQualityService = () => {
               heading='h3'
             />
             <Text tag='p'>{highQualityServiceData.quote.description}</Text>
-          </div>
-          <div className='flex flex-col gap-3'>
+          </Container>
+          <Container className='flex flex-col gap-3'>
             <Text tag='p' variant='citation'>
               {highQualityServiceData.quote.author}
             </Text>
             <Redirect
-              href={'#'}
+              href={highQualityServiceData.link}
               variant='tertiary'
               Icon={FaWhatsapp}
               highlight={true}
             >
-              Fale conosco
+              {highQualityServiceData.quote.buttonName}
             </Redirect>
-          </div>
-        </div>
+          </Container>
+        </Container>
       </Container>
     </Section>
   );

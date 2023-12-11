@@ -1,8 +1,8 @@
 'use client';
-import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/Presentation';
-import Section from '@/components/atoms/Section';
 import { ourPortfolioData } from './data';
+import Container from '@/components/atoms/Container';
+import Presentation from '@/components/atoms/SectionPresentation';
+import Section from '@/components/atoms/Section';
 import { SwiperSlide } from 'swiper/react';
 import Image from '@/components/atoms/Image';
 import Carousel from '@/components/molecules/Carousel';
@@ -11,8 +11,8 @@ import Anchor from '@/components/atoms/Anchor';
 
 const OurPortfolio = () => {
   return (
-    <Section className='block'>
-      <Container gap='xl'>
+    <Section className='block h-fit'>
+      <Container gap='xl' className='mx-auto'>
         <Presentation
           subtitle={ourPortfolioData.subtitle}
           title={ourPortfolioData.title}

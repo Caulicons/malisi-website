@@ -1,8 +1,8 @@
+import theBetterChoiceInWorkSafetyData from './data';
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/Presentation';
+import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import CardCallToAction from '@/components/molecules/Cards/CardCallToAction';
-import theBetterChoiceInWorkSafetyData from './data';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
 
 const TheBetterChoiceInWorkSafety = () => {
