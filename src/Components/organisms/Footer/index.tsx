@@ -1,10 +1,6 @@
-import Text from '@components/atoms/Text';
-import { FaSquareTwitter } from 'react-icons/fa6';
-import { FaFacebookSquare } from 'react-icons/fa';
-import { FaWhatsappSquare } from 'react-icons/fa';
-import Anchor from '@/components/atoms/Anchor';
-import Container from '@/components/atoms/Container';
 import { footerData } from './data';
+import Text from '@components/atoms/Text';
+import Container from '@/components/atoms/Container';
 import SocialMediaIcon from '@/components/atoms/SocialMediaIcon';
 export default function Footer() {
   return (
@@ -33,7 +29,6 @@ export default function Footer() {
           </ul>
         </div>
         <div className='flex w-full flex-col gap-1'>
-          {/* TODO : (footer) Add social correct social medias */}
           <Text tag='h4' variant='footerHeader'>
             Social Medias
           </Text>

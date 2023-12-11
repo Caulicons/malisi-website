@@ -23,15 +23,15 @@ const footerData: {
   socialMedias: [
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com',
+      url: 'https://www.linkedin.com/company/malisi-engenharia-de-seguran%C3%A7a-do-trabalho-e-meio-ambiente/',
     },
-    {
+    /*  {
       name: 'Facebook',
       url: 'https://www.facebook.com',
-    },
+    }, */
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com',
+      url: 'https://www.instagram.com/eng.marcelolima/',
     },
   ],
 };
