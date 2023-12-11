@@ -1,13 +1,20 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 import { Swiper, SwiperProps } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 
 type CarouselProps = {} & React.HTMLAttributes<HTMLDivElement> & SwiperProps;
 
 const Carousel = ({ children, ...props }: CarouselProps) => {
   return (
     <Swiper
+      modules={[Autoplay]}
+      autoplay={{
+        delay: 4000,
+        disableOnInteraction: false,
+      }}
       slidesPerView={1}
       spaceBetween={20}
       grabCursor={true}

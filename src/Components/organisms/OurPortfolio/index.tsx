@@ -3,11 +3,11 @@ import { ourPortfolioData } from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
-import { SwiperSlide } from 'swiper/react';
 import Image from '@/components/atoms/Image';
 import Carousel from '@/components/molecules/Carousel';
 import Text from '@/components/atoms/Text';
 import Anchor from '@/components/atoms/Anchor';
+import Slide from '@/components/molecules/Carousel/Slide';
 
 const OurPortfolio = () => {
   return (
@@ -20,8 +20,8 @@ const OurPortfolio = () => {
         />
         <Carousel>
           {ourPortfolioData.slides.map((slide) => (
-            <SwiperSlide key={slide.id}>
-              <div className='mx-auto mt-7 grid h-full w-full max-w-[400px] select-none '>
+            <Slide key={slide.id}>
+              <div className='mx-auto grid h-full w-full max-w-[400px] select-none '>
                 <Image
                   src={slide.href}
                   alt={slide.alt}
@@ -45,7 +45,7 @@ const OurPortfolio = () => {
                   </Text>
                 </Anchor>
               </div>
-            </SwiperSlide>
+            </Slide>
           ))}
         </Carousel>
       </Container>

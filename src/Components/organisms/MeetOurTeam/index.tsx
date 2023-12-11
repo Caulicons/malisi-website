@@ -5,7 +5,7 @@ import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import CardMember from '@/components/molecules/Cards/CardMember';
 import Carousel from '@/components/molecules/Carousel';
-import { SwiperSlide } from 'swiper/react';
+import Slide from '@/components/molecules/Carousel/Slide';
 
 const MeetOurTeam = () => {
   return (
@@ -19,11 +19,9 @@ const MeetOurTeam = () => {
         />
         <Carousel breakpoints={{}}>
           {meetOurTeamData.team.map((member) => (
-            <SwiperSlide key={member.id}>
-              <div className=' grid h-full w-full justify-center '>
-                <CardMember {...member} />
-              </div>
-            </SwiperSlide>
+            <Slide key={member.id}>
+              <CardMember {...member} />
+            </Slide>
           ))}
         </Carousel>
       </Container>

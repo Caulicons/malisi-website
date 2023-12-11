@@ -1,7 +1,7 @@
+import { contactData } from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/SectionPresentation';
 import Section from '@/components/atoms/Section';
-import { contactData } from './data';
 import Redirect from '@/components/molecules/Redirect';
 const Contact = () => {
   return (
