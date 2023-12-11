@@ -28,11 +28,17 @@ const OurPortfolio = () => {
                   key={slide.id}
                   width={400}
                   height={400}
+                  style={{
+                    objectFit: 'cover',
+                    maxWidth: '100%',
+                    maxHeight: '255px',
+                    objectPosition: 'center',
+                  }}
                   className=' w-full tablet:max-h-[500px] tablet:max-w-[500px]'
                 />
                 <Anchor
                   href={slide.moreInfo}
-                  className=' flex h-full w-full  justify-center rounded-b-3xl bg-secondary px-2 py-4'
+                  className=' flex h-full w-full  justify-center rounded-b-3xl bg-secondary p-2 '
                 >
                   <Text variant='cardBody' className='font-semibold text-white'>
                     {slide.description}

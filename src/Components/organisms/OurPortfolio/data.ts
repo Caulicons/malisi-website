@@ -1,6 +1,6 @@
 const ourPortfolioData = {
-  title: '⭐⭐⭐⭐⭐',
-  subtitle: '',
+  title: 'Colaborações',
+  subtitle: '⭐⭐⭐⭐⭐',
   titleColor: 'secondary',
   slides: [
     {
