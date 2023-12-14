@@ -1,17 +1,20 @@
 'use client';
 import { ourPortfolioData } from './data';
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/SectionPresentation';
+import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import Image from '@/components/atoms/Image';
 import Carousel from '@/components/molecules/Carousel';
 import Text from '@/components/atoms/Text';
 import Anchor from '@/components/atoms/Anchor';
 import Slide from '@/components/molecules/Carousel/Slide';
+import Animation from '@/components/atoms/Animation';
+import { useRef } from 'react';
 
 const OurPortfolio = () => {
+  const ref = useRef(null);
   return (
-    <Section className='block h-fit'>
+    <Section sectionRef={ref} className='block h-fit'>
       <Container gap='xl' className='mx-auto'>
         <Presentation
           subtitle={ourPortfolioData.subtitle}
@@ -21,7 +24,7 @@ const OurPortfolio = () => {
         <Carousel>
           {ourPortfolioData.slides.map((slide) => (
             <Slide key={slide.id}>
-              <div className='mx-auto grid h-full w-full max-w-[400px] select-none '>
+              <Container className='mx-auto grid h-full w-full max-w-[400px] select-none gap-0 overflow-hidden tablet:gap-0'>
                 <Image
                   src={slide.href}
                   alt={slide.alt}
@@ -44,7 +47,7 @@ const OurPortfolio = () => {
                     {slide.description}
                   </Text>
                 </Anchor>
-              </div>
+              </Container>
             </Slide>
           ))}
         </Carousel>

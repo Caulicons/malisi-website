@@ -1,4 +1,4 @@
-import { sectionMeetOurTeamType } from '../../../types/sections';
+import { sectionMeetOurTeamType } from '@/types';
 
 const meetOurTeamData: sectionMeetOurTeamType = {
   subtitle: 'Nossa equipe',
@@ -8,9 +8,12 @@ const meetOurTeamData: sectionMeetOurTeamType = {
       id: 1,
       name: 'Marcelo Lima',
       role: 'Diretor técnico',
-      quote:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
-      image: '/assets/images/our-team/malisi.png',
+      formations: [
+        'Graduado em Engenharia Ambiental pela Universidade de Guarulhos – UNG',
+        'Pós Graduado em Engenharia de Segurança do Trabalho pela Universidade Santo Amaro – UNISA',
+        'Diretor Técnico da Malisi Engenharia de Segurança do Trabalho e Meio Ambiente',
+      ],
+      quote: '',
       socialMedias: [
         {
           name: 'Instagram',
