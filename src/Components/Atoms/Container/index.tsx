@@ -1,9 +1,10 @@
-import cn from '@utils/cn';
+import { cn } from '@/utils';
 
 type ContainerProps = {
   size?: 'default' | 'small';
   direction?: 'column' | 'row';
   gap?: 'lg' | 'xl' | 'default';
+  containerRef?: React.Ref<HTMLDivElement>;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const Container = ({
@@ -12,6 +13,7 @@ const Container = ({
   size = 'default',
   direction = 'column',
   gap = 'default',
+  containerRef,
   ...props
 }: ContainerProps) => {
   const variantSize = {
@@ -23,12 +25,13 @@ const Container = ({
     row: 'tablet:flex-row',
   };
   const variantGap = {
-    default: 'gap-2 tablet:gap-4',
+    default: '',
     xl: 'gap-4 tablet:gap-8',
     lg: 'gap-9 tablet:gap-12',
   };
   return (
     <div
+      ref={containerRef}
       className={cn(
         'flex w-full flex-col',
         variantSize[size],

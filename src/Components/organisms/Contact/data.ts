@@ -1,55 +1,5 @@
 import { BsInstagram, BsLinkedin, BsWhatsapp, BsYoutube } from 'react-icons/bs';
 import { TbBrandGmail } from 'react-icons/tb';
-/*   <Redirect
-            variant={'secondary'}
-            href={'#'}
-            Icon={BsWhatsapp}
-            iconSize={30}
-            className='mx-auto w-full min-w-[240px] justify-between'
-            highlight={true}
-          >
-            WhatsApp
-          </Redirect>
-          <Redirect
-            variant={'secondary'}
-            href={'#'}
-            Icon={TbBrandGmail}
-            iconSize={30}
-            className='mx-auto w-full min-w-[240px] justify-between'
-            highlight={true}
-          >
-            Email
-          </Redirect>
-          <Redirect
-            variant={'secondary'}
-            href={'#'}
-            Icon={BsLinkedin}
-            iconSize={30}
-            className='mx-auto w-full min-w-[240px] justify-between'
-            highlight={true}
-          >
-            Linkedin
-          </Redirect>
-          <Redirect
-            variant={'secondary'}
-            href={'#'}
-            Icon={BsInstagram}
-            iconSize={30}
-            className='mx-auto w-full min-w-[240px] justify-between'
-            highlight={true}
-          >
-            Instagram
-          </Redirect>
-          <Redirect
-            variant={'secondary'}
-            href={'#'}
-            Icon={BsYoutube}
-            iconSize={30}
-            className='mx-auto w-full min-w-[240px] justify-between'
-            highlight={true}
-          >
-            Youtube
-          </Redirect> */
 
 const contactData = {
   subtitle: 'Contato',

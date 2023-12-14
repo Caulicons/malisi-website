@@ -1,10 +1,10 @@
 'use client';
+import { cn } from '@/utils';
 import { useAnimation, motion, useInView, AnimationType } from 'framer-motion';
 import { useEffect, useRef, MutableRefObject } from 'react';
-import cn from '../../../../utils/cn';
 
 type animationProps = {
-  direction?: 'left-to-right' | 'right-to-left' | 'up' | 'down';
+  direction?: 'left-to-right' | 'right-to-left' | 'up-to-down' | 'down-to-up';
   reference?: MutableRefObject<null>;
   once?: boolean;
   customAnimation?: {
@@ -42,10 +42,10 @@ export default function Animation({
       'right-to-left': {
         x: '87vw',
       },
-      up: {
+      'up-to-down': {
         y: '-87vh',
       },
-      down: {
+      'down-to-up': {
         y: '87vh',
       },
     };
