@@ -2,11 +2,12 @@ import Text from '@/components/atoms/Text';
 import { IconType } from 'react-icons';
 import { BsBuildingCheck } from 'react-icons/bs';
 
-import Redirect from '@/components/molecules/Redirect';
+import Redirect from '@/components/molecules/RedirectButton';
 
 type CardCallToActionProps = {
   title: string;
   description: string;
+  buttonMessage?: string;
   icon?: IconType;
   button: {
     icon?: IconType | undefined;
@@ -17,6 +18,7 @@ type CardCallToActionProps = {
 const CardCallToAction = ({
   title,
   description,
+  buttonMessage,
   icon: Icon,
 }: CardCallToActionProps) => {
   return (
@@ -30,9 +32,8 @@ const CardCallToAction = ({
         </div>
         <Text className='text-center'>{description}</Text>
       </div>
-      {/* TODO: change href later */}
       <Redirect href='/servicos' iconSize={21} className='self-end'>
-        Saiba mais
+        {buttonMessage ? buttonMessage : 'Saiba mais'}
       </Redirect>
     </div>
   );

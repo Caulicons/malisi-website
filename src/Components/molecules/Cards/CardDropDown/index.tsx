@@ -1,11 +1,10 @@
 'use client';
 import Text from '@/components/atoms/Text';
-import cn from '@utils/cn';
+import { cn } from '@/utils';
 import { ReactNode, useState } from 'react';
-import { IconType } from 'react-icons';
 
 type CardDropdownProps = {
-  /* I don't can pass I function to a Client component, so because of that I need the slot approach
+  /* I can't pass the function to a Client component, so I need use the slot approach.
   Example: icon={<Icon.type {...Icon.props} />}
   https://github.com/vercel/next.js/discussions/49885
   */
@@ -33,8 +32,8 @@ const CardDropdown = ({
       onFocus={() => setIsOpen(true)}
     >
       <div
-        className='flex w-full items-center justify-between 
-        gap-2 rounded-xl bg-secondary p-4'
+        className='flex w-full select-none items-center 
+        justify-between gap-2 rounded-xl bg-secondary p-4'
       >
         {Icon}
         <Text tag='h3' variant='cardTitle' className='text-end text-white'>

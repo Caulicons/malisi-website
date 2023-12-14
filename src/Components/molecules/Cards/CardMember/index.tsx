@@ -1,37 +1,16 @@
 import Image from '@/components/atoms/Image';
 import SocialMediaIcon from '@/components/atoms/SocialMediaIcon';
 import Text from '@/components/atoms/Text';
-
-type CardMemberProps = {
-  id: number;
-  name: string;
-  role: string;
-  quote: string;
-  socialMedias: {
-    name:
-      | 'WhatsApp'
-      | 'Instagram'
-      | 'Facebook'
-      | 'Linkedin'
-      | 'Twitter'
-      | 'Youtube'
-      | 'Github'
-      | 'Telegram'
-      | 'Discord'
-      | 'Snapchat'
-      | 'TikTok'
-      | 'Twitch';
-    url: string;
-  }[];
-};
+import type { memberCard } from '@/types';
 
 const CardMember = ({
   id,
   name,
   role,
+  formations,
   quote,
   socialMedias,
-}: CardMemberProps) => {
+}: memberCard) => {
   return (
     <div
       className='flex  max-w-[300px] flex-col justify-center self-center text-center'
@@ -53,10 +32,19 @@ const CardMember = ({
           >
             {name}
           </Text>
-          <Text className='self-center text-[14px] font-bold uppercase tracking-[9px]'>
+          <Text className='w-full self-center text-center text-[14px] font-bold uppercase tracking-[9px]'>
             {role}
           </Text>
-          <Text className='text-white'>{quote}</Text>
+          {formations && (
+            <ul className='grid list-inside list-disc gap-2'>
+              {formations.map((formation) => (
+                <li key={formation} className='text-white'>
+                  {formation}
+                </li>
+              ))}
+            </ul>
+          )}
+          {quote && <Text className='text-white'>{quote}</Text>}
         </div>
         <div className='flex justify-evenly '>
           {socialMedias.map((socialMedia) => (

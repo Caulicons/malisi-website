@@ -12,25 +12,12 @@ import {
   BsYoutube,
 } from 'react-icons/bs';
 import Anchor from '../Anchor';
+import { socialMediaIconVariants } from '@/types';
 
 type SocialMediaIconProps = {
-  url: string;
-  name:
-    | 'WhatsApp'
-    | 'Instagram'
-    | 'Facebook'
-    | 'Linkedin'
-    | 'Twitter'
-    | 'Youtube'
-    | 'Github'
-    | 'Telegram'
-    | 'Discord'
-    | 'Snapchat'
-    | 'TikTok'
-    | 'Twitch';
   color?: string;
   size?: number;
-};
+} & socialMediaIconVariants;
 
 const socialMedias = {
   WhatsApp: BsWhatsapp,
