@@ -1,10 +1,10 @@
 import { footerData } from './data';
-import Text from '@components/atoms/Text';
+import Text from '@/components/atoms/Text';
 import Container from '@/components/atoms/Container';
 import SocialMediaIcon from '@/components/atoms/SocialMediaIcon';
+import ScrollButton from '@/components/atoms/ScrollButton';
 export default function Footer() {
   return (
-    /* TODO : (footer) see a way to automatically re-render the content */
     <footer className='flex w-full justify-center bg-secondary'>
       <Container
         gap='xl'
@@ -18,7 +18,6 @@ export default function Footer() {
           >
             Contato
           </Text>
-          {/* TODO : (footer) add links to contanct, when click switch to matches contact*/}
           <ul className='flex flex-col items-center gap-1'>
             <li>
               <Text className='text-white' icon='📞'>
@@ -47,6 +46,7 @@ export default function Footer() {
           </div>
         </div>
       </Container>
+      <ScrollButton />
     </footer>
   );
 }
