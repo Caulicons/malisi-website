@@ -1,7 +1,7 @@
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/SectionPresentation';
+import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
-import cn from '@utils/cn';
+import { cn } from '@/utils';
 import { cva } from 'class-variance-authority';
 
 type BannerProps = {

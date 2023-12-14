@@ -1,7 +1,7 @@
 'use client';
 import { meetOurTeamData } from './data';
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/SectionPresentation';
+import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import CardMember from '@/components/molecules/Cards/CardMember';
 import Carousel from '@/components/molecules/Carousel';

@@ -1,7 +1,7 @@
 import { ourHistoryData } from './data';
 import Container from '@/components/atoms/Container';
 import Image from '@/components/atoms/Image';
-import Presentation from '@/components/atoms/SectionPresentation';
+import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
 

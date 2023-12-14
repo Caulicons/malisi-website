@@ -1,4 +1,4 @@
-import Image from '@components/atoms/Image';
+import Image from '@/components/atoms/Image';
 import HamburgerMenu from './HamburgerMenu';
 import Anchor from '@/components/atoms/Anchor';
 

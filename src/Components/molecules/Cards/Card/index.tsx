@@ -1,5 +1,5 @@
-import Image from '@components/atoms/Image';
-import cn from '../../../../../utils/cn';
+import Image from '@/components/atoms/Image';
+import { cn } from '@/utils';
 import { IconType } from 'react-icons';
 import { cva } from 'class-variance-authority';
 import Text from '@/components/atoms/Text';

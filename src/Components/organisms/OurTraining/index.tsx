@@ -1,6 +1,6 @@
 import { ourTrainingsData } from './data';
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/SectionPresentation';
+import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
 import CardTrainings from '@/components/molecules/Cards/CardTrainings';

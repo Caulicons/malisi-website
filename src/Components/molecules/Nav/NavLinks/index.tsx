@@ -1,7 +1,7 @@
 'use client';
 import Anchor from '@/components/atoms/Anchor';
 import asideMenuOpenAtom from '@/provider/atoms/asideMenuOpen';
-import cn from '@utils/cn';
+import { cn } from '@/utils';
 import { useSetAtom } from 'jotai';
 
 type NavLinksProps = {

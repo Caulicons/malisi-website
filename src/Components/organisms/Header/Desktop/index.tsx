@@ -1,4 +1,4 @@
-import Image from '@components/atoms/Image';
+import Image from '@/components/atoms/Image';
 import Nav from '@/components/molecules/Nav';
 import Anchor from '@/components/atoms/Anchor';
 

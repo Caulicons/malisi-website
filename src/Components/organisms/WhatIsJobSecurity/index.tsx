@@ -1,6 +1,6 @@
 import whatIsJobSecurityData from './data';
 import Container from '@/components/atoms/Container';
-import Presentation from '@/components/atoms/SectionPresentation';
+import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import CardDropdown from '@/components/molecules/Cards/CardDropDown';
 import CardContainer from '@/components/molecules/Cards/CardContainer';

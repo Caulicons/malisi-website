@@ -1,5 +1,5 @@
+import { cn } from '@/utils';
 import { cva } from 'class-variance-authority';
-import cn from '../../../../utils/cn';
 import { IconType } from 'react-icons';
 
 type ButtonProps = {
