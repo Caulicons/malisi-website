@@ -13,6 +13,7 @@ const About = () => {
       <Banner
         title={aboutPageData.title}
         subtitle={aboutPageData.subtitle}
+        imageName='about'
         variant='small'
       />
       <OurPurpose />

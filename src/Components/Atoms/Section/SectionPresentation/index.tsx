@@ -1,5 +1,5 @@
 import Text from '@/components/atoms/Text';
-import cn from '@utils/cn';
+import { cn } from '@/utils';
 
 type PresentationProps = {
   title: string;

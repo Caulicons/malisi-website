@@ -1,6 +1,6 @@
 import Anchor from '@/components/atoms/Anchor';
 import Text from '@/components/atoms/Text';
-import cn from '@utils/cn';
+import { cn } from '@/utils';
 import { cva } from 'class-variance-authority';
 import { LinkProps } from 'next/link';
 import { IconType } from 'react-icons';
@@ -13,6 +13,7 @@ type RedirectProps = {
   variant?: 'primary' | 'secondary' | 'tertiary';
   highlight?: boolean;
   iconSize?: number;
+  /* for some reason 'typeof Anchor' not working, so using 'LinkProps' */
 } & LinkProps;
 
 const variants = cva(

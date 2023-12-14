@@ -2,7 +2,7 @@ import Main from '@/components/atoms/Main';
 import Banner from '@/components/molecules/Banner';
 import Contact from '@/components/organisms/Contact';
 import { contactDPageData } from './data';
-import Location from '@/components/atoms/Location';
+import LocationMap from '@/components/atoms/Location';
 
 const ContactPage = () => {
   return (
@@ -12,7 +12,7 @@ const ContactPage = () => {
         subtitle={contactDPageData.subtitle}
         variant='small'
       />
-      <Location />
+      <LocationMap />
       <Contact />
     </Main>
   );
