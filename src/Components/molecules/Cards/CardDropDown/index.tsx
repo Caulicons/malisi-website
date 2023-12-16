@@ -2,6 +2,7 @@
 import Text from '@/components/atoms/Text';
 import { cn } from '@/utils';
 import { ReactNode, useState } from 'react';
+import { FaCircleMinus } from 'react-icons/fa6';
 
 type CardDropdownProps = {
   /* I can't pass the function to a Client component, so I need use the slot approach.
@@ -35,7 +36,17 @@ const CardDropdown = ({
         className='flex w-full select-none items-center 
         justify-between gap-2 rounded-xl bg-secondary p-4'
       >
-        {Icon}
+        <span className='cursor-pointer text-white transition-all'>
+          {isOpen ? (
+            <FaCircleMinus
+              onClick={() => setIsOpen(false)}
+              cursor='pointer'
+              size={42}
+            />
+          ) : (
+            Icon
+          )}
+        </span>
         <Text tag='h3' variant='cardTitle' className='text-end text-white'>
           {title}
         </Text>
