@@ -22,11 +22,12 @@ const OurClients = () => {
         />
         {/* <Animation reference={ref}> */}
         <Carousel
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-            reverseDirection: true,
-            waitForTransition: true,
+          autoplay={{}}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
           }}
         >
           {ourClientData.reviews.map((review) => (

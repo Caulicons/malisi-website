@@ -8,7 +8,7 @@ import CardContainer from '@/components/molecules/Cards/CardContainer';
 const OurPurpose = () => {
   return (
     <Section>
-      <Container>
+      <Container className='gap-10'>
         <Presentation
           title={ourPurposeData.title}
           subtitle={ourPurposeData.subtitle}
