@@ -27,7 +27,7 @@ const NavMobile = () => {
                 type: 'spring',
                 stiffness: 260,
                 damping: 20,
-                delay: 1.8 + idx / 10,
+                delay: 0.9 + idx / 10,
                 duration: 12,
                 ease: 'easeInOut',
               }}

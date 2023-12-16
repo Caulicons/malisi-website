@@ -49,7 +49,7 @@ const Contact = () => {
                   type: 'spring',
                   stiffness: 260,
                   damping: 20,
-                  delay: 0.7 + idx / 10,
+                  delay: 0.5 + idx / 10,
                   duration: 10,
                   ease: 'easeInOut',
                 }}
