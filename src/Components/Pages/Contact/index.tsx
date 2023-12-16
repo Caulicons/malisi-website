@@ -1,7 +1,7 @@
+import { contactDPageData } from './data';
 import Main from '@/components/atoms/Main';
 import Banner from '@/components/molecules/Banner';
 import Contact from '@/components/organisms/Contact';
-import { contactDPageData } from './data';
 import LocationMap from '@/components/atoms/Location';
 
 const ContactPage = () => {

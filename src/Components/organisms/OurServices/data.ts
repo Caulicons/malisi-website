@@ -88,7 +88,7 @@ const ourServicesData = {
       },
     },
     {
-      name: 'PPR',
+      name: 'Programa de Proteção Respiratória - PPR',
       details: {
         description:
           'O Programa de Proteção Respiratória é um conjunto de medidas que busca apontar quais são os riscos respiratórios, como devem ser o procedimento de seleção do respirador e o treinamento dos atores envolvidos, informando sobre a adequada escolha do tamanho da peça facial que melhor veda o rosto do usuário e o seu uso correto contra a exposição aos riscos químicos e biológicos existentes no local de trabalho. O intuito do programa é controlar as doenças ocupacionais causadas pela inalação das impurezas do ar que são prejudiciais à saúde como poeiras, névoas, fumos, vapores e gases químicos.',

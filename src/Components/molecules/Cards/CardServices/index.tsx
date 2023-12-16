@@ -44,7 +44,7 @@ const CardServices = ({ name, details }: CardConsultanciesProps) => {
         <Text
           tag='h3'
           variant='cardTitle'
-          className='text-right text-base font-bold '
+          className='text-center text-base font-bold'
         >
           {name}
         </Text>

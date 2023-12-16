@@ -32,7 +32,7 @@ const CardMember = ({
           >
             {name}
           </Text>
-          <Text className='w-full self-center text-center text-[14px] font-bold uppercase tracking-[9px]'>
+          <Text className='w-full self-center text-center text-[14px] font-bold uppercase tracking-[9px] text-white'>
             {role}
           </Text>
           {formations && (
