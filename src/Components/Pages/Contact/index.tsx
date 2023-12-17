@@ -12,7 +12,7 @@ const ContactPage = () => {
         subtitle={contactDPageData.subtitle}
         variant='small'
       />
-      <LocationMap />
+      {/*   <LocationMap /> */}
       <Contact />
     </Main>
   );

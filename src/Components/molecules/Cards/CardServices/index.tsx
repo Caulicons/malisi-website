@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { FaCirclePlus } from 'react-icons/fa6';
 import { FaCircleMinus } from 'react-icons/fa6';
 
-type CardConsultanciesProps = {
+type CardServicesProps = {
   name: string;
   details: {
     description: string;
@@ -15,7 +15,7 @@ type CardConsultanciesProps = {
   };
 };
 
-const CardServices = ({ name, details }: CardConsultanciesProps) => {
+const CardServices = ({ name, details }: CardServicesProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -51,7 +51,7 @@ const CardServices = ({ name, details }: CardConsultanciesProps) => {
       </div>
       {isOpen && (
         <div className='flex h-fit w-full flex-col gap-6 rounded-3xl bg-white p-5 pt-2 text-black'>
-          <Text>{details.description}</Text>
+          <Text className='text-center'>{details.description}</Text>
           {details.list.length > 0 && (
             <div className='flex w-full flex-col gap-2'>
               <ol className='list-disc  pl-8 pr-3'>

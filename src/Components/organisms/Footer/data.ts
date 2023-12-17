@@ -31,7 +31,7 @@ const footerData: {
     }, */
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/eng.marcelolima/',
+      url: 'https://www.instagram.com/malisiengenharia?utm_source=qr',
     },
   ],
 };

@@ -39,7 +39,13 @@ const CardDropdown = ({
         <span className='cursor-pointer text-white transition-all'>
           {isOpen ? (
             <FaCircleMinus
-              onClick={() => setIsOpen(false)}
+              onClick={(
+                event: React.MouseEvent<HTMLSpanElement, MouseEvent>
+              ) => {
+                setIsOpen(false);
+                event.currentTarget.blur();
+                event.cancelable = true;
+              }}
               cursor='pointer'
               size={42}
             />

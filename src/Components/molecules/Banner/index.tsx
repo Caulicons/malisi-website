@@ -31,7 +31,7 @@ const Banner = ({ subtitle, title, imageName, variant }: BannerProps) => {
   return (
     <Section
       style={{
-        backgroundImage: `url(assets/images/banners/${banner}.jpg)`,
+        backgroundImage: `url(../../assets/images/banners/${banner}.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
