@@ -12,8 +12,8 @@ const HighQualityService = () => {
     <Section>
       <Container direction='row' size='small' gap='lg'>
         <Image
-          src='/assets/images/quotes/quote01.png'
-          alt='Fundador da Malisi palestrado o que é segurança do trabalho'
+          src={highQualityServiceData.image.src}
+          alt={highQualityServiceData.image.alt}
           width={300}
           height={300}
           className='self-center rounded-3xl'
@@ -34,12 +34,13 @@ const HighQualityService = () => {
               {highQualityServiceData.quote.author}
             </Text>
             <Redirect
-              href={highQualityServiceData.link}
+              href={highQualityServiceData.button.link}
               variant='tertiary'
               Icon={FaWhatsapp}
+              aria-label={highQualityServiceData.button.ariaLabel}
               highlight={true}
             >
-              {highQualityServiceData.quote.buttonName}
+              {highQualityServiceData.button.name}
             </Redirect>
           </Container>
         </Container>

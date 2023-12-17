@@ -13,6 +13,7 @@ type RedirectProps = {
   variant?: 'primary' | 'secondary' | 'tertiary';
   highlight?: boolean;
   iconSize?: number;
+  ariaLabel?: string;
   /* for some reason 'typeof Anchor' not working, so using 'LinkProps' */
 } & LinkProps;
 
@@ -43,9 +44,14 @@ const Redirect = ({
   variant = 'primary',
   highlight = false,
   iconSize,
+  ariaLabel,
 }: RedirectProps) => {
   return (
-    <Anchor href={href} className={cn(variants({ variant }), className)}>
+    <Anchor
+      href={href}
+      className={cn(variants({ variant }), className)}
+      aria-label={ariaLabel}
+    >
       {Icon ? (
         <Icon size={iconSize ? iconSize : 27} />
       ) : (

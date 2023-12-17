@@ -53,7 +53,6 @@ const Contact = () => {
                   duration: 10,
                   ease: 'easeInOut',
                 }}
-                className=' '
               >
                 <Redirect
                   variant={'secondary'}
@@ -62,6 +61,7 @@ const Contact = () => {
                   iconSize={30}
                   className='mx-auto w-full min-w-[240px] justify-between'
                   highlight={true}
+                  ariaLabel={`Entre em contato com a gente via ${link.name}.`}
                 >
                   {link.name}
                 </Redirect>

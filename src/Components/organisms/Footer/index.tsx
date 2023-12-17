@@ -12,7 +12,7 @@ export default function Footer() {
       >
         <div className='flex w-full flex-col gap-3 text-white'>
           <Text
-            tag='h4'
+            tag='h3'
             variant='footerHeader'
             className='text-white underline'
           >
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
         <div className='flex w-full flex-col gap-3'>
           <Text
-            tag='h4'
+            tag='h3'
             variant='footerHeader'
             className='text-white underline'
           >
@@ -41,7 +41,11 @@ export default function Footer() {
           </Text>
           <div className='flex justify-center gap-4'>
             {footerData.socialMedias.map((socialMedia) => (
-              <SocialMediaIcon key={socialMedia.name} {...socialMedia} />
+              <SocialMediaIcon
+                key={socialMedia.name}
+                ariaLabel={`Siga a Malisi no ${socialMedia.name}`}
+                {...socialMedia}
+              />
             ))}
           </div>
         </div>

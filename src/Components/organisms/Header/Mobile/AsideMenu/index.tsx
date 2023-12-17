@@ -52,9 +52,9 @@ const AsideMenu = () => {
             className='fixed left-0 right-0 top-0 h-screen  bg-white p-6'
           >
             <div className='flex w-full justify-between pb-6'>
-              <Anchor href='/#'>
+              <Anchor href='/'>
                 <Image
-                  src='/assets/images/logos/Logo.png'
+                  src='/assets/images/logos/Logo.webp'
                   alt='Malisi Engenharia de segurança do trabalho e meio ambiente logo'
                   width={120}
                   height={47}
@@ -62,7 +62,12 @@ const AsideMenu = () => {
                 />
               </Anchor>
               <div className='rounded-xl bg-primary text-white hover:bg-primary/95'>
-                <Hamburger toggled={isOpen} size={21} toggle={setIsOpen} />
+                <Hamburger
+                  toggled={isOpen}
+                  size={21}
+                  toggle={setIsOpen}
+                  label='menu'
+                />
               </div>
             </div>
             <Nav />

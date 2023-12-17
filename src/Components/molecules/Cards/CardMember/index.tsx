@@ -17,7 +17,7 @@ const CardMember = ({
       key={id}
     >
       <Image
-        src={`/assets/images/team/member${id}.png`}
+        src={`/assets/images/team/member${id}.webp`}
         alt={`${name}, ${role}`}
         width={300}
         height={300}
@@ -48,7 +48,11 @@ const CardMember = ({
         </div>
         <div className='flex justify-evenly '>
           {socialMedias.map((socialMedia) => (
-            <SocialMediaIcon key={socialMedia.name} {...socialMedia} />
+            <SocialMediaIcon
+              key={socialMedia.name}
+              ariaLabel={`Siga ${name} no ${socialMedia.name}.`}
+              {...socialMedia}
+            />
           ))}
         </div>
       </div>

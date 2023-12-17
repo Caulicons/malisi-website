@@ -7,7 +7,7 @@ export default function HeaderMobile() {
     <div className='flex w-full items-center justify-between tablet:invisible tablet:hidden'>
       <Anchor href='/#'>
         <Image
-          src='/assets/images/logos/Logo.png'
+          src='/assets/images/logos/Logo.webp'
           alt='Malisi Engenharia de segurança do trabalho e meio ambiente logo'
           width={121}
           height={48}

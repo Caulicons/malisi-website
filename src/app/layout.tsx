@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/organisms/Header';
 import Footer from '@/components/organisms/Footer';
-import Analytics from '@/components/atoms/Analytics';
+/* import Analytics from '@/components/atoms/Analytics'; */
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='pt-br'>
-      <Analytics />
+      {/* <Analytics /> */}
       <body className={inter.className}>
         <Header />
         {children}

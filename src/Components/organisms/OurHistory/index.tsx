@@ -44,7 +44,7 @@ const OurHistory = () => {
               vislumbrava, o que essa iniciativa modesta viria a se tornar.
             </Text>
             <Image
-              src={'/assets/images/history/image1.png'}
+              src={'/assets/images/history/image1.webp'}
               alt='Fundador da Malisi'
               width={400}
               height={200}
@@ -53,7 +53,7 @@ const OurHistory = () => {
           </div>
           <div className=' flex flex-col-reverse gap-5 text-justify tablet:text-lg  laptop:flex-row'>
             <Image
-              src={'/assets/images/history/image2.png'}
+              src={'/assets/images/history/image2.webp'}
               alt='Fundador da Malisi'
               width={300}
               height={300}

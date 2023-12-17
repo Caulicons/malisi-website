@@ -17,6 +17,7 @@ import { socialMediaIconVariants } from '@/types';
 type SocialMediaIconProps = {
   color?: string;
   size?: number;
+  ariaLabel?: string;
 } & socialMediaIconVariants;
 
 const socialMedias = {
@@ -39,11 +40,12 @@ const SocialMediaIcon = ({
   name = 'WhatsApp',
   color = 'white',
   size = 42,
+  ariaLabel,
 }: SocialMediaIconProps) => {
   const Icon = socialMedias[name];
 
   return (
-    <Anchor href={url}>
+    <Anchor href={url} aria-label={ariaLabel}>
       <Icon size={size} color={color} />
     </Anchor>
   );

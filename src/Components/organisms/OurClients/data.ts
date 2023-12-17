@@ -5,7 +5,7 @@ const ourClientData = {
     {
       id: 1,
       start: '⭐⭐⭐⭐⭐',
-      logo: 'loga.jpg',
+      logo: 'loga.webp',
       company: 'Loga – Logística Ambiental de São Paulo S.A.',
       description:
         'Venho agradecer o trabalho da empresa Malisi Engenharia de Segurança do Trabalho e Meio Ambiente, pelo belo trabalho realizado em nossa empresa LOGA. Foi realizado AET - Análise Ergonômica do Trabalho com excelência, onde contribui com a segurança, saúde e bem estar dos colaboradores na execução de suas atividades laboral.',
@@ -15,7 +15,7 @@ const ourClientData = {
     {
       id: 2,
       start: '⭐⭐⭐⭐⭐',
-      logo: 'planetaDasPecas.jpg',
+      logo: 'planetaDasPecas.webp',
       company: 'Planeta Distribuidora de Peças para Motos Ltda.',
       description:
         'A MALISI Engenharia de Segurança do Trabalho e Meio Ambiente fez para nós o PGR, PCMSO, Avaliação de Higiene Ocupacional e Adequações de EPI´s, fizeram um trabalho de excelência, com muita integridade e transparência. Ficamos muito satisfeitos com o resultado. ',

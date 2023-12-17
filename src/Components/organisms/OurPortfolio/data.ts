@@ -5,7 +5,7 @@ const ourPortfolioData = {
   slides: [
     {
       id: 1,
-      href: '/assets/images/carousel/portfolio/1.jpeg',
+      href: '/assets/images/carousel/portfolio/1.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_engenhariadeseguranaexadotrabalho-treinamento-activity-7121282989971419136-4nIr?utm_source=share&utm_medium=member_desktop',
       alt: 'Palestra sobre direção defensiva para funcionários em uma mesa',
@@ -14,7 +14,7 @@ const ourPortfolioData = {
     },
     {
       id: 2,
-      href: '/assets/images/carousel/portfolio/2.jpeg',
+      href: '/assets/images/carousel/portfolio/2.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_sipat-alcoolismo-tabagismo-activity-7089993636167188480-UQ6W?utm_source=share&utm_medium=member_desktop',
       alt: ' Palestra para um grupo de funcionários sentando em uma cadeira verde sobre SIPAT',
@@ -22,7 +22,7 @@ const ourPortfolioData = {
     },
     {
       id: 3,
-      href: '/assets/images/carousel/portfolio/3.jpeg',
+      href: '/assets/images/carousel/portfolio/3.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_brigada-incaeandio-combateaincendio-activity-7076957809971445760-RlOv?utm_source=share&utm_medium=member_desktop',
       alt: 'grupo de pessoas reunidas ouvindo uma palestra sobre orientação para abandono da área em caso de risco.',
@@ -31,7 +31,7 @@ const ourPortfolioData = {
     },
     {
       id: 4,
-      href: '/assets/images/carousel/portfolio/4.jpeg',
+      href: '/assets/images/carousel/portfolio/4.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_engenhariadeseguranaexadotrabalho-treinamento-activity-7121282989971419136-4nIr?utm_source=share&utm_medium=member_desktop',
       alt: 'Palestra sobre direção defensiva para funcionários em uma mesa',
@@ -40,7 +40,7 @@ const ourPortfolioData = {
     },
     {
       id: 5,
-      href: '/assets/images/carousel/portfolio/5.jpeg',
+      href: '/assets/images/carousel/portfolio/5.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_sipat-alcoolismo-tabagismo-activity-7089993636167188480-UQ6W?utm_source=share&utm_medium=member_desktop',
       alt: 'Grupo de pessoas segurando um cartaz escrito sobre SIPAT.',
@@ -48,7 +48,7 @@ const ourPortfolioData = {
     },
     {
       id: 6,
-      href: '/assets/images/carousel/portfolio/6.jpeg',
+      href: '/assets/images/carousel/portfolio/6.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_brigada-incaeandio-combateaincendio-activity-7076957809971445760-RlOv?utm_source=share&utm_medium=member_desktop',
       alt: 'Grupo de pessoas simulando um abandono de área em caso de risco.',
@@ -57,7 +57,7 @@ const ourPortfolioData = {
     },
     {
       id: 7,
-      href: '/assets/images/carousel/portfolio/7.jpeg',
+      href: '/assets/images/carousel/portfolio/7.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_licenciamentoambiental-preservaaexaeto-sustentabilidadeambiental-activity-7044726243740520448-PdhC?utm_source=share&utm_medium=member_desktop',
       alt: 'grupo de pessoas reunidas segurando um certificado de licença ambiental.',
@@ -66,7 +66,7 @@ const ourPortfolioData = {
     },
     {
       id: 8,
-      href: '/assets/images/carousel/portfolio/8.jpeg',
+      href: '/assets/images/carousel/portfolio/8.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_pcmso-engenhariadeseguranaexadotrabalho-saaeqde-activity-7011711443842543616-T5LV?utm_source=share&utm_medium=member_desktop',
       alt: 'Duas pessoas segurando um certificado de PCMSO.',
@@ -75,15 +75,16 @@ const ourPortfolioData = {
     },
     {
       id: 9,
-      href: '/assets/images/carousel/portfolio/9.jpeg',
-      moreInfo: '',
+      href: '/assets/images/carousel/portfolio/9.webp',
+      moreInfo:
+        'https://www.linkedin.com/posts/engenheiromarcelolima_aet-ergonomia-engenhariadeseguranaexadotrabalho-activity-7002996607306600448-zLeV?utm_source=share&utm_medium=member_desktop',
       alt: '.',
       description:
         'Análise Ergonômica do Trabalho – AET, Logistica Ambiental De Sao Paulo S A - Loga - 2022',
     },
     {
       id: 10,
-      href: '/assets/images/carousel/portfolio/10.jpeg',
+      href: '/assets/images/carousel/portfolio/10.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_licenciamentoambiental-preservaaexaeto-sustentabilidadeambiental-activity-7044726243740520448-PdhC?utm_source=share&utm_medium=member_desktop',
       alt: 'Homem assinando um contrato.',
@@ -92,7 +93,7 @@ const ourPortfolioData = {
     },
     {
       id: 11,
-      href: '/assets/images/carousel/portfolio/11.jpeg',
+      href: '/assets/images/carousel/portfolio/11.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_sipat2022-sipat-engenhariadeseguranaexadotrabalho-activity-6960259300443222017-HWH_?utm_source=share&utm_medium=member_desktop',
       alt: 'Grupo de funcionarios reunidos segurando circulo escrito  SIPAT.',
@@ -100,7 +101,7 @@ const ourPortfolioData = {
     },
     {
       id: 12,
-      href: '/assets/images/carousel/portfolio/12.jpeg',
+      href: '/assets/images/carousel/portfolio/12.webp',
       moreInfo:
         'https://www.linkedin.com/posts/engenheiromarcelolima_pgr-engenhariadeseguranaexadotrabalho-nr01-activity-6974060076001026048-ps2V?utm_source=share&utm_medium=member_desktop',
       alt: '3 pessoas segurando um certificado de Programa de Gerenciamento de Riscos.',

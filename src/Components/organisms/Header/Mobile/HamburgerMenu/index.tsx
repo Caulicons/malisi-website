@@ -10,7 +10,7 @@ export default function HamburgerMenu() {
   return (
     <div>
       <div className='rounded-xl bg-primary text-white hover:bg-primary/95'>
-        <Hamburger toggled={isOpen} size={21} toggle={setIsOpen} />
+        <Hamburger toggled={isOpen} size={21} toggle={setIsOpen} label='menu' />
       </div>
       <AsideMenu />
     </div>
