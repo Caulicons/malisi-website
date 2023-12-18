@@ -1,9 +1,10 @@
+'use client';
 import whatIsJobSecurityData from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
-import CardDropdown from '@/components/molecules/Cards/CardDropDown';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
+import CardDropdown from '@/components/molecules/Cards/CardDropdown';
 
 const WhatIsJobSecurity = () => {
   return (
@@ -15,12 +16,8 @@ const WhatIsJobSecurity = () => {
           position='start'
         />
         <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-4'>
-          {whatIsJobSecurityData.cards.map(({ Icon, ...card }) => (
-            <CardDropdown
-              key={card.title}
-              icon={<Icon.type {...Icon.props} />}
-              {...card}
-            />
+          {whatIsJobSecurityData.cards.map((card) => (
+            <CardDropdown key={card.header.title} {...card} />
           ))}
         </CardContainer>
       </Container>

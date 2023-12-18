@@ -22,34 +22,16 @@ const ourClientData = {
       author: 'Danilo Ribeiro Teixeira',
       role: 'Diretor Comercial',
     },
-    /* {
+    {
       id: 3,
       start: '⭐⭐⭐⭐⭐',
+      logo: 'vital.webp',
+      company: 'Vital Engenharia Ambiental SA',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
-      author: 'Malisi Engenharia',
+        'A MALISI Engenharia de Segurança do Trabalho e Meio Ambiente tem uma parceria com a Vital Engenharia Ambiental desde 2020 executando cursos de CIPA , SIPAT , Direção defensiva e apoio nas documentações como : PGR, PCMSO, Avaliação de Higiene Ocupacional   entre visitas em outros contratos da empresa, apoio esse realizado com profissionalismo e dedicação. A empresa Vital agradeçe o apoio e que essa parceria continue se perpetuando .',
+      author: 'Ricardo Soares de Moura',
+      role: 'Técnico de segurança do trabalho',
     },
-    {
-      id: 4,
-      start: '⭐⭐⭐⭐⭐',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
-      author: 'Malisi Engenharia',
-    },
-    {
-      id: 5,
-      start: '⭐⭐⭐⭐⭐',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
-      author: 'Malisi Engenharia',
-    },
-    {
-      id: 6,
-      start: '⭐⭐⭐⭐⭐',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
-      author: 'Malisi Engenharia',
-    }, */
   ],
 };
 

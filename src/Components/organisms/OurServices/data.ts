@@ -1,10 +1,15 @@
+import { FaCirclePlus } from 'react-icons/fa6';
+
 const ourServicesData = {
   subtitle: '',
   title: 'NOSSOS SERVIÇOS',
   cards: [
     {
-      name: 'GERENCIAMENTO DE RISCOS OCUPACIONAIS - NR-01',
-      details: {
+      header: {
+        title: 'GERENCIAMENTO DE RISCOS OCUPACIONAIS - NR-01',
+        icon: FaCirclePlus,
+      },
+      body: {
         description: '',
         list: [
           'Gerenciamento de Riscos Ocupacionais - GRO',
@@ -16,8 +21,12 @@ const ourServicesData = {
       },
     },
     {
-      name: 'SEGURANÇA EM INSTALAÇÕES E SERVIÇOS EM ELETRICIDADE - NR-10',
-      details: {
+      header: {
+        title: 'SEGURANÇA EM INSTALAÇÕES E SERVIÇOS EM ELETRICIDADE - NR-10',
+        icon: FaCirclePlus,
+      },
+
+      body: {
         description: '',
         list: [
           'Laudo de Aterramento',
@@ -33,8 +42,13 @@ const ourServicesData = {
       },
     },
     {
-      name: 'CALDEIRAS, VASOS DE PRESSÃO E TUBULAÇÕES E TANQUES METÁLICOS DE ARMAZENAMENTO - NR-13',
-      details: {
+      header: {
+        title:
+          'CALDEIRAS, VASOS DE PRESSÃO E TUBULAÇÕES E TANQUES METÁLICOS DE ARMAZENAMENTO - NR-13',
+        icon: FaCirclePlus,
+      },
+
+      body: {
         description: '',
         list: [
           'Laudo com emissão de relatório de Inspeção',
@@ -50,8 +64,13 @@ const ourServicesData = {
       },
     },
     {
-      name: 'ATIVIDADES E OPERAÇÕES INSALUBRES E ATIVIDADES E OPERAÇÕES PERIGOSAS - NR-15 E NR-16',
-      details: {
+      header: {
+        title:
+          'ATIVIDADES E OPERAÇÕES INSALUBRES E ATIVIDADES E OPERAÇÕES PERIGOSAS/NR-15 E NR-16',
+        icon: FaCirclePlus,
+      },
+
+      body: {
         description: '',
         list: ['Laudo de Insalubridade e Periculosidade – LIP'],
         forWhat: '',
@@ -60,8 +79,9 @@ const ourServicesData = {
       },
     },
     {
-      name: 'ERGONOMIA - NR-17',
-      details: {
+      header: { title: 'ERGONOMIA - NR-17', icon: FaCirclePlus },
+
+      body: {
         description: '',
         list: [
           'Avaliação Ergonômica Preliminar – AEP',
@@ -73,8 +93,8 @@ const ourServicesData = {
       },
     },
     {
-      name: 'Palestras',
-      details: {
+      header: { title: 'Palestras', icon: FaCirclePlus },
+      body: {
         description: '',
         list: [
           'Combate ao Assédio no Ambiente de Trabalho',
@@ -88,8 +108,12 @@ const ourServicesData = {
       },
     },
     {
-      name: 'Programa de Proteção Respiratória - PPR',
-      details: {
+      header: {
+        title: 'Programa de Proteção Respiratória - PPR',
+        icon: FaCirclePlus,
+      },
+
+      body: {
         description:
           'O Programa de Proteção Respiratória é um conjunto de medidas que busca apontar quais são os riscos respiratórios, como devem ser o procedimento de seleção do respirador e o treinamento dos atores envolvidos, informando sobre a adequada escolha do tamanho da peça facial que melhor veda o rosto do usuário e o seu uso correto contra a exposição aos riscos químicos e biológicos existentes no local de trabalho. O intuito do programa é controlar as doenças ocupacionais causadas pela inalação das impurezas do ar que são prejudiciais à saúde como poeiras, névoas, fumos, vapores e gases químicos.',
         list: [],
@@ -99,28 +123,12 @@ const ourServicesData = {
       },
     },
     {
-      name: 'LAUDO PREVIDENCIÁRIO/LEI 8.213/1991 E INSTRUÇÃO NORMATIVA PRES/INSS Nº 128, DE 28 DE MARÇO DE 2022',
-      details: {
-        description: '',
-        list: ['Laudo Técnico das Condições Ambientais do Trabalho – LTCAT'],
-        forWhat: '',
-        whatAreTheObjectives: '',
-        beNotDo: '',
+      header: {
+        title: 'HIGIENE OCUPACIONAL/NORMAS DE HIGIENE OCUPACIONAL FUNDACENTRO',
+        icon: FaCirclePlus,
       },
-    },
-    {
-      name: 'PROTEÇÃO RESPIRATÓRIA/ PORTARIA 672 de 08/11/2021',
-      details: {
-        description: '',
-        list: ['Programa de Proteção Respiratória – PPR'],
-        forWhat: '',
-        whatAreTheObjectives: '',
-        beNotDo: '',
-      },
-    },
-    {
-      name: 'HIGIENE OCUPACIONAL/NORMAS DE HIGIENE OCUPACIONAL FUNDACENTRO',
-      details: {
+
+      body: {
         description: '',
         list: ['Avaliações de Higiene Ocupacional – HO'],
         forWhat: '',
@@ -129,8 +137,43 @@ const ourServicesData = {
       },
     },
     {
-      name: 'CONSULTOR TÉCNICO DE CAMPO, OBSERVADORES E FISCAIS DE SEGURANÇA PARA TRABALHO EM ALTURA, ESPAÇOS CONFINADOS E RESGATE',
-      details: {
+      header: {
+        title: 'PROTEÇÃO RESPIRATÓRIA/ PORTARIA 672 de 08/11/2021',
+        icon: FaCirclePlus,
+      },
+
+      body: {
+        description: '',
+        list: ['Programa de Proteção Respiratória – PPR'],
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    {
+      header: {
+        title:
+          'LAUDO PREVIDENCIÁRIO/LEI 8.213/1991 E INSCRIção NORMATIVA PRES/INSS Nº 128, DE 28 DE MARÇO DE 2022',
+        icon: FaCirclePlus,
+      },
+
+      body: {
+        description: '',
+        list: ['Laudo Técnico das Condições Ambientais do Trabalho – LTCAT'],
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    /* EXAMPLE */
+    /*  {
+      header: {
+        title:
+          'CONSULTOR TÉCNICO DE CAMPO, OBSERVADORES E FISCAIS DE SEGURANÇA PARA TRABALHO EM ALTURA, ESPAÇOS CONFINADOS E RESGATE',
+        icon: FaCirclePlus,
+      },
+
+      body: {
         description:
           'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
         list: [
@@ -148,7 +191,7 @@ const ourServicesData = {
         beNotDo:
           'As empresas que não cumprirem essa exigência, estão infringindo ao nas Normas Regulamentadoras – NR de segurança e medicina do trabalho, expondo as empresas a multas e notificações por parte do Ministério do Trabalho.',
       },
-    },
+    }, */
   ],
 };
 export { ourServicesData };

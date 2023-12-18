@@ -1,9 +1,10 @@
+'use client';
 import { ourValuesData } from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
-import CardDropdown from '@/components/molecules/Cards/CardDropDown';
 import CardContainer from '@/components/molecules/Cards/CardContainer';
+import CardDropdown from '@/components/molecules/Cards/CardDropdown';
 
 const OurValues = () => {
   return (
@@ -15,12 +16,8 @@ const OurValues = () => {
           position='end'
         />
         <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-3'>
-          {ourValuesData.cards.map(({ Icon, ...card }) => (
-            <CardDropdown
-              key={card.title}
-              icon={<Icon.type {...Icon.props} />}
-              {...card}
-            />
+          {ourValuesData.cards.map((card) => (
+            <CardDropdown key={card.header.title} {...card} />
           ))}
         </CardContainer>
       </Container>

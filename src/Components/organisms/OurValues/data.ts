@@ -5,73 +5,64 @@ const ourValuesData = {
   title: 'Prezamos por relações duradouras,  tendo como pilares: ',
   cards: [
     {
-      Icon: {
-        type: PiUsers,
-        props: {
-          size: 45,
-          color: 'white',
-        },
+      header: {
+        title: 'Integridade',
+        icon: PiUsers,
       },
-      title: 'Integridade',
-      description: 'Toda a base de conhecimento e experiência do cliente',
+      body: {
+        description:
+          'Atuar com ética, transparência e honestidade em todas as nossas ações, garantindo a confiança de nossos clientes e colaboradores.',
+      },
     },
     {
-      Icon: {
-        type: PiUsers,
-        props: {
-          size: 45,
-          color: 'white',
-        },
+      header: {
+        title: 'Compromisso',
+        icon: PiUsers,
       },
-      title: 'Compromisso',
-      description: 'Toda a base de conhecimento e experiência do cliente',
+      body: {
+        description:
+          'Estarmos comprometidos em proteger vidas, promover a segurança e cuidar do meio ambiente, buscando continuamente o aperfeiçoamento e a excelência em nossos serviços',
+      },
     },
     {
-      Icon: {
-        type: PiUsers,
-        props: {
-          size: 45,
-          color: 'white',
-        },
+      header: {
+        title: 'Inovação',
+        icon: PiUsers,
       },
-      title: 'Inovação',
-      description: 'Toda a base de conhecimento e experiência do cliente',
+      body: {
+        description:
+          'Buscar constantemente soluções criativas e tecnologicamente avançadas para atender às necessidades em constante evolução de nossos clientes.',
+      },
     },
     {
-      Icon: {
-        type: PiUsers,
-        props: {
-          size: 45,
-          color: 'white',
-        },
+      header: {
+        title: 'sustentabilidade',
+        icon: PiUsers,
       },
-      title: 'sustentabilidade',
-      description:
-        'Agir de maneira responsável e sustentável, considerando o impacto ambiental de nossas operações e promovendo práticas ecologicamente corretas.',
+      body: {
+        description:
+          'Agir de maneira responsável e sustentável, considerando o impacto ambiental de nossas operações e promovendo práticas ecologicamente corretas.',
+      },
     },
     {
-      Icon: {
-        type: PiUsers,
-        props: {
-          size: 45,
-          color: 'white',
-        },
+      header: {
+        title: 'valorização das pessoas',
+        icon: PiUsers,
       },
-      title: 'valorização das pessoas',
-      description:
-        'Investir no desenvolvimento de nossos colaboradores, reconhecendo que são a chave para o nosso sucesso e a fonte de nossa força.',
+      body: {
+        description:
+          'Investir no desenvolvimento de nossos colaboradores, reconhecendo que são a chave para o nosso sucesso e a fonte de nossa força.',
+      },
     },
     {
-      Icon: {
-        type: PiUsers,
-        props: {
-          size: 45,
-          color: 'white',
-        },
+      header: {
+        title: 'responsabilidade social',
+        icon: PiUsers,
       },
-      title: 'responsabilidade social',
-      description:
-        'Agir de maneira responsável e sustentável, considerando o impacto ambiental de nossas operações e promovendo práticas ecologicamente corretas.',
+      body: {
+        description:
+          'Contribuir para o bem estar das comunidades onde atuamos, promovendo ações que beneficiam a sociedade como um todo',
+      },
     },
   ],
 };

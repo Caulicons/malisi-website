@@ -22,7 +22,6 @@ const OurClients = () => {
         />
         {/* <Animation reference={ref}> */}
         <Carousel
-          autoplay={{}}
           breakpoints={{
             768: {
               slidesPerView: 2,

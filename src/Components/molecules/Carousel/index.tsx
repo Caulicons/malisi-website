@@ -12,7 +12,7 @@ const Carousel = ({ children, ...props }: CarouselProps) => {
     <Swiper
       modules={[Autoplay]}
       autoplay={{
-        delay: 4000,
+        delay: 7000,
         disableOnInteraction: false,
       }}
       slidesPerView={1}
