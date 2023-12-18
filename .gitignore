@@ -1,5 +1,26 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# All others
+## Folders
+/.husky
+/.vscode
+/public
+/src
+##Files
+.eslintrc.json
+.htaccess
+.prettierrc
+commitlint.config.js
+next-env.d.ts
+next.config.js
+package-lock.json
+package.json
+postcss.config.js
+README.md
+tailwind.config.ts
+tsconfig.json
+.gitignore
+
 # dependencies
 /node_modules
 /.pnp
@@ -11,7 +32,6 @@
 
 # next.js
 /.next/
-/out/
 
 # production
 /build
