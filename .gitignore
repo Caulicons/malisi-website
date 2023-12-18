@@ -19,7 +19,6 @@ postcss.config.js
 README.md
 tailwind.config.ts
 tsconfig.json
-.gitignore
 
 # dependencies
 /node_modules
