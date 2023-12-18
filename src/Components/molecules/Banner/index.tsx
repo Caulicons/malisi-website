@@ -37,7 +37,7 @@ const Banner = ({ subtitle, title, imageName, variant }: BannerProps) => {
         backgroundRepeat: 'no-repeat',
       }}
       className={cn(
-        `min-h-[calc(100vh-80px)] p-0 tablet:min-h-[calc(100vh-102px)] tablet:p-0`,
+        `min-h-[calc(100vh-80px)] select-none p-0 tablet:min-h-[calc(100vh-102px)] tablet:p-0`,
         variants({ variant })
       )}
     >
