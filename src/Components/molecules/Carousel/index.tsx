@@ -12,11 +12,11 @@ const Carousel = ({ children, ...props }: CarouselProps) => {
     <Swiper
       modules={[Autoplay]}
       autoplay={{
-        delay: 7000,
-        disableOnInteraction: false,
+        delay: 8000,
+        disableOnInteraction: true,
       }}
       slidesPerView={1}
-      spaceBetween={20}
+      spaceBetween={18}
       grabCursor={true}
       loop={true}
       breakpoints={{

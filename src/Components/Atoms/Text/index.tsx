@@ -30,10 +30,10 @@ const variants = cva('', {
   variants: {
     variant: {
       h1: [
-        'uppercase text-2xl font-semibold tablet:extrabold tablet:text-3xl desktop:text-[42px] tracking-[5px] desktop:leading-heading',
+        'uppercase text-2xl font-semibold tablet:extrabold tablet:text-3xl desktop:text-[35px] tracking-[5px] desktop:leading-heading',
       ],
       h2: [
-        ' desktop:leading-heading uppercase font-bold text-2xl tablet:font-extrabold tablet:text-3xl desktop:text-[42px]	 tracking-[4px]',
+        ' desktop:leading-heading uppercase font-bold text-[21px] tablet:font-extrabold tablet:text-3xl desktop:text-[42px]	 tracking-[4px]',
       ],
       h3: [
         'leading-heading uppercase font-bold text-xl  tablet:text-[27px]  tracking-[4px] ',

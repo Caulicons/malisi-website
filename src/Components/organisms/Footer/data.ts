@@ -19,7 +19,7 @@ const footerData: {
   }[];
 } = {
   phone: '(11) 93015-3155',
-  email: 'Marcelo.lima@malisiengenharia.com.br',
+  email: 'marcelo.lima@malisiengenharia.com.br',
   socialMedias: [
     {
       name: 'Linkedin',

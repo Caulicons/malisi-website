@@ -80,12 +80,32 @@ const ourServicesData = {
     },
     {
       header: { title: 'ERGONOMIA - NR-17', icon: FaCirclePlus },
-
       body: {
         description: '',
         list: [
           'Avaliação Ergonômica Preliminar – AEP',
           'Análise Ergonômica do Trabalho – AET',
+        ],
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    {
+      header: {
+        title:
+          'PROTEÇÃO CONTRA INCÊNDIOS/NR-23 e INSTUÇÃO TÉCNICA CORPO DE BOMEIROS',
+        icon: FaCirclePlus,
+      },
+      body: {
+        description: '',
+        list: [
+          'Auto de Vistoria do Corpo de Bombeiros – AVCB',
+          'Certificado de Licenciamento do Corpo de Bombeiros – CLCB',
+          'Laudo Técnico Estrutural da Edição',
+          'Plano de Ação de Emergência',
+          'Sinalização de Emergência',
+          'Extintores e Hidrantes',
         ],
         forWhat: '',
         whatAreTheObjectives: '',
@@ -107,7 +127,7 @@ const ourServicesData = {
         beNotDo: '',
       },
     },
-    {
+    /*  {
       header: {
         title: 'Programa de Proteção Respiratória - PPR',
         icon: FaCirclePlus,
@@ -121,7 +141,7 @@ const ourServicesData = {
         whatAreTheObjectives: '',
         beNotDo: '',
       },
-    },
+    }, */
     {
       header: {
         title: 'HIGIENE OCUPACIONAL/NORMAS DE HIGIENE OCUPACIONAL FUNDACENTRO',

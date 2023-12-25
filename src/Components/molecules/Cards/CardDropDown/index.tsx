@@ -64,7 +64,7 @@ const CardDropdown = ({
               size={45}
             />
           ) : Icon ? (
-            <Icon size={45} cursor='pointer' onClick={() => setIsOpen(true)} />
+            <Icon size={48} cursor='pointer' onClick={() => setIsOpen(true)} />
           ) : (
             <FaCirclePlus
               onClick={() => setIsOpen(true)}
@@ -85,7 +85,7 @@ const CardDropdown = ({
         <div className='flex h-fit w-full flex-col gap-6 rounded-3xl bg-white p-5 pt-2 text-black'>
           <Text className='text-center'>{body.description}</Text>
           {body.list && body.list.length > 0 && (
-            <div className='flex w-full flex-col gap-2'>
+            <div className='flex w-full flex-col gap-2 text-secondary'>
               <ol className='list-disc  pl-8 pr-3'>
                 {body.list.map((item, index) => (
                   <li key={index} className='font-bold '>
@@ -103,7 +103,6 @@ const CardDropdown = ({
               <p>{body.forWhat}</p>
             </div>
           )}
-
           {body.whatAreTheObjectives && (
             <div className='flex w-full flex-col gap-2'>
               <h4 className='text-xl font-bold uppercase text-secondary underline'>

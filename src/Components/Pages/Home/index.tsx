@@ -6,7 +6,7 @@ import MeetOurTeam from '@/components/organisms/MeetOurTeam';
 import WhatIsJobSecurity from '@/components/organisms/WhatIsJobSecurity';
 import HighQualityService from '@/components/organisms/HighQualityServices';
 import TheBetterChoiceInWorkSafety from '@/components/organisms/TheBetterChoiceInWorkSafety';
-import OurPortfolio from '@/components/organisms/OurPortfolio';
+import ProjectsCarriedOut from '@/components/organisms/ProjectsCarrieOut';
 import OurClients from '@/components/organisms/OurClients';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       <WhatIsJobSecurity />
       <HighQualityService />
       <TheBetterChoiceInWorkSafety />
-      <OurPortfolio />
+      <ProjectsCarriedOut />
       <OurClients />
       <MeetOurTeam />
       <Contact />

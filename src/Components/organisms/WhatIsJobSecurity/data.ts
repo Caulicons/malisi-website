@@ -213,18 +213,17 @@ const whatIsJobSecurityData = {
         icon: IoPeopleCircleOutline,
       },
       body: {
-        description:
-          'A Segurança do Trabalho é a garantia de saúde ao trabalhador, e segurança jurídica ao empregador',
+        description: 'Destinada ao trabalhador e ao empregador.',
       },
     },
     {
       header: {
-        title: 'Para quê ?',
+        title: 'Para o quê ?',
         icon: IoPeopleCircleOutline,
       },
       body: {
         description:
-          'Porque previne e garante ao trabalhador qualidade de vida e integridade física no trabalho e previne e garante ao empregador segurança em fiscalização.',
+          'Porque previne e garante saúde e integridade física aos trabalhadores no ambiente de trabalho. E garante ao empregador maior segurança em fiscalizações e ações judiciais.',
       },
     },
     {
@@ -234,7 +233,7 @@ const whatIsJobSecurityData = {
       },
       body: {
         description:
-          'Através de gestão eficiente e Documentos elaborados com excelência.',
+          'Através de gestão eficiente e documentos elaborados com excelência.',
       },
     },
   ],
