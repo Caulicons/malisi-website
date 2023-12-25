@@ -24,7 +24,7 @@ const ScrollButton = () => {
   return (
     <button
       style={{ opacity: visible ? '1' : '0' }}
-      className='fixed bottom-2 left-2 z-10 rounded-xl bg-primary p-3 text-white  shadow-2xl transition-all duration-1000 ease-in-out hover:bg-primary hover:bg-primary/90 tablet:bottom-4 tablet:left-5 desktop:left-8'
+      className='fixed bottom-3 left-3 z-10 rounded-xl bg-green-700 p-3 text-white shadow-2xl transition-all duration-1000 ease-in-out  hover:bg-green-800 tablet:bottom-4 tablet:left-5 desktop:left-8'
       onClick={scrollToTop}
       aria-label='Scroll para o topo da página.'
     >
