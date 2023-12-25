@@ -32,7 +32,7 @@ const CardDropdown = ({
 
   const variantBorder = {
     white: 'border-white',
-    secondary: 'border-secondary',
+    secondary: 'border-primary',
   };
 
   const variantHeight = {
@@ -52,7 +52,7 @@ const CardDropdown = ({
     >
       <div
         className={cn(
-          ' flex h-fit w-full select-none items-center justify-between gap-3 rounded-3xl bg-secondary p-5 ',
+          ' flex h-fit w-full select-none items-center justify-between gap-3 rounded-3xl bg-primary p-5 ',
           variantHeight[minHeight]
         )}
       >
@@ -85,7 +85,7 @@ const CardDropdown = ({
         <div className='flex h-fit w-full flex-col gap-6 rounded-3xl bg-white p-5 pt-2 text-black'>
           <Text className='text-center'>{body.description}</Text>
           {body.list && body.list.length > 0 && (
-            <div className='flex w-full flex-col gap-2 text-secondary'>
+            <div className='flex w-full flex-col gap-2 text-primary'>
               <ol className='list-disc  pl-8 pr-3'>
                 {body.list.map((item, index) => (
                   <li key={index} className='font-bold '>
@@ -97,7 +97,7 @@ const CardDropdown = ({
           )}
           {body.forWhat && (
             <div className='flex w-full flex-col gap-2'>
-              <h4 className='text-xl font-bold uppercase text-secondary underline'>
+              <h4 className='text-xl font-bold uppercase text-primary underline'>
                 PARA QUEM ?
               </h4>
               <p>{body.forWhat}</p>
@@ -105,7 +105,7 @@ const CardDropdown = ({
           )}
           {body.whatAreTheObjectives && (
             <div className='flex w-full flex-col gap-2'>
-              <h4 className='text-xl font-bold uppercase text-secondary underline'>
+              <h4 className='text-xl font-bold uppercase text-primary underline'>
                 Quais os Objetivos
               </h4>
               <p>{body.whatAreTheObjectives}</p>
@@ -113,7 +113,7 @@ const CardDropdown = ({
           )}
           {body.forWhat && (
             <div className='flex w-full flex-col gap-2'>
-              <h4 className='text-xl font-bold uppercase text-secondary underline'>
+              <h4 className='text-xl font-bold uppercase text-primary underline'>
                 O que acontece se a empresa não realiza o trabalho ?
               </h4>
               <p>{body.beNotDo}</p>

@@ -10,7 +10,7 @@ const OurHistory = () => {
     /* Sorry for the code below 😭😭😭😭😭 */
     <Section>
       <Container>
-        <div className='flex w-full flex-col gap-2 rounded-t-section bg-secondary p-5 tablet:p-10 '>
+        <div className='flex w-full flex-col gap-2 rounded-t-section bg-primary p-5 tablet:p-10 '>
           <Presentation
             title={ourHistoryData.title}
             subtitle={ourHistoryData.subtitle}
@@ -24,7 +24,7 @@ const OurHistory = () => {
               No âmbito empresarial, algumas trajetórias começam como sementes
               lançadas ao vento, sem grandes pretensões, mas logo começam a
               florescer em empreendimentos notáveis. Assim é a história da
-              <span className=' font-medium  text-secondary'>
+              <span className=' font-medium  text-primary'>
                 {' '}
                 Malisi Engenharia de Segurança do Trabalho e Meio Ambiente
               </span>
@@ -34,7 +34,7 @@ const OurHistory = () => {
               Há poucos anos, de forma totalmente despretensiosa, eu Marcelo
               Lima da Silva graduado em Engenharia Ambiental, com especialização
               em Engenharia de Segurança do Trabalho, movido pela{' '}
-              <span className=' font-medium  text-secondary'>
+              <span className=' font-medium  text-primary'>
                 {' '}
                 paixão em oferecer serviços de qualidade em relação a segurança
                 do trabalho
@@ -65,7 +65,7 @@ const OurHistory = () => {
               em desafios que moldaram o caráter da empresa. Em um mercado
               competitivo, a Malisi começou a se destacar não apenas pelo que
               fazia, mas pela forma{' '}
-              <span className=' font-medium  text-secondary'>
+              <span className=' font-medium  text-primary'>
                 {' '}
                 comprometida com a qualidade de seus serviços, ética e
                 integridade com seus parceiros e colaboradores
@@ -81,7 +81,7 @@ const OurHistory = () => {
           </div>
           <Text className='text-justify tablet:text-lg'>
             Hoje, a Malisi Engenharia de Segurança do Trabalho e Meio Ambiente
-            <span className=' font-medium  text-secondary'>
+            <span className=' font-medium  text-primary'>
               {' '}
               olha para o futuro com a mesma humildade e a mesma paixão que a
               impulsionaram desde o princípio.

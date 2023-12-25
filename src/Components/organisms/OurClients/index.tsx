@@ -6,7 +6,7 @@ import ClientsCarousel from './ClientsCarousel';
 
 const OurClients = () => {
   return (
-    <Section className='block rounded-t-section bg-secondary'>
+    <Section className='block rounded-t-section bg-primary'>
       <Container gap='xl' className='mx-auto'>
         <Presentation
           subtitle={ourClientData.subtitle}

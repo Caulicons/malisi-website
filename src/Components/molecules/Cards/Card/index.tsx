@@ -20,8 +20,8 @@ const variants = cva(
   {
     variants: {
       variant: {
-        primary: 'bg-secondary text-white',
-        secondary: 'bg-white text-secondary border-2 border-secondary',
+        primary: 'bg-primary text-white',
+        secondary: 'bg-white text-primary border-2 border-primary',
       },
     },
     defaultVariants: {

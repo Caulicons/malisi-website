@@ -24,7 +24,7 @@ const CardCallToAction = ({
   href,
 }: CardCallToActionProps) => {
   return (
-    <div className='flex  w-full flex-col justify-between gap-4 rounded-2xl bg-secondary p-4 text-white'>
+    <div className='flex  w-full flex-col justify-between gap-4 rounded-2xl bg-primary p-4 text-white'>
       <div className='flex flex-col gap-3'>
         <div className='flex items-center justify-between gap-2 border-white'>
           {Icon ? <Icon size={36} /> : <BsBuildingCheck size={27} />}

@@ -7,7 +7,7 @@ import CardMember from '@/components/molecules/Cards/CardMember';
 
 const MeetOurTeam = () => {
   return (
-    <Section className='block rounded-b-section bg-secondary'>
+    <Section className='block rounded-b-section bg-primary'>
       <Container className='mx-auto'>
         <Presentation
           subtitle={meetOurTeamData.subtitle}

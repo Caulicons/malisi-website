@@ -12,7 +12,7 @@ const ProjectsCarousel = dynamic(() => import('./ProjectsCarousel'), {
   loading: () => (
     <div>
       <Skeleton height={270} />
-      <div className='rounded-b-2xl bg-secondary p-5'>
+      <div className='rounded-b-2xl bg-primary p-5'>
         <Skeleton count={3} baseColor='#fff' highlightColor='#fff' />
       </div>
     </div>

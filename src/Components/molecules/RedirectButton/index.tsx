@@ -23,11 +23,11 @@ const variants = cva(
     variants: {
       variant: {
         primary:
-          'gap-3 border border-secondary bg-white  font-bold text-secondary hover:border-white hover:text-white hover:bg-secondary',
+          'gap-3 border border-primary bg-white  font-bold text-primary hover:border-white hover:text-white hover:bg-primary',
         secondary:
-          'justify-between gap-3 border border-white bg-secondary  font-bold text-white hover:border-secondary hover:text-secondary hover:bg-white',
+          'justify-between gap-3 border border-white bg-primary  font-bold text-white hover:border-primary hover:text-primary hover:bg-white',
         tertiary:
-          'gap-5 justify-between bg-secondary text-white hover:bg-secondary/95',
+          'gap-5 justify-between bg-primary text-white hover:bg-primary/95',
       },
     },
     defaultVariants: {

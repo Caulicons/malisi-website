@@ -24,7 +24,7 @@ const CardProject = (slide: projectCard) => {
 
       <Anchor
         href={slide.moreInfo}
-        className=' flex h-full w-full  justify-center rounded-b-3xl bg-secondary p-2 '
+        className=' flex h-full w-full  justify-center rounded-b-3xl bg-primary p-2 '
       >
         <Text variant='cardBody' className='font-semibold text-white'>
           {slide.description}

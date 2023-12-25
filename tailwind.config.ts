@@ -18,7 +18,6 @@ const config: Config = {
       },
       colors: {
         primary: 'rgba(var(--primary), <alpha-value>)',
-        secondary: 'rgba(var(--secondary), <alpha-value>)',
         black: 'rgba(var(--black), <alpha-value>)',
         white: 'rgba(var(--white), <alpha-value>)',
       },

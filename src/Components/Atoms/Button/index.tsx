@@ -13,7 +13,7 @@ const variants = cva(
   {
     variants: {
       variant: {
-        primary: 'bg-secondary text-white hover:bg-secondary/95',
+        primary: 'bg-primary text-white hover:bg-primary/95',
         secondary: '',
       },
     },

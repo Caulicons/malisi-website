@@ -27,13 +27,13 @@ const Presentation = ({
   };
 
   const tileColor = {
-    secondary: 'text-secondary',
+    secondary: 'text-primary',
     black: 'text-black',
     white: 'text-white',
   };
 
   const subtitleColorVariant = {
-    secondary: 'text-secondary',
+    secondary: 'text-primary',
     white: 'text-white',
   };
 

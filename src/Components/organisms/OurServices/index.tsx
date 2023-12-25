@@ -8,7 +8,7 @@ import CardDropdown from '@/components/molecules/Cards/CardDropdown';
 
 const OurServices = () => {
   return (
-    <Section id='servicos' className='rounded-t-section bg-secondary'>
+    <Section id='servicos' className='rounded-t-section bg-primary'>
       <Container>
         <Presentation
           title={ourServicesData.title}

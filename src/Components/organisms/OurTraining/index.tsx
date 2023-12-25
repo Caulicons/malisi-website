@@ -9,7 +9,7 @@ const OurTrainings = () => {
   return (
     <Section
       id='treinamentos'
-      className='rounded-b-section bg-secondary transition-all duration-1000'
+      className='rounded-b-section bg-primary transition-all duration-1000'
     >
       <Container>
         <Presentation

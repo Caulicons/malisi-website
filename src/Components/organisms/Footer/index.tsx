@@ -5,7 +5,7 @@ import SocialMediaIcon from '@/components/atoms/SocialMediaIcon';
 import ScrollButton from '@/components/atoms/ScrollButton';
 export default function Footer() {
   return (
-    <footer className='flex w-full justify-center bg-secondary'>
+    <footer className='flex w-full justify-center bg-primary'>
       <Container
         gap='xl'
         className='grid justify-center gap-8 px-5 py-10 text-center tablet:flex-row laptop:grid-cols-2'
