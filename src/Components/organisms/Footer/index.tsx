@@ -37,7 +37,7 @@ export default function Footer() {
             variant='footerHeader'
             className='text-white underline'
           >
-            Social Medias
+            Mídias Sociais
           </Text>
           <div className='flex justify-center gap-4'>
             {footerData.socialMedias.map((socialMedia) => (
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
       </Container>
-      {/* <ScrollButton /> */}
+      <ScrollButton />
     </footer>
   );
 }
