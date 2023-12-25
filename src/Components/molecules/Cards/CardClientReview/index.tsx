@@ -1,15 +1,6 @@
 import Image from '@/components/atoms/Image';
 import Text from '@/components/atoms/Text';
-
-type CardClientReviewProps = {
-  id: number;
-  start: string;
-  logo: string;
-  company: string;
-  description: string;
-  author: string;
-  role: string;
-};
+import { clientReviewCard } from '@/types';
 
 const CardClientReview = ({
   id,
@@ -19,7 +10,7 @@ const CardClientReview = ({
   description,
   author,
   role,
-}: CardClientReviewProps) => {
+}: clientReviewCard) => {
   return (
     <div
       key={id}

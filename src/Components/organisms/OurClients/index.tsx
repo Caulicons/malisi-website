@@ -1,18 +1,12 @@
-'use client';
 import ourClientData from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
-import CardClientReview from '@/components/molecules/Cards/CardClientReview';
-import Carousel from '@/components/molecules/Carousel';
-import Slide from '@/components/molecules/Carousel/Slide';
-import Animation from '@/components/atoms/Animation';
-import { useRef } from 'react';
+import ClientsCarousel from './ClientsCarousel';
 
 const OurClients = () => {
-  const ref = useRef(null);
   return (
-    <Section sectionRef={ref} className='block rounded-t-section bg-secondary'>
+    <Section className='block rounded-t-section bg-secondary'>
       <Container gap='xl' className='mx-auto'>
         <Presentation
           subtitle={ourClientData.subtitle}
@@ -20,22 +14,7 @@ const OurClients = () => {
           titleColor='white'
           subtitleColor='white'
         />
-        {/* <Animation reference={ref}> */}
-        <Carousel
-          breakpoints={{
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-          }}
-        >
-          {ourClientData.reviews.map((review) => (
-            <Slide key={review.id}>
-              <CardClientReview {...review} />
-            </Slide>
-          ))}
-        </Carousel>
-        {/* </Animation> */}
+        <ClientsCarousel />
       </Container>
     </Section>
   );

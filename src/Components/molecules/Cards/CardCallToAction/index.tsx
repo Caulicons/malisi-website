@@ -13,6 +13,7 @@ type CardCallToActionProps = {
     icon?: IconType | undefined;
     name: string;
   };
+  href: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const CardCallToAction = ({
@@ -20,6 +21,7 @@ const CardCallToAction = ({
   description,
   buttonMessage,
   icon: Icon,
+  href,
 }: CardCallToActionProps) => {
   return (
     <div className='flex  w-full flex-col justify-between gap-4 rounded-2xl bg-secondary p-4 text-white'>
@@ -32,7 +34,7 @@ const CardCallToAction = ({
         </div>
         <Text className='text-center'>{description}</Text>
       </div>
-      <Redirect href='/servicos' iconSize={21} className='self-end'>
+      <Redirect href={`/servicos#${href}`} iconSize={21} className='self-end'>
         {buttonMessage ? buttonMessage : 'Saiba mais'}
       </Redirect>
     </div>

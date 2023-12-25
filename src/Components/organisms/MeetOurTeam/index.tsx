@@ -4,8 +4,6 @@ import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Section from '@/components/atoms/Section';
 import CardMember from '@/components/molecules/Cards/CardMember';
-import Carousel from '@/components/molecules/Carousel';
-import Slide from '@/components/molecules/Carousel/Slide';
 
 const MeetOurTeam = () => {
   return (
@@ -17,13 +15,9 @@ const MeetOurTeam = () => {
           titleColor='white'
           subtitleColor='white'
         />
-        <Carousel breakpoints={{}}>
-          {meetOurTeamData.team.map((member) => (
-            <Slide key={member.id}>
-              <CardMember {...member} />
-            </Slide>
-          ))}
-        </Carousel>
+        {meetOurTeamData.team.map((member) => (
+          <CardMember key={member.id} {...member} />
+        ))}
       </Container>
     </Section>
   );
