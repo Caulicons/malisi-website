@@ -1,0 +1,37 @@
+{
+  "name": "Malisi engenharia do trabalho e meio ambiente",
+  "short_name": "Malisi",
+  "theme_color": "#147f3c",
+  "background_color": "#f7f7f7",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "description": "Malisi, oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.",
+  "icons": [
+    {
+      "src": "/assets/images/favicon/32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon/64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon/128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon/256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
