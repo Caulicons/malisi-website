@@ -15,10 +15,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'Malisi',
   description:
-    'Malisi, oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.',
+    'Oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.',
   manifest: '/manifest.json',
   icons: {
-    icon: '/assets/images/favicon/256x256.png',
+    icon: '/assets/images/favicon/128x128.png',
   },
 };
 
@@ -30,9 +30,11 @@ export default function RootLayout({
   return (
     <html lang='pt-br'>
       <Analytics />
-      <Header />
-      <body className={inter.className}>{children}</body>
-      <Footer />
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

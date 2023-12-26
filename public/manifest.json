@@ -1,12 +1,12 @@
 {
-  "name": "Malisi engenharia do trabalho e meio ambiente",
+  "name": "Malisi, Engenharia do trabalho e meio ambiente.",
   "short_name": "Malisi",
   "theme_color": "#147f3c",
   "background_color": "#f7f7f7",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "description": "Malisi, oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.",
+  "description": "Oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.",
   "icons": [
     {
       "src": "/assets/images/favicon/32x32.png",
