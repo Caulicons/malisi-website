@@ -10,7 +10,7 @@ const OurHistory = () => {
     /* Sorry for the code below 😭😭😭😭😭 */
     <Section>
       <Container>
-        <div className='flex w-full flex-col gap-2 rounded-t-section bg-primary p-5 tablet:p-10 '>
+        <div className='flex w-full flex-col gap-2 rounded-t-section bg-primary p-5 pb-1 tablet:p-10 tablet:pb-3 '>
           <Presentation
             title={ourHistoryData.title}
             subtitle={ourHistoryData.subtitle}
@@ -18,7 +18,7 @@ const OurHistory = () => {
             subtitleColor='white'
           />
         </div>
-        <div className='mx-auto flex max-w-sectionContainer flex-col gap-8 p-5 tablet:items-center'>
+        <div className='mx-auto flex max-w-sectionContainer flex-col gap-8 px-1 py-5 tablet:items-center'>
           <div className=' flex flex-col gap-8  laptop:flex-row'>
             <Text variant='p' className='text-justify tablet:text-lg'>
               No âmbito empresarial, algumas trajetórias começam como sementes

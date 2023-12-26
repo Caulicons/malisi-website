@@ -1,7 +1,7 @@
 'use client';
 import Text from '@/components/atoms/Text';
 import { cn } from '@/utils';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { FaCirclePlus } from 'react-icons/fa6';
 import { FaCircleMinus } from 'react-icons/fa6';
 
@@ -27,6 +27,7 @@ const CardDropdown = ({
   iconSize,
 }: CardDropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   const variantBorder = {
     white: 'border-white',
@@ -40,24 +41,28 @@ const CardDropdown = ({
 
   return (
     <div
+      ref={ref}
       tabIndex={0}
       onBlur={() => setIsOpen(false)}
       onFocus={() => setIsOpen(true)}
       className={cn(
-        'flex h-fit w-full flex-col items-center rounded-3xl border bg-white text-white',
+        'flex h-fit  w-full flex-col items-center rounded-3xl border bg-white text-white',
         variantBorder[borderColor]
       )}
     >
       <div
         className={cn(
-          ' flex h-fit w-full select-none items-center justify-between gap-3 rounded-3xl bg-primary p-5 ',
+          'flex w-full select-none items-center justify-between gap-3 rounded-3xl bg-primary p-3 tablet:p-5 ',
           variantHeight[minHeight]
         )}
       >
         <span>
           {isOpen ? (
             <FaCircleMinus
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                ref.current?.blur();
+                setIsOpen(false);
+              }}
               cursor='pointer'
               size={45}
             />
