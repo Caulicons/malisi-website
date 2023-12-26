@@ -2,7 +2,6 @@ import { highQualityServiceData } from './data';
 import Image from '@/components/atoms/Image';
 import Section from '@/components/atoms/Section';
 import Text from '@/components/atoms/Text';
-import { FaWhatsapp } from 'react-icons/fa6';
 import Redirect from '@/components/molecules/RedirectButton';
 import Presentation from '@/components/atoms/Section/SectionPresentation';
 import Container from '@/components/atoms/Container';
@@ -38,7 +37,7 @@ const HighQualityService = () => {
             <Redirect
               href={highQualityServiceData.button.link}
               variant='tertiary'
-              Icon={FaWhatsapp}
+              icon={highQualityServiceData.button.icon}
               aria-label={highQualityServiceData.button.ariaLabel}
               highlight={true}
             >

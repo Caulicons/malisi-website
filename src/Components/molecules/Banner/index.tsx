@@ -43,20 +43,18 @@ const Banner = ({ subtitle, title, imageName, variant }: BannerProps) => {
     >
       <div
         className={cn(
-          'flex min-h-[calc(100vh-80px)]  w-full items-center justify-center bg-gray-900/70 text-center  tablet:min-h-[calc(100vh-80px)]',
+          'flex min-h-[calc(100vh-80px)]  w-full items-center justify-center bg-gray-900/70 text-center tablet:min-h-[calc(100vh-80px)]',
           variants({ variant })
         )}
       >
-        <Container className=''>
-          <div>
-            <Presentation
-              title={title}
-              subtitle={subtitle}
-              heading='h1'
-              titleColor='white'
-              position='center'
-            />
-          </div>
+        <Container>
+          <Presentation
+            title={title}
+            subtitle={subtitle}
+            heading='h1'
+            titleColor='white'
+            position='center'
+          />
         </Container>
       </div>
     </Section>

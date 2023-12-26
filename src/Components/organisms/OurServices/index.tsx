@@ -1,4 +1,3 @@
-'use client';
 import { ourServicesData } from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Section/SectionPresentation';
@@ -18,12 +17,15 @@ const OurServices = () => {
         />
 
         <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-3'>
-          {ourServicesData.cards.map((service) => (
+          {ourServicesData.cards.map(({ header: { title }, ...card }) => (
             <CardDropdown
-              key={service.header.title}
+              key={title}
+              header={{
+                title: title,
+              }}
+              body={card.body}
               borderColor='white'
               minHeight='150px'
-              {...service}
             />
           ))}
         </CardContainer>

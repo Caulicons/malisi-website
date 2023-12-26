@@ -2,15 +2,11 @@
 import Text from '@/components/atoms/Text';
 import { cn } from '@/utils';
 import { useState } from 'react';
-import { IconType } from 'react-icons';
 import { FaCirclePlus } from 'react-icons/fa6';
 import { FaCircleMinus } from 'react-icons/fa6';
 
 type CardDropdownProps = {
-  header: {
-    title: string;
-    icon: IconType;
-  };
+  header: { title: string; icon?: React.ReactElement };
   body: {
     description: string;
     list?: string[];
@@ -20,6 +16,7 @@ type CardDropdownProps = {
   };
   minHeight?: '150px' | 'none';
   borderColor?: 'white' | 'secondary';
+  iconSize?: number;
 };
 
 const CardDropdown = ({
@@ -27,6 +24,7 @@ const CardDropdown = ({
   body,
   minHeight = 'none',
   borderColor = 'secondary',
+  iconSize,
 }: CardDropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -64,7 +62,11 @@ const CardDropdown = ({
               size={45}
             />
           ) : Icon ? (
-            <Icon size={48} cursor='pointer' onClick={() => setIsOpen(true)} />
+            <Icon.type
+              {...Icon.props}
+              cursor='pointer'
+              onClick={() => setIsOpen(true)}
+            />
           ) : (
             <FaCirclePlus
               onClick={() => setIsOpen(true)}

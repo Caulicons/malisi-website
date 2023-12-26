@@ -1,3 +1,5 @@
+import { FaWhatsapp } from 'react-icons/fa6';
+
 const highQualityServiceData = {
   subtitle: 'serviços de alta qualidade',
   title:
@@ -10,6 +12,7 @@ const highQualityServiceData = {
     name: 'fale conosco',
     link: 'https://wa.me/5511930153155',
     ariaLabel: 'Fale conosco via WhatsApp',
+    icon: FaWhatsapp,
   },
   quote: {
     description:

@@ -1,4 +1,3 @@
-'use client';
 import whatIsJobSecurityData from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Section/SectionPresentation';
@@ -16,9 +15,18 @@ const WhatIsJobSecurity = () => {
           position='start'
         />
         <CardContainer grid='tablet:grid-cols-2 desktop:grid-cols-4'>
-          {whatIsJobSecurityData.cards.map((card) => (
-            <CardDropdown key={card.header.title} {...card} />
-          ))}
+          {whatIsJobSecurityData.cards.map(
+            ({ header: { title, icon: Icon }, ...card }) => (
+              <CardDropdown
+                key={title}
+                header={{
+                  title: title,
+                  icon: <Icon size={48} />,
+                }}
+                body={card.body}
+              />
+            )
+          )}
         </CardContainer>
       </Container>
     </Section>

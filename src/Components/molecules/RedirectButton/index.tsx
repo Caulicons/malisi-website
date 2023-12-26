@@ -8,7 +8,7 @@ import { FaPlus } from 'react-icons/fa';
 
 type RedirectProps = {
   children?: React.ReactNode;
-  Icon?: IconType;
+  icon?: IconType;
   className?: string;
   variant?: 'primary' | 'secondary' | 'tertiary';
   highlight?: boolean;
@@ -39,7 +39,7 @@ const variants = cva(
 const Redirect = ({
   href,
   className,
-  Icon,
+  icon: Icon,
   children,
   variant = 'primary',
   highlight = false,

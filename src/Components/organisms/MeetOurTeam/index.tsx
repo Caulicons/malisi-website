@@ -1,4 +1,3 @@
-'use client';
 import { meetOurTeamData } from './data';
 import Container from '@/components/atoms/Container';
 import Presentation from '@/components/atoms/Section/SectionPresentation';

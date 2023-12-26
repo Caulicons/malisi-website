@@ -1,5 +1,3 @@
-import { FaCirclePlus } from 'react-icons/fa6';
-
 const ourServicesData = {
   subtitle: '',
   title: 'NOSSOS SERVIÇOS',
@@ -7,7 +5,6 @@ const ourServicesData = {
     {
       header: {
         title: 'GERENCIAMENTO DE RISCOS OCUPACIONAIS - NR-01',
-        icon: FaCirclePlus,
       },
       body: {
         description: '',
@@ -23,7 +20,6 @@ const ourServicesData = {
     {
       header: {
         title: 'SEGURANÇA EM INSTALAÇÕES E SERVIÇOS EM ELETRICIDADE - NR-10',
-        icon: FaCirclePlus,
       },
 
       body: {
@@ -45,7 +41,6 @@ const ourServicesData = {
       header: {
         title:
           'CALDEIRAS, VASOS DE PRESSÃO E TUBULAÇÕES E TANQUES METÁLICOS DE ARMAZENAMENTO - NR-13',
-        icon: FaCirclePlus,
       },
 
       body: {
@@ -67,7 +62,6 @@ const ourServicesData = {
       header: {
         title:
           'ATIVIDADES E OPERAÇÕES INSALUBRES E ATIVIDADES E OPERAÇÕES PERIGOSAS/NR-15 E NR-16',
-        icon: FaCirclePlus,
       },
 
       body: {
@@ -79,7 +73,7 @@ const ourServicesData = {
       },
     },
     {
-      header: { title: 'ERGONOMIA - NR-17', icon: FaCirclePlus },
+      header: { title: 'ERGONOMIA - NR-17' },
       body: {
         description: '',
         list: [
@@ -95,7 +89,6 @@ const ourServicesData = {
       header: {
         title:
           'PROTEÇÃO CONTRA INCÊNDIOS/NR-23 e INSTUÇÃO TÉCNICA CORPO DE BOMEIROS',
-        icon: FaCirclePlus,
       },
       body: {
         description: '',
@@ -113,7 +106,7 @@ const ourServicesData = {
       },
     },
     {
-      header: { title: 'Palestras', icon: FaCirclePlus },
+      header: { title: 'Palestras' },
       body: {
         description: '',
         list: [
@@ -127,25 +120,9 @@ const ourServicesData = {
         beNotDo: '',
       },
     },
-    /*  {
-      header: {
-        title: 'Programa de Proteção Respiratória - PPR',
-        icon: FaCirclePlus,
-      },
-
-      body: {
-        description:
-          'O Programa de Proteção Respiratória é um conjunto de medidas que busca apontar quais são os riscos respiratórios, como devem ser o procedimento de seleção do respirador e o treinamento dos atores envolvidos, informando sobre a adequada escolha do tamanho da peça facial que melhor veda o rosto do usuário e o seu uso correto contra a exposição aos riscos químicos e biológicos existentes no local de trabalho. O intuito do programa é controlar as doenças ocupacionais causadas pela inalação das impurezas do ar que são prejudiciais à saúde como poeiras, névoas, fumos, vapores e gases químicos.',
-        list: [],
-        forWhat: '',
-        whatAreTheObjectives: '',
-        beNotDo: '',
-      },
-    }, */
     {
       header: {
         title: 'HIGIENE OCUPACIONAL/NORMAS DE HIGIENE OCUPACIONAL FUNDACENTRO',
-        icon: FaCirclePlus,
       },
 
       body: {
@@ -159,7 +136,6 @@ const ourServicesData = {
     {
       header: {
         title: 'PROTEÇÃO RESPIRATÓRIA/ PORTARIA 672 de 08/11/2021',
-        icon: FaCirclePlus,
       },
 
       body: {
@@ -174,7 +150,6 @@ const ourServicesData = {
       header: {
         title:
           'LAUDO PREVIDENCIÁRIO/LEI 8.213/1991 E INSCRIção NORMATIVA PRES/INSS Nº 128, DE 28 DE MARÇO DE 2022',
-        icon: FaCirclePlus,
       },
 
       body: {
@@ -185,33 +160,6 @@ const ourServicesData = {
         beNotDo: '',
       },
     },
-    /* EXAMPLE */
-    /*  {
-      header: {
-        title:
-          'CONSULTOR TÉCNICO DE CAMPO, OBSERVADORES E FISCAIS DE SEGURANÇA PARA TRABALHO EM ALTURA, ESPAÇOS CONFINADOS E RESGATE',
-        icon: FaCirclePlus,
-      },
-
-      body: {
-        description:
-          'Grupo de profissionais altamente qualificados para apoio de campo e administrativos para a supervisão e coordenação das atividades de risco caracterizadas como trabalhos não rotineiros. Estes profissionais poderão ser responsáveis pelas liberações das atividades, bem como o seu acompanhamento “in loco” para assegurar a aplicação dos requisitos legais e sistêmicos aplicáveis.',
-        list: [
-          'Laudo de Aterramento',
-          'Laudo de SPDA',
-          'Projeto de Incorporação de Rede',
-          'Projetos de Entrada de Energia Baixão',
-          'Projetos em CAD 2D',
-          'Criação ou Atualização de Mapa de Risco',
-        ],
-        forWhat:
-          'O PGR é para todos os empregadores que mantenham os trabalhadores como empregados (CLT).',
-        whatAreTheObjectives:
-          'O principal objetivo do PGR é prevenir que acidentes que possam vir prejudicar a saúde dos trabalhadores, a propriedade privada e ao meio ambiente.',
-        beNotDo:
-          'As empresas que não cumprirem essa exigência, estão infringindo ao nas Normas Regulamentadoras – NR de segurança e medicina do trabalho, expondo as empresas a multas e notificações por parte do Ministério do Trabalho.',
-      },
-    }, */
   ],
 };
 export { ourServicesData };
