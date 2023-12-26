@@ -122,7 +122,8 @@ const ourServicesData = {
     },
     {
       header: {
-        title: 'HIGIENE OCUPACIONAL/NORMAS DE HIGIENE OCUPACIONAL FUNDACENTRO',
+        title:
+          'HIGIENE OCUPACIONAL / NORMAS DE HIGIENE OCUPACIONAL FUNDACENTRO',
       },
 
       body: {
@@ -149,12 +150,38 @@ const ourServicesData = {
     {
       header: {
         title:
-          'LAUDO PREVIDENCIÁRIO/LEI 8.213/1991 E INSCRIção NORMATIVA PRES/INSS Nº 128, DE 28 DE MARÇO DE 2022',
+          'LAUDO PREVIDENCIÁRIO - LEI 8.213/1991 E INSCRIção NORMATIVA PRES/INSS Nº 128, DE 28 DE MARÇO DE 2022',
       },
 
       body: {
         description: '',
         list: ['Laudo Técnico das Condições Ambientais do Trabalho – LTCAT'],
+        forWhat: '',
+        whatAreTheObjectives: '',
+        beNotDo: '',
+      },
+    },
+    {
+      header: {
+        title: 'LICENCIAMENTO AMBIENTAL / SOLUÇÕES AMBIENTAIS',
+      },
+
+      body: {
+        description: '',
+        list: [
+          'Licença Prévia - LP',
+          'Licença de Instalação - LI',
+          'Licença de Operação - LO',
+          'Certificado de Dispensa de Licença - CDL',
+          'Renovação de Licença - RL',
+          'Cadastro Técnico Federal de Atividades Potencialmente Poluidoras e/ou Instrumentos de Defesa Ambiental – CDF/APP e CDF/AIDA',
+          'Relatório de Atividades Potencialmente Poluidoras – RAPP',
+          'Programa de Gerenciamento de Resíduos – PGRS',
+          'Emissão do Manifesto de Transporte de Resíduos – MTR',
+          'Declaração de Movimentação de Resíduos – DMR',
+          'Inventário Anual de Resíduos - IAR',
+          'Certificado de Movimentação de Resíduos de Interesse Ambiental - CADRI',
+        ],
         forWhat: '',
         whatAreTheObjectives: '',
         beNotDo: '',
