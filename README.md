@@ -1,5 +1,3 @@
-# WebSite
-
 # Malisi - Website 🌳
 
 This is a website that I create to company Malisi Engenharia de Segurança do Trabalho e Meio Ambiente as a freelancer. I did everything from scratch, from choosing technologies to brig great efficency, performance and scalability to the project, until modern design of pages/components with the Figma, always respecting business rules.
