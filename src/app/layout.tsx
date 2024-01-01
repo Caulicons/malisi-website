@@ -13,9 +13,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Malisi Engenharia de Segurança do Trabalho e Meio Ambiente ',
+  title: 'Malisi Engenharia',
   description:
-    'Oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.',
+    'Malisi de Segurança do Trabalho e Meio Ambiente. Oferecemos a você os melhores serviços de segurança do trabalho e meio ambiente.',
   manifest: '/manifest.json',
   icons: {
     icon: '/assets/images/favicon/128x128.png',

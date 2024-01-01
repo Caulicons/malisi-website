@@ -52,7 +52,7 @@ const CardDropdown = ({
     >
       <div
         className={cn(
-          'flex w-full select-none items-center justify-between gap-3 rounded-3xl bg-primary p-3 tablet:p-5 ',
+          'flex w-full select-none items-center justify-between gap-3 rounded-3xl bg-primary p-3 tablet:p-4 ',
           variantHeight[minHeight]
         )}
       >

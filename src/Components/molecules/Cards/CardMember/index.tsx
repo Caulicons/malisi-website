@@ -1,7 +1,19 @@
-import Image from '@/components/atoms/Image';
 import SocialMediaIcon from '@/components/atoms/SocialMediaIcon';
 import Text from '@/components/atoms/Text';
 import type { memberCard } from '@/types';
+
+import dynamic from 'next/dynamic';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton';
+
+const Image = dynamic(() => import('@/components/atoms/Image'), {
+  ssr: false,
+  loading: () => (
+    <div className='rounded-t-2xl'>
+      <Skeleton width={300} height={423} />
+    </div>
+  ),
+});
 
 const CardMember = ({
   id,
@@ -13,14 +25,14 @@ const CardMember = ({
 }: memberCard) => {
   return (
     <div
-      className='flex  max-w-[300px] flex-col justify-center self-center text-center'
+      className='flex max-w-[300px]  flex-col justify-center self-center rounded-t-2xl text-center'
       key={id}
     >
       <Image
         src={`/assets/images/team/member${id}.webp`}
         alt={`${name}, ${role}`}
         width={300}
-        height={300}
+        height={423}
         className='rounded-t-2xl'
       />
       <div className=' flex flex-col gap-6 rounded-b-3xl border-2 border-t-0 border-white px-4 py-5'>

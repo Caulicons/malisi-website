@@ -14,9 +14,9 @@ const CardClientReview = ({
   return (
     <div
       key={id}
-      className='text0-center flex h-full flex-col items-center justify-center gap-6 rounded-2xl bg-white p-5'
+      className='flex  min-h-full flex-col items-center justify-center gap-6 rounded-2xl bg-white p-5 text-center tablet:max-w-[600px]'
     >
-      <div className='flex flex-col items-center  justify-center text-center'>
+      <div className='flex flex-col items-center justify-center gap-2 text-center'>
         <Image
           src={`/assets/images/clients/${logo}`}
           width={90}
