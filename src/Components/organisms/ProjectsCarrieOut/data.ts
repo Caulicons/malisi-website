@@ -4,6 +4,15 @@ const projectsCarriedOutData = {
   titleColor: 'secondary',
   slides: [
     {
+      id: 13,
+      href: '/assets/images/carousel/portfolio/13.webp',
+      moreInfo:
+        'https://www.linkedin.com/posts/engenheiromarcelolima_engenhariadeseguranaexadotrabalho-cipa-treinamento-activity-7152760902931357696-g9vi/?utm_source=share&utm_medium=member_desktop',
+      alt: 'Apresentação sobre CIPA.',
+      description:
+        'Treinamento da Comissão Interna de Prevenção de Acidentes e de Assédio (CIPA) gestão 2023/2024 da empresa Vital Engenharia Ambiental - Logística/SP.',
+    },
+    {
       id: 1,
       href: '/assets/images/carousel/portfolio/1.webp',
       moreInfo:
@@ -107,6 +116,15 @@ const projectsCarriedOutData = {
       alt: '3 pessoas segurando um certificado de Programa de Gerenciamento de Riscos.',
       description:
         'Programa de Gerenciamento de Riscos “PGR”, Planeta Distribuidora de Peças para Motos Ltda - 2022',
+    },
+    {
+      id: 13,
+      href: '/assets/images/carousel/portfolio/13.webp',
+      moreInfo:
+        'https://www.linkedin.com/posts/engenheiromarcelolima_engenhariadeseguranaexadotrabalho-cipa-treinamento-activity-7152760902931357696-g9vi/?utm_source=share&utm_medium=member_desktop',
+      alt: 'Apresentação sobre CIPA.',
+      description:
+        'Treinamento da Comissão Interna de Prevenção de Acidentes e de Assédio (CIPA) gestão 2023/2024 da empresa Vital Engenharia Ambiental - Logística/SP.',
     },
   ],
 };
