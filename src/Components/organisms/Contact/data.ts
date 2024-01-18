@@ -11,7 +11,7 @@ const contactData = {
       Icon: BsWhatsapp,
     },
     {
-      name: 'Email',
+      name: 'E-mail',
       url: 'mailto:marcelo.lima@malisiengenharia.com.br',
       Icon: TbBrandGmail,
     },
